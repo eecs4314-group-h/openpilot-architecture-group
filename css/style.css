@@ -1,0 +1,618 @@
+:root {
+  --york-red: #9a1020;
+  --york-red-dark: #730817;
+  --ink: #1d232d;
+  --muted: #596273;
+  --line: #dce1e8;
+  --paper: #ffffff;
+  --surface: #f4f6f8;
+  --dark: #20252d;
+  --dark-soft: #2c333d;
+  --success: #dff5e8;
+  --success-ink: #17633a;
+  --shadow: 0 18px 45px rgba(29, 35, 45, 0.09);
+  --content: 72rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: white;
+  background: var(--york-red);
+  border-radius: 0.4rem;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  position: sticky;
+  z-index: 50;
+  top: 0;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+
+.nav-shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: min(calc(100% - 2rem), var(--content));
+  min-height: 4.75rem;
+  margin: 0 auto;
+}
+
+.brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--ink);
+  font-weight: 750;
+  line-height: 1.15;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 2.3rem;
+  height: 2.3rem;
+  place-items: center;
+  color: white;
+  background: var(--york-red);
+  border-radius: 0.45rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links a {
+  display: block;
+  padding: 0.65rem 0.7rem;
+  color: #3e4755;
+  border-radius: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 650;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--york-red);
+  background: #f9edef;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(17rem, 0.7fr);
+  gap: clamp(2.5rem, 7vw, 6.5rem);
+  align-items: center;
+  width: min(calc(100% - 2rem), var(--content));
+  min-height: 40rem;
+  margin: 0 auto;
+  padding: clamp(4rem, 9vw, 7.5rem) 0;
+}
+
+.hero-content {
+  max-width: 49rem;
+}
+
+.eyebrow,
+.card-kicker,
+.assignment-topline {
+  margin: 0 0 0.75rem;
+  color: var(--york-red);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.12;
+}
+
+h1 {
+  max-width: 13ch;
+  margin-bottom: 1rem;
+  font-size: clamp(2.7rem, 7vw, 5.6rem);
+  letter-spacing: -0.06em;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  letter-spacing: -0.035em;
+}
+
+h3 {
+  margin-bottom: 0.65rem;
+  font-size: 1.2rem;
+  letter-spacing: -0.015em;
+}
+
+.hero-subtitle {
+  margin: 0 0 1.5rem;
+  color: var(--york-red);
+  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.hero-description {
+  max-width: 46rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 2.9rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.button-primary {
+  color: white;
+  background: var(--york-red);
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: var(--york-red-dark);
+}
+
+.button-secondary {
+  color: var(--ink);
+  background: white;
+  border-color: var(--line);
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible {
+  border-color: var(--ink);
+}
+
+.milestone-card {
+  position: relative;
+  padding: 2rem;
+  color: white;
+  background: var(--dark);
+  border-top: 0.35rem solid var(--york-red);
+  border-radius: 0.65rem;
+  box-shadow: var(--shadow);
+}
+
+.milestone-card .card-kicker {
+  color: #ffb4bf;
+}
+
+.milestone-card h2 {
+  margin-bottom: 0.35rem;
+  font-size: 2rem;
+}
+
+.milestone-card > p:not(.card-kicker) {
+  margin-top: 0;
+  color: #ccd2da;
+}
+
+.milestone-details {
+  display: grid;
+  gap: 0;
+  margin: 1.6rem 0 0;
+}
+
+.milestone-details div {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid #404853;
+}
+
+.milestone-details dt {
+  color: #aab2bd;
+}
+
+.milestone-details dd {
+  margin: 0;
+  font-weight: 650;
+}
+
+.status-badge {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  padding: 0.22rem 0.6rem;
+  color: var(--success-ink);
+  background: var(--success);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.section {
+  padding: clamp(4rem, 8vw, 7rem) max(1rem, calc((100% - var(--content)) / 2));
+  scroll-margin-top: 5rem;
+}
+
+.section-tinted {
+  background: var(--surface);
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading h2,
+.section-heading p,
+.compact-section h2,
+.compact-section p,
+.report-layout h2,
+.report-layout p {
+  margin-bottom: 0;
+}
+
+.section-heading > p {
+  max-width: 34rem;
+  color: var(--muted);
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.team-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.member-card,
+.assignment-card,
+.source-card,
+.collection-card {
+  padding: 1.5rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+}
+
+.member-card {
+  min-height: 10rem;
+  border-top: 0.22rem solid var(--york-red);
+}
+
+.member-card h3 {
+  min-height: 2.7rem;
+}
+
+.member-card p {
+  margin: 1.75rem 0 0;
+  color: var(--muted);
+}
+
+.member-card strong {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.assignment-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.assignment-card-featured {
+  grid-column: span 2;
+  color: white;
+  background: var(--york-red);
+  border-color: var(--york-red);
+}
+
+.assignment-card-featured .assignment-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: white;
+}
+
+.assignment-card-featured h3 {
+  margin-top: 2.5rem;
+  font-size: 1.65rem;
+}
+
+.assignment-card-featured p {
+  margin-bottom: 0;
+  color: #ffe5e8;
+}
+
+.assignment-card:not(.assignment-card-featured) h3 {
+  margin-top: 2.8rem;
+  color: var(--muted);
+}
+
+.section-dark {
+  color: white;
+  background: var(--dark);
+}
+
+.section-dark .eyebrow {
+  color: #ffb4bf;
+}
+
+.report-layout,
+.compact-section {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.7fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 8vw, 7rem);
+  align-items: center;
+}
+
+.report-layout > p {
+  padding-left: clamp(1.2rem, 4vw, 3rem);
+  color: #d4dae1;
+  border-left: 0.2rem solid var(--york-red);
+  font-size: clamp(1.25rem, 2.7vw, 1.7rem);
+  line-height: 1.5;
+}
+
+.resource-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(17rem, 0.55fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.link-list {
+  display: grid;
+  border-top: 1px solid var(--line);
+}
+
+.link-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.link-list a:hover strong,
+.link-list a:focus-visible strong,
+.source-card a:hover,
+.source-card a:focus-visible {
+  color: var(--york-red);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.link-list small {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.collection-card {
+  background: var(--surface);
+}
+
+.collection-card ul {
+  margin: 1.2rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.compact-section > p {
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.source-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.source-card a {
+  color: var(--york-red);
+  font-weight: 700;
+}
+
+.source-card p:last-child {
+  margin-bottom: 0;
+}
+
+.source-card-muted {
+  background: var(--surface);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem max(1rem, calc((100% - var(--content)) / 2));
+  color: #d0d5dc;
+  background: #171b21;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 64rem) {
+  .nav-shell {
+    display: block;
+    padding: 0.8rem 0;
+  }
+
+  .nav-links {
+    margin-top: 0.6rem;
+    padding-bottom: 0.15rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .nav-links a {
+    padding-left: 0;
+    padding-right: 1.2rem;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 48rem) {
+  html {
+    scroll-padding-top: 8.5rem;
+  }
+
+  .hero,
+  .report-layout,
+  .compact-section,
+  .resource-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    gap: 2.5rem;
+    padding-top: 3.5rem;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > p {
+    margin-top: 1rem;
+  }
+
+  .assignment-grid,
+  .source-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .assignment-card-featured {
+    grid-column: auto;
+  }
+
+  .report-layout > p {
+    padding: 1.2rem 0 0;
+    border-top: 0.2rem solid var(--york-red);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 34rem) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-card,
+  .assignment-card,
+  .source-card,
+  .collection-card,
+  .milestone-card {
+    padding: 1.25rem;
+  }
+
+  .member-card {
+    min-height: auto;
+  }
+
+  .member-card h3 {
+    min-height: 0;
+  }
+
+  .member-card p {
+    margin-top: 1.1rem;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer p + p {
+    margin-top: 0.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

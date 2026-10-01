@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="York University group project studying the software architecture and design of OpenPilot.">
+    <meta name="theme-color" content="#9a1020">
+    <title>Group H | OpenPilot Architecture Project</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a1020'/%3E%3Cpath d='M19 46V18h13c9 0 15 5 15 14s-6 14-15 14H19zm9-8h4c4 0 7-2 7-6s-3-6-7-6h-4v12z' fill='white'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/members.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Group H home">
+          <span class="brand-mark" aria-hidden="true">OP</span>
+          <span>Group H</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#assignments">Assignments</a></li>
+          <li><a href="#architecture">Architecture Report</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#discussions">Discussions</a></li>
+          <li><a href="#source-code">Source Code</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="page-title">
+        <div class="hero-content">
+          <p class="eyebrow">York University · Software Architecture</p>
+          <h1 id="page-title">Group H</h1>
+          <p class="hero-subtitle">Software Architecture &amp; Design Analysis of OpenPilot</p>
+          <p class="hero-description">This website contains our group's software architecture and design analysis of OpenPilot, an open-source advanced driver assistance system developed by comma.ai. Throughout the term, this website will be updated with assignment summaries, architecture reports, references, discussions, and other project resources.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#team">View the team</a>
+            <a class="button button-secondary" href="https://www.comma.ai/openpilot" target="_blank" rel="noopener noreferrer">Visit OpenPilot</a>
+          </div>
+        </div>
+
+        <aside class="milestone-card" aria-label="Current project milestone">
+          <p class="card-kicker">Current milestone</p>
+          <h2>Assignment 0</h2>
+          <p>Group List + Website Link</p>
+          <dl class="milestone-details">
+            <div>
+              <dt>Weight</dt>
+              <dd>0%</dd>
+            </div>
+            <div>
+              <dt>Due</dt>
+              <dd><time datetime="2026-10-04T23:59:00-04:00">October 4, 2026<br>at 11:59 PM</time></dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd><span class="status-badge">Completed</span></dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section section-tinted" id="team" aria-labelledby="team-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Our group</p>
+            <h2 id="team-title">Team Members</h2>
+          </div>
+          <p>Student numbers are loaded from our shared, read-only published Google Sheet.</p>
+        </div>
+        <div class="card-grid team-grid" id="team-members" aria-live="polite" aria-busy="true">
+          <article class="member-card"><h3>Setayesh Chegini</h3><p>Student Number: Loading…</p></article>
+          <article class="member-card"><h3>Spence Hashemi</h3><p>Student Number: Loading…</p></article>
+          <article class="member-card"><h3>Mehdi Jafarian</h3><p>Student Number: Loading…</p></article>
+          <article class="member-card"><h3>David Odidi</h3><p>Student Number: Loading…</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="assignments" aria-labelledby="assignments-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Coursework</p>
+            <h2 id="assignments-title">Assignments</h2>
+          </div>
+          <p>Summaries and deliverables will be added as the term progresses.</p>
+        </div>
+        <div class="card-grid assignment-grid">
+          <article class="assignment-card assignment-card-featured">
+            <div class="assignment-topline">
+              <span>Assignment 0</span>
+              <span class="status-badge">Completed</span>
+            </div>
+            <h3>Group List + Website Link</h3>
+            <p><strong>Due:</strong> <time datetime="2026-10-04T23:59:00-04:00">October 4, 2026 at 11:59 PM</time></p>
+          </article>
+          <article class="assignment-card">
+            <p class="card-kicker">Assignment 1</p>
+            <h3>Coming soon.</h3>
+          </article>
+          <article class="assignment-card">
+            <p class="card-kicker">Assignment 2</p>
+            <h3>Coming soon.</h3>
+          </article>
+          <article class="assignment-card">
+            <p class="card-kicker">Assignment 3</p>
+            <h3>Coming soon.</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="architecture" aria-labelledby="architecture-title">
+        <div class="report-layout">
+          <div>
+            <p class="eyebrow">Semester deliverable</p>
+            <h2 id="architecture-title">Architecture Report</h2>
+          </div>
+          <p>Our detailed OpenPilot architecture report will be developed and updated throughout the term.</p>
+        </div>
+      </section>
+
+      <section class="section" id="resources" aria-labelledby="resources-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reference library</p>
+            <h2 id="resources-title">Resources</h2>
+          </div>
+          <p>Primary OpenPilot links and space for our growing research collection.</p>
+        </div>
+        <div class="resource-layout">
+          <div class="link-list">
+            <a href="https://www.comma.ai/openpilot" target="_blank" rel="noopener noreferrer">
+              <span><strong>OpenPilot Official Website</strong><small>comma.ai/openpilot</small></span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://github.com/commaai/openpilot" target="_blank" rel="noopener noreferrer">
+              <span><strong>OpenPilot GitHub</strong><small>github.com/commaai/openpilot</small></span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://docs.comma.ai/" target="_blank" rel="noopener noreferrer">
+              <span><strong>OpenPilot Documentation</strong><small>docs.comma.ai</small></span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <aside class="collection-card">
+            <h3>Collection in progress</h3>
+            <ul>
+              <li>Research papers</li>
+              <li>Books</li>
+              <li>Documentation</li>
+              <li>Architecture references</li>
+              <li>Course resources</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-tinted" id="discussions" aria-labelledby="discussions-title">
+        <div class="compact-section">
+          <div>
+            <p class="eyebrow">Design notes</p>
+            <h2 id="discussions-title">Discussions</h2>
+          </div>
+          <p>Group discussions and design observations will be added throughout the project.</p>
+        </div>
+      </section>
+
+      <section class="section" id="source-code" aria-labelledby="source-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Repositories</p>
+            <h2 id="source-title">Source Code</h2>
+          </div>
+        </div>
+        <div class="card-grid source-grid">
+          <article class="source-card">
+            <p class="card-kicker">Upstream project</p>
+            <h3>OpenPilot Source Code</h3>
+            <a href="https://github.com/commaai/openpilot" target="_blank" rel="noopener noreferrer">github.com/commaai/openpilot</a>
+          </article>
+          <article class="source-card source-card-muted">
+            <p class="card-kicker">Course project</p>
+            <h3>Group Repository</h3>
+            <p>Coming soon</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>Group H</strong></p>
+      <p>York University · Software Architecture &amp; Design</p>
+    </footer>
+  </body>
+</html>
