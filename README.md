@@ -1,8 +1,8 @@
 # Group H Website
 
-A static, responsive website for York University Group H's OpenPilot architecture project. It uses HTML, CSS, and vanilla JavaScript only, so it can be hosted directly on GitHub Pages.
+A static, responsive GitHub Pages website for York University Group H's OpenPilot architecture project. It uses HTML, CSS, vanilla JavaScript, Google Forms, and a published Google Sheets CSV—without a backend, npm packages, passwords, API keys, or private credentials.
 
-Student numbers are **not** stored in `index.html`. The website reads them from a published, read-only Google Sheet CSV whenever the page loads.
+Team members can add or update their own student number directly from the website. Submissions go to Google Forms, responses are stored in Google Sheets, and the website reads the latest response for each member.
 
 ## Folder Structure
 
@@ -19,22 +19,34 @@ resources/
 README.md
 ```
 
-The empty content folders contain `.gitkeep` files so Git will include them. They are ready for future files such as:
-
-- `assignments/assignment1-summary.pdf`
-- `assignments/assignment2-summary.pdf`
-- `reports/openpilot-architecture-report.pdf`
-
 ## How Team Members Add Their Student Numbers
 
-The Google Sheet is the only place where student numbers should be entered. Do not add student numbers directly to `index.html`.
+After the Google integration below is configured, a team member only needs to:
 
-### 1. Create the Google Sheet
+1. Open the public Group H website.
+2. Find their card under **Team Members**.
+3. Click **Add / Update Student Number**.
+4. Confirm their preselected name.
+5. Enter their student number using digits only.
+6. Click **Save Student Number**.
 
-1. Go to [Google Sheets](https://sheets.google.com/) and create a blank spreadsheet.
-2. Put `Name` in cell **A1**.
-3. Put `Student Number` in cell **B1**.
-4. Enter these names in column A, starting at cell A2:
+They do not need to open GitHub, edit code, make commits, or edit the Google Sheet.
+
+## Configure Google Forms and Google Sheets
+
+Complete these steps once as the project owner.
+
+### 1. Create the Google Form
+
+1. Go to [Google Forms](https://forms.google.com/) and create a **Blank form**.
+2. Name it something clear, such as `Group H Student Numbers`.
+3. Leave the form open while completing the next steps.
+
+### 2. Create the Name dropdown
+
+1. Add a question titled exactly `Name`.
+2. Change the question type to **Dropdown**.
+3. Add only these four options, spelled exactly as shown:
 
    ```text
    Setayesh Chegini
@@ -43,112 +55,165 @@ The Google Sheet is the only place where student numbers should be entered. Do n
    David Odidi
    ```
 
-5. Leave the cells in column B blank until each person enters their own student number.
+4. Turn on **Required** for this question.
 
-The sheet should look like this:
+### 3. Create the Student Number field
 
-| Name | Student Number |
-| --- | --- |
-| Setayesh Chegini | |
-| Spence Hashemi | |
-| Mehdi Jafarian | |
-| David Odidi | |
+1. Add a second question titled exactly `Student Number`.
+2. Set its type to **Short answer**.
+3. Turn on **Required**.
+4. Open the question's three-dot menu and choose **Response validation**.
+5. Choose **Regular expression** → **Matches**.
+6. Enter this expression:
 
-Keep the headings exactly as `Name` and `Student Number` so the website can identify the columns.
-
-### 2. Share it privately with the team
-
-1. In the Google Sheet, click **Share** in the upper-right corner.
-2. Under **General access**, keep the setting as **Restricted**. Do **not** change the editable sheet to “Anyone with the link.”
-3. Add the Google accounts of the four group members.
-4. Set each group member's permission to **Editor**.
-5. Click **Send**.
-
-This keeps editing access limited to the four group members. There are no editing controls on the website.
-
-### 3. Let each person add their own number
-
-Each group member should:
-
-1. Open the privately shared Google Sheet while signed in to the Google account that was invited.
-2. Find their name in column A.
-3. Enter their own student number in the matching cell in column B.
-4. Click outside the cell. Google Sheets saves the change automatically.
-
-If a student number is blank, the website displays `Student Number: Not added yet` after the sheet loads successfully.
-
-### 4. Publish a read-only CSV for the website
-
-Publishing creates a separate read-only view for the website. It does not make the spreadsheet publicly editable.
-
-1. In the Google Sheet, open **File** → **Share** → **Publish to web**.
-2. In the first drop-down, choose the sheet tab that contains the member list (for example, `Sheet1`).
-3. In the second drop-down, choose **Comma-separated values (.csv)**.
-4. Click **Publish**.
-5. Confirm by clicking **OK** if Google asks for confirmation.
-6. Copy the URL shown in the publishing window. A CSV publishing URL usually contains `/pub?` and ends with or contains `output=csv`.
-
-Important privacy note: anyone who has the published URL may be able to read the published values. Only the four invited group members should have **Editor** access to the original sheet. The website only fetches the published read-only CSV and cannot edit the spreadsheet.
-
-### 5. Paste the published CSV URL into the website
-
-1. Open `js/members.js`.
-2. At the very top, find this clearly marked line:
-
-   ```javascript
-   const GOOGLE_SHEET_CSV_URL = "PASTE_GOOGLE_SHEET_CSV_URL_HERE";
+   ```text
+   ^[0-9]+$
    ```
 
-3. Replace only `PASTE_GOOGLE_SHEET_CSV_URL_HERE` with the URL copied from Google Sheets. Keep the quotation marks.
+7. Use an error message such as `Enter digits only.`
+
+The website also validates digits before sending the response.
+
+### 4. Allow updates from the website
+
+Open the form's **Settings** and check the response settings:
+
+1. Keep **Accepting responses** enabled.
+2. Turn off **Limit to 1 response**. A teammate must be able to submit again when correcting or updating a number.
+3. Do not require users to edit an existing response.
+4. If all teammates cannot sign in with the same organization, turn off any setting that restricts responses to your organization.
+5. Do not add password fields or request private credentials.
+
+### 5. Connect the Form to a Google Sheet
+
+1. Open the form's **Responses** tab.
+2. Click the green **Link to Sheets** button.
+3. Choose **Create a new spreadsheet**.
+4. Give it a clear name and click **Create**.
+5. Open the new response spreadsheet.
+
+Google Forms normally creates a sheet tab named `Form Responses 1` with columns similar to:
+
+```text
+Timestamp | Name | Student Number
+```
+
+Do not rename the `Name` or `Student Number` columns. The JavaScript uses those exact headings.
+
+### 6. Publish the response data as a read-only CSV
+
+The website must be able to read the response sheet without signing in.
+
+1. In the linked Google Sheet, choose **File** → **Share** → **Publish to web**.
+2. In the first dropdown, choose the response tab, normally `Form Responses 1`.
+3. In the second dropdown, choose **Comma-separated values (.csv)**.
+4. Click **Publish** and confirm.
+5. Copy the published CSV URL. It normally contains `/pub?` and `output=csv`.
+
+Do not make the spreadsheet publicly editable. Publishing creates a read-only output; editing access can remain restricted.
+
+### 7. Copy the Google Form ID
+
+1. In Google Forms, click **Send** and choose the link icon.
+2. Copy the form's public link. It looks similar to:
+
+   ```text
+   https://docs.google.com/forms/d/e/1FAIpQLExampleFormId/viewform
+   ```
+
+3. The Form ID is the text between `/d/e/` and `/viewform`:
+
+   ```text
+   1FAIpQLExampleFormId
+   ```
+
+### 8. Copy the two Google Form entry IDs
+
+Each Google Form question has a public entry ID. These are safe to include in a public repository.
+
+1. Open the form editor's three-dot menu.
+2. Choose **Get pre-filled link**.
+3. Select `Setayesh Chegini` in the Name dropdown.
+4. Enter a temporary number such as `123456789` in Student Number.
+5. Click **Get link**, then copy the generated link.
+6. Paste the link into a temporary text editor so the full URL is visible.
+
+The end of the link will look similar to:
+
+```text
+?entry.111111111=Setayesh+Chegini&entry.222222222=123456789
+```
+
+- The entry key whose value is `Setayesh Chegini` is the Name entry ID, for example `entry.111111111`.
+- The entry key whose value is `123456789` is the Student Number entry ID, for example `entry.222222222`.
+
+Copy each complete value beginning with `entry.`.
+
+### 9. Paste the four configuration values into the website
+
+Open `js/members.js`. At the very top, find:
+
+```javascript
+const GOOGLE_FORM_ID = "PASTE_GOOGLE_FORM_ID_HERE";
+const GOOGLE_FORM_NAME_ENTRY_ID = "entry.PASTE_NAME_ENTRY_ID_HERE";
+const GOOGLE_FORM_STUDENT_NUMBER_ENTRY_ID = "entry.PASTE_STUDENT_NUMBER_ENTRY_ID_HERE";
+const GOOGLE_SHEET_CSV_URL = "PASTE_GOOGLE_SHEET_CSV_URL_HERE";
+```
+
+Replace the placeholder text while keeping the quotation marks. For example:
+
+```javascript
+const GOOGLE_FORM_ID = "1FAIpQLExampleFormId";
+const GOOGLE_FORM_NAME_ENTRY_ID = "entry.111111111";
+const GOOGLE_FORM_STUDENT_NUMBER_ENTRY_ID = "entry.222222222";
+const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/EXAMPLE/pub?gid=123&single=true&output=csv";
+```
+
+Save the file, commit the change, and push it to the `main` branch. GitHub Pages will redeploy automatically.
+
+## Test a Submission
+
+1. Open the public GitHub Pages website.
+2. Under **Team Members**, click **Add / Update Student Number** on one member's card.
+3. Confirm that the correct member is already selected.
+4. Try entering letters and confirm the form rejects them.
+5. Enter a temporary digits-only student number and click **Save Student Number**.
+6. Confirm the message `Student number saved successfully.` appears.
+7. Open the Google Form's **Responses** tab or its linked Sheet and confirm a new row was added.
+8. The website updates the selected card immediately and automatically checks the published Sheet for the new response. Google may take a short time to refresh the published CSV.
+9. Submit a different number for the same member and confirm the website eventually shows the newer value.
+
+Before the integration is configured, every card shows `Not added yet`. `Unable to load` is reserved for an actual Sheet request or parsing error.
+
+## How the Latest Submission Is Chosen
+
+Google Forms appends each response as a new row at the bottom of the response sheet. The website reads the rows from top to bottom and stores one number per recognized team member. When it encounters another response for the same name, the later row replaces the earlier one.
 
 Example:
 
-```javascript
-const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/EXAMPLE/pub?gid=0&single=true&output=csv";
+```text
+Spence Hashemi | 111111111
+Spence Hashemi | 222222222
 ```
 
-4. Save `js/members.js`, commit the change, and push it to GitHub.
+The website displays `222222222` because it appears in the most recent appended response row.
 
-## Test the Google Sheet Connection
+## Privacy and Security
 
-For the most accurate test, view the site through a local web server or GitHub Pages instead of double-clicking `index.html`.
+- The repository is public. Never commit passwords, API keys, OAuth tokens, service-account files, or other private credentials.
+- Google Form IDs, question entry IDs, and a published CSV URL are public identifiers, not editing credentials.
+- The Google Sheet should remain non-editable to the public.
+- Publishing the response sheet as CSV means anyone with the published URL—and visitors to the public website—can read the submitted names and student numbers. Make sure every team member understands this before collecting their number.
+- The website provides submission access only. It does not provide Google Sheet editing access.
 
-1. Confirm the published CSV URL is pasted into `js/members.js`.
-2. Open the published CSV URL directly in a browser. It should display or download the two-column member list.
-3. Start a simple local web server in the project folder. If Python is installed, run:
+## GitHub Pages
 
-   ```text
-   python -m http.server 8000
-   ```
+The existing repository deploys from the `main` branch and `/ (root)` folder. After future changes are pushed to `main`, GitHub Pages rebuilds the site automatically.
 
-4. Open `http://localhost:8000/` in a browser.
-5. Check the **Team Members** section:
-   - Entered numbers should appear beside the matching names.
-   - Blank cells should show `Not added yet`.
-6. Change one test value in the Google Sheet, wait briefly for the published version to update, and refresh the website.
-7. If the cards show `Unable to load`, open the browser developer console for the detailed error. Then verify that the URL is the published **CSV** URL, the sheet is still published, and the headings have not changed.
+## Troubleshooting
 
-The site deliberately keeps working when the sheet cannot be loaded. All four names remain visible and each card displays `Unable to load`.
-
-## Deploy to GitHub Pages
-
-1. Create a GitHub repository and push this project to it. Make sure `index.html` is at the repository root, not inside another folder.
-2. On GitHub, open the repository.
-3. Open **Settings**.
-4. In the sidebar, open **Pages**.
-5. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-6. Select the `main` branch.
-7. Select the `/ (root)` folder.
-8. Click **Save**.
-9. Wait for the GitHub Pages URL to appear on the Pages settings screen. The first deployment may take a few minutes.
-10. Open the GitHub Pages URL and verify the navigation, links, and Team Members cards.
-
-After future changes, commit and push them to `main`. GitHub Pages will publish the updated files automatically.
-
-## Privacy and Error Handling
-
-- The website contains no form for editing student numbers.
-- The original Google Sheet should remain restricted to the four team members as Editors.
-- The published CSV is read-only and is used only to display the data.
-- The website does not use a backend, database, login system, npm package, or external JavaScript library.
-- If the CSV request fails or the configuration is missing, the website still displays all four names with `Student Number: Unable to load` and writes a useful error to the browser console.
+- **The modal says the Form is not configured:** Replace all three Form placeholders at the top of `js/members.js`.
+- **Cards keep showing Not added yet:** Add the published CSV URL, confirm the response tab—not another tab—was published, and keep the `Name` and `Student Number` headings unchanged.
+- **A submission does not appear in Google Forms:** Recheck the Form ID and both `entry.` IDs using a new pre-filled link.
+- **Cards show Unable to load:** Open the CSV URL directly in a browser and confirm it returns CSV data. Then check the browser console for the detailed error.
+- **An older number appears:** Keep the Google Form response sheet in its original append order. The newest responses must remain below older responses.
