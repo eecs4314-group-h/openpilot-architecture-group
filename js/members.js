@@ -4,10 +4,10 @@
  * Full setup instructions are in README.md.
  * =====================================================================
  */
-const GOOGLE_FORM_ID = "PASTE_GOOGLE_FORM_ID_HERE";
-const GOOGLE_FORM_NAME_ENTRY_ID = "entry.PASTE_NAME_ENTRY_ID_HERE";
-const GOOGLE_FORM_STUDENT_NUMBER_ENTRY_ID = "entry.PASTE_STUDENT_NUMBER_ENTRY_ID_HERE";
-const GOOGLE_SHEET_CSV_URL = "PASTE_GOOGLE_SHEET_CSV_URL_HERE";
+const GOOGLE_FORM_ID = "1FAIpQLSfOShtEKYaiJvwRHARHP9VGsE4iLjbSz1NXv24DU9K1NvY6qQ";
+const GOOGLE_FORM_NAME_ENTRY_ID = "entry.489204874";
+const GOOGLE_FORM_STUDENT_NUMBER_ENTRY_ID = "entry.353591388";
+const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT865JKq86Cs6w6FJxd6-ka60rjATrPSTY2llm50AcC_yRNvl5dwvJCJrBaq6olv32X2hetWk2UBGjt/pub?gid=1497950523&single=true&output=csv";
 
 const GROUP_MEMBERS = [
   "Setayesh Chegini",
