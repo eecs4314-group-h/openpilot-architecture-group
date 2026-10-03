@@ -1,4 +1,4 @@
-# Group H Website
+# Group H – OpenPilot Architecture Project
 
 A static, responsive GitHub Pages website for York University Group H's OpenPilot architecture project. It uses HTML, CSS, vanilla JavaScript, Google Forms, and a published Google Sheets CSV—without a backend, npm packages, passwords, API keys, or private credentials.
 
