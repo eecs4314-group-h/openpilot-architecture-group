@@ -210,6 +210,8 @@ The website displays `222222222` because it appears in the most recent appended 
 
 The existing repository deploys from the `main` branch and `/ (root)` folder. After future changes are pushed to `main`, GitHub Pages rebuilds the site automatically.
 
+Live site: https://eecs4314-group-h.github.io/openpilot-architecture-group/
+
 ## Troubleshooting
 
 - **The modal says the Form is not configured:** Replace all three Form placeholders at the top of `js/members.js`.
