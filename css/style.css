@@ -340,7 +340,7 @@ h3 {
 }
 
 .team-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .member-card,
@@ -355,7 +355,7 @@ h3 {
 
 .member-card {
   display: flex;
-  min-height: 14rem;
+  min-height: 10rem;
   flex-direction: column;
   border-top: 0.22rem solid var(--york-red);
 }
@@ -365,7 +365,7 @@ h3 {
 }
 
 .member-card p {
-  margin: 1.75rem 0 0;
+  margin: auto 0 0;
   color: var(--muted);
 }
 
@@ -374,166 +374,6 @@ h3 {
   margin-top: 0.2rem;
   color: var(--ink);
   font-size: 1.05rem;
-}
-
-.member-action {
-  width: 100%;
-  min-height: 2.75rem;
-  margin-top: auto;
-  padding: 0.65rem 0.8rem;
-  color: var(--york-red);
-  background: white;
-  border: 1px solid #c9cfd8;
-  border-radius: 0.4rem;
-  font: inherit;
-  font-size: 0.9rem;
-  font-weight: 750;
-  cursor: pointer;
-}
-
-.member-action:hover,
-.member-action:focus-visible {
-  color: white;
-  background: var(--york-red);
-  border-color: var(--york-red);
-}
-
-.student-number-dialog {
-  width: min(calc(100% - 2rem), 34rem);
-  max-height: calc(100vh - 2rem);
-  padding: 0;
-  color: var(--ink);
-  background: white;
-  border: 0;
-  border-radius: 0.7rem;
-  box-shadow: 0 24px 80px rgba(16, 21, 29, 0.35);
-}
-
-.student-number-dialog::backdrop {
-  background: rgba(23, 27, 33, 0.72);
-  backdrop-filter: blur(3px);
-}
-
-.student-number-dialog[open] {
-  animation: dialog-in 150ms ease-out;
-}
-
-.student-number-dialog > * {
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-}
-
-.dialog-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1.5rem;
-  margin-top: 1.75rem;
-}
-
-.dialog-header h2 {
-  margin-bottom: 0;
-  font-size: 1.75rem;
-}
-
-.dialog-close {
-  display: grid;
-  width: 2.5rem;
-  height: 2.5rem;
-  flex: 0 0 auto;
-  place-items: center;
-  color: var(--muted);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  font: inherit;
-  font-size: 1.45rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.dialog-close:hover,
-.dialog-close:focus-visible {
-  color: white;
-  background: var(--york-red);
-  border-color: var(--york-red);
-}
-
-#student-number-dialog-help {
-  color: var(--muted);
-}
-
-#student-number-form {
-  display: grid;
-  gap: 1.25rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.75rem;
-}
-
-.form-field {
-  display: grid;
-  gap: 0.45rem;
-}
-
-.form-field label {
-  font-weight: 750;
-}
-
-.form-field input,
-.form-field select {
-  width: 100%;
-  min-height: 3rem;
-  padding: 0.65rem 0.75rem;
-  color: var(--ink);
-  background: white;
-  border: 1px solid #aeb6c2;
-  border-radius: 0.4rem;
-  font: inherit;
-}
-
-.form-field input:focus,
-.form-field select:focus {
-  border-color: var(--york-red);
-  outline: 0.18rem solid rgba(154, 16, 32, 0.15);
-}
-
-.form-field small {
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
-.form-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.75rem;
-  margin-top: 0.25rem;
-}
-
-.form-status {
-  min-height: 1.5rem;
-  margin: 0;
-  color: var(--muted);
-  font-weight: 650;
-}
-
-.form-status.is-success {
-  color: var(--success-ink);
-}
-
-.form-status.is-error {
-  color: var(--york-red-dark);
-}
-
-@keyframes dialog-in {
-  from {
-    opacity: 0;
-    transform: translateY(0.75rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .assignment-grid {
@@ -770,23 +610,6 @@ footer p {
 
   .member-card p {
     margin-top: 1.1rem;
-  }
-
-  .student-number-dialog > * {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
-
-  .dialog-header {
-    margin-top: 1.25rem;
-  }
-
-  .form-actions {
-    display: grid;
-  }
-
-  .form-actions .button-primary {
-    grid-row: 1;
   }
 
   footer {

@@ -8,7 +8,6 @@
     <title>Group H | OpenPilot Architecture Project</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a1020'/%3E%3Cpath d='M19 46V18h13c9 0 15 5 15 14s-6 14-15 14H19zm9-8h4c4 0 7-2 7-6s-3-6-7-6h-4v12z' fill='white'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/members.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -72,13 +71,14 @@
             <p class="eyebrow">Our group</p>
             <h2 id="team-title">Team Members</h2>
           </div>
-          <p>Choose a team member to add or update their student number directly from this page.</p>
+          <p>Group H roster for the OpenPilot architecture project.</p>
         </div>
-        <div class="card-grid team-grid" id="team-members" aria-live="polite" aria-busy="true">
-          <article class="member-card"><h3>Setayesh Chegini</h3><p>Student Number:<strong>Not added yet</strong></p><button class="member-action" type="button">Add / Update Student Number</button></article>
-          <article class="member-card"><h3>Spence Hashemi</h3><p>Student Number:<strong>Not added yet</strong></p><button class="member-action" type="button">Add / Update Student Number</button></article>
-          <article class="member-card"><h3>Mehdi Jafarian</h3><p>Student Number:<strong>Not added yet</strong></p><button class="member-action" type="button">Add / Update Student Number</button></article>
-          <article class="member-card"><h3>David Odidi</h3><p>Student Number:<strong>Not added yet</strong></p><button class="member-action" type="button">Add / Update Student Number</button></article>
+        <div class="card-grid team-grid" id="team-members">
+          <article class="member-card"><h3>Setayesh Chegini</h3><p>Student Number:<strong>218804096</strong></p></article>
+          <article class="member-card"><h3>Spence Hashemi</h3><p>Student Number:<strong>220785408</strong></p></article>
+          <article class="member-card"><h3>Mehdi Jafarian</h3><p>Student Number:<strong>219899095</strong></p></article>
+          <article class="member-card"><h3>David Odidi</h3><p>Student Number:<strong>214208086</strong></p></article>
+          <article class="member-card"><h3>Dan Logvinovsky</h3><p>Student Number:<strong>215753494</strong></p></article>
         </div>
       </section>
 
@@ -191,42 +191,6 @@
         </div>
       </section>
     </main>
-
-    <dialog class="student-number-dialog" id="student-number-dialog" aria-labelledby="student-number-dialog-title" aria-describedby="student-number-dialog-help">
-      <div class="dialog-header">
-        <div>
-          <p class="card-kicker">Team details</p>
-          <h2 id="student-number-dialog-title">Add or update a student number</h2>
-        </div>
-        <button class="dialog-close" id="student-number-dialog-close" type="button" aria-label="Close student number form">×</button>
-      </div>
-
-      <p id="student-number-dialog-help">Choose your name, enter your student number using digits only, and save it to the group's response sheet.</p>
-
-      <form id="student-number-form">
-        <div class="form-field">
-          <label for="member-name">Name</label>
-          <select id="member-name" required>
-            <option value="Setayesh Chegini">Setayesh Chegini</option>
-            <option value="Spence Hashemi">Spence Hashemi</option>
-            <option value="Mehdi Jafarian">Mehdi Jafarian</option>
-            <option value="David Odidi">David Odidi</option>
-          </select>
-        </div>
-
-        <div class="form-field">
-          <label for="student-number">Student Number</label>
-          <input id="student-number" type="text" inputmode="numeric" pattern="[0-9]+" autocomplete="off" required aria-describedby="student-number-hint">
-          <small id="student-number-hint">Digits only.</small>
-        </div>
-
-        <div class="form-actions">
-          <button class="button button-secondary" id="student-number-cancel" type="button">Cancel</button>
-          <button class="button button-primary" id="student-number-submit" type="submit">Save Student Number</button>
-        </div>
-        <p class="form-status" id="student-number-status" role="status" aria-live="polite"></p>
-      </form>
-    </dialog>
 
     <footer>
       <p><strong>Group H</strong></p>
