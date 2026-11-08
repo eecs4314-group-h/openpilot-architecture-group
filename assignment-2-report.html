@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Group H Assignment 2 concrete architecture report tasks, responsibilities, outline, and progress."
+    >
+    <meta name="theme-color" content="#9a1020">
+    <title>Assignment 2 Report | Group H</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a1020'/%3E%3Cpath d='M19 46V18h13c9 0 15 5 15 14s-6 14-15 14H19zm9-8h4c4 0 7-2 7-6s-3-6-7-6h-4v12z' fill='white'/%3E%3C/svg%3E"
+    >
+    <link rel="stylesheet" href="css/style.css?v=20261108-2">
+    <script
+      src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+      defer
+    ></script>
+    <script src="js/supabase-config.js" defer></script>
+    <script src="js/shared-progress.js" defer></script>
+    <script src="js/assignment-dashboard.js" defer></script>
+  </head>
+  <body
+    class="assignment-page assignment-2-page"
+    data-assignment-id="assignment2-report"
+    data-progress-source="data/assignment-2-report.json"
+  >
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Group H home"
+          ><span class="brand-mark" aria-hidden="true">OP</span
+          ><span>Group H</span></a
+        >
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#outline">Report Outline</a></li>
+          <li><a href="#member-workflows">Member Tasks</a></li>
+          <li><a href="#submission">Final Check</a></li>
+          <li>
+            <a href="assignment-2-presentation.html">Presentation Workspace</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <nav class="breadcrumb-shell" aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#assignments">Assignments</a></li>
+          <li>Assignment 2 – Report</li>
+          <li data-breadcrumb-member>Setayesh Chegini</li>
+        </ol>
+      </nav>
+
+      <section class="assignment-hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">EECS 4314 · Group H · Assignment 2</p>
+          <h1 id="page-title">Report Tasks &amp; Responsibilities</h1>
+          <p class="assignment-lead">
+            Publish a 10–15 page, web-readable report that explains how Group H
+            recovered OpenPilot v0.9.5's concrete architecture, focuses on one
+            claimed top-level subsystem, and supports every important conclusion
+            with traceable evidence.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#member-workflows"
+              >Choose your name</a
+            ><a class="button button-secondary" href="#outline"
+              >Open report outline</a
+            ><a
+              class="button button-secondary"
+              href="assignment-2-presentation.html"
+              >Open presentation tasks</a
+            >
+          </div>
+        </div>
+        <aside class="deadline-card" aria-labelledby="report-schedule-title">
+          <h2 class="card-kicker" id="report-schedule-title">
+            Official eClass deadline
+          </h2>
+          <dl>
+            <div>
+              <dt>Report due</dt>
+              <dd>
+                <time datetime="2026-11-15T23:59:00-05:00"
+                  >Sunday, November 15<br>11:59 PM</time
+                >
+              </dd>
+            </div>
+            <div>
+              <dt>Length</dt>
+              <dd>10–15 pages</dd>
+            </div>
+            <div>
+              <dt>Publication</dt>
+              <dd>Website + submitted PDF</dd>
+            </div>
+            <div>
+              <dt>Current status</dt>
+              <dd>
+                <span class="status-badge status-not-started">Not Started</span>
+              </dd>
+            </div>
+          </dl>
+          <p class="schedule-note">
+            The PDF must be submitted before the deadline, and the evolving
+            report must remain readable online on the Group H website.
+          </p>
+        </aside>
+      </section>
+
+      <section
+        class="section assignment-overview"
+        id="overview"
+        aria-labelledby="overview-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Report overview</p>
+            <h2 id="overview-title">What the team must produce</h2>
+          </div>
+          <p>
+            A focused, reproducible, evidence-backed architecture report—not a
+            collection of disconnected member sections.
+          </p>
+        </div>
+        <div class="overview-card-grid">
+          <article>
+            <span>10–15</span>
+            <h3>Final pages</h3>
+            <p>
+              Use figures and tables efficiently and keep the narrative within
+              the official limit.
+            </p>
+          </article>
+          <article>
+            <span>1</span>
+            <h3>Claimed subsystem</h3>
+            <p>
+              Focus the detailed analysis on one top-level subsystem accepted in
+              the forum.
+            </p>
+          </article>
+          <article>
+            <span>3+</span>
+            <h3>Core diagrams</h3>
+            <p>
+              System map, focused static view, and at least one sequence or
+              state view.
+            </p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Published formats</h3>
+            <p>
+              Web-readable report plus one verified PDF for eClass submission.
+            </p>
+          </article>
+        </div>
+        <div class="requirements-layout assignment2-requirements">
+          <div class="requirements-panel">
+            <h3>Required report content</h3>
+            <ul class="requirements-list">
+              <li>
+                Source snapshot, scope, research questions, and subsystem claim.
+              </li>
+              <li>Reproducible Understand extraction and grouping method.</li>
+              <li>
+                Top-level concrete architecture and selected-subsystem
+                hierarchy.
+              </li>
+              <li>
+                Responsibilities, important entities, and internal/external
+                dependencies.
+              </li>
+              <li>
+                Low-level functions or entities responsible for major dependency
+                edges.
+              </li>
+              <li>
+                Sequence or state analysis of important subsystem behavior.
+              </li>
+              <li>
+                Architectural style and noteworthy design patterns supported by
+                evidence.
+              </li>
+              <li>
+                Conceptual comparison, alternatives, trade-offs, limitations,
+                and lessons.
+              </li>
+            </ul>
+          </div>
+          <aside class="format-card" aria-labelledby="report-format-title">
+            <h3 class="card-kicker" id="report-format-title">
+              Evidence standard
+            </h3>
+            <dl>
+              <div>
+                <dt>Implementation</dt>
+                <dd>OpenPilot v0.9.5</dd>
+              </div>
+              <div>
+                <dt>Primary tool</dt>
+                <dd>Understand</dd>
+              </div>
+              <div>
+                <dt>Traceability</dt>
+                <dd>Entity → relation → finding</dd>
+              </div>
+              <div>
+                <dt>Dynamic view</dt>
+                <dd>Sequence or state</dd>
+              </div>
+              <div>
+                <dt>Publication</dt>
+                <dd>Website + PDF</dd>
+              </div>
+            </dl>
+            <p>
+              Every diagram needs a source snapshot, scope, legend, extraction
+              method, and evidence identifiers for its important relations.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section
+        class="section section-tinted"
+        id="outline"
+        aria-labelledby="outline-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Shared structure</p>
+            <h2 id="outline-title">Report Outline &amp; Page Budget</h2>
+          </div>
+          <p>
+            Page ranges are targets. Setayesh adjusts them during integration so
+            the finished report stays within 10–15 pages.
+          </p>
+        </div>
+        <section
+          class="table-shell"
+          aria-label="Assignment 2 report outline and page budget"
+          tabindex="0"
+        >
+          <table class="project-table">
+            <thead>
+              <tr>
+                <th scope="col">Section</th>
+                <th scope="col">Target</th>
+                <th scope="col">Lead</th>
+                <th scope="col">Required content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Section">
+                  <strong>1. Executive Summary &amp; Scope</strong>
+                </td>
+                <td data-label="Target">1–1.5 pages</td>
+                <td data-label="Lead">Setayesh</td>
+                <td data-label="Required content">
+                  Objective, claimed subsystem, snapshot, questions, headline
+                  findings.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Section">
+                  <strong>2. Recovery Method &amp; System Map</strong>
+                </td>
+                <td data-label="Target">2–2.5 pages</td>
+                <td data-label="Lead">Spence</td>
+                <td data-label="Required content">
+                  Understand setup, extraction, grouping rules, mapping,
+                  top-level diagram.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Section">
+                  <strong>3. Focused Concrete Architecture</strong>
+                </td>
+                <td data-label="Target">2.5–3 pages</td>
+                <td data-label="Lead">Mehdi</td>
+                <td data-label="Required content">
+                  Hierarchy, responsibilities, entities, dependencies, evidence
+                  matrix.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Section">
+                  <strong>4. Dynamic Behavior, Style &amp; Patterns</strong>
+                </td>
+                <td data-label="Target">2–2.5 pages</td>
+                <td data-label="Lead">David</td>
+                <td data-label="Required content">
+                  Scenario trace, sequence/state view, architecture style,
+                  patterns.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Section">
+                  <strong>5. Comparison, Trade-offs &amp; Conclusion</strong>
+                </td>
+                <td data-label="Target">2–2.5 pages</td>
+                <td data-label="Lead">Dan</td>
+                <td data-label="Required content">
+                  Conceptual comparison, gaps, alternatives, limitations,
+                  lessons, references.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <section class="section" aria-labelledby="summary-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Ownership map</p>
+            <h2 id="summary-title">Report Responsibility Summary</h2>
+          </div>
+          <p>
+            Each member owns one evidence package and one integrated report
+            contribution.
+          </p>
+        </div>
+        <section
+          class="table-shell"
+          aria-label="Assignment 2 report responsibility summary"
+          tabindex="0"
+        >
+          <table class="project-table">
+            <thead>
+              <tr>
+                <th scope="col">Member</th>
+                <th scope="col">Report responsibility</th>
+                <th scope="col">Primary artifacts</th>
+                <th scope="col">Integration handoff</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Member"><strong>Setayesh Chegini</strong></td>
+                <td data-label="Responsibility">
+                  Scope, opening, coordination, final edit, publication
+                </td>
+                <td data-label="Artifacts">
+                  Scope brief, integrated report, final web/PDF package
+                </td>
+                <td data-label="Handoff">
+                  Receives and reconciles all member packages
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Member"><strong>Spence Hashemi</strong></td>
+                <td data-label="Responsibility">
+                  Recovery method and system-level architecture
+                </td>
+                <td data-label="Artifacts">
+                  Settings record, mapping table, top-level diagram
+                </td>
+                <td data-label="Handoff">
+                  Common evidence base to Mehdi and David
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Member"><strong>Mehdi Jafarian</strong></td>
+                <td data-label="Responsibility">
+                  Focused static structure and dependency analysis
+                </td>
+                <td data-label="Artifacts">
+                  Hierarchy, dependency view, evidence matrix
+                </td>
+                <td data-label="Handoff">
+                  Static model to David and findings to Dan
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Member"><strong>David Odidi</strong></td>
+                <td data-label="Responsibility">
+                  Dynamic behavior, architecture style, patterns
+                </td>
+                <td data-label="Artifacts">
+                  Scenario trace, sequence/state view, pattern analysis
+                </td>
+                <td data-label="Handoff">Dynamic findings to Dan</td>
+              </tr>
+              <tr>
+                <td data-label="Member"><strong>Dan Logvinovsky</strong></td>
+                <td data-label="Responsibility">
+                  Comparison, trade-offs, limitations, conclusion, QA
+                </td>
+                <td data-label="Artifacts">
+                  Comparison matrix, closing analysis, references
+                </td>
+                <td data-label="Handoff">
+                  Review record and closing package to Setayesh
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <section
+        class="section section-tinted member-workspace"
+        id="member-workflows"
+        aria-labelledby="member-workflows-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Individual report workspaces</p>
+            <h2 id="member-workflows-title">Select Your Name</h2>
+          </div>
+          <p>
+            Each tab shows the member's report contribution, dedicated
+            artifacts, definition of done, and trackable steps.
+          </p>
+        </div>
+        <section
+          class="tracker-auth"
+          aria-labelledby="tracker-access-title"
+          data-auth-panel
+        >
+          <div class="persistence-banner" data-persistence-banner>
+            <div>
+              <p class="card-kicker">Shared task access</p>
+              <h3 id="tracker-access-title" data-persistence-title>
+                Checking shared progress…
+              </h3>
+              <p data-persistence-description>
+                Loading authentication and persistence settings.
+              </p>
+            </div>
+            <a
+              href="https://github.com/eecs4314-group-h/openpilot-architecture-group/blob/main/SUPABASE_SETUP.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Setup guide</a
+            >
+          </div>
+          <form class="auth-form" data-auth-form hidden>
+            <label
+              >Email<input
+                type="email"
+                name="email"
+                autocomplete="username"
+                required></label
+            ><label
+              >Password<input
+                type="password"
+                name="password"
+                autocomplete="current-password"
+                required></label
+            ><button class="button button-primary" type="submit">
+              Sign in
+            </button>
+          </form>
+          <div class="auth-session" data-auth-session hidden>
+            <span>Signed in as <strong data-auth-user></strong></span
+            ><button
+              class="button button-secondary"
+              type="button"
+              data-sign-out
+            >
+              Sign out
+            </button>
+          </div>
+          <p class="auth-message" data-auth-message aria-live="polite"></p>
+        </section>
+        <div
+          class="member-tabs"
+          role="tablist"
+          aria-label="Assignment 2 report member workflows"
+        >
+          <button
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="a2-report-panel-setayesh"
+            id="a2-report-tab-setayesh"
+            data-member-tab="setayesh-chegini"
+            data-member-name="Setayesh Chegini"
+          >
+            Setayesh
+            <span data-member-progress="setayesh-chegini"
+              >0 of 5 · 0% complete</span
+            ></button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="a2-report-panel-spence"
+            id="a2-report-tab-spence"
+            data-member-tab="spence-hashemi"
+            data-member-name="Spence Hashemi"
+            tabindex="-1"
+          >
+            Spence
+            <span data-member-progress="spence-hashemi"
+              >0 of 5 · 0% complete</span
+            ></button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="a2-report-panel-mehdi"
+            id="a2-report-tab-mehdi"
+            data-member-tab="mehdi-jafarian"
+            data-member-name="Mehdi Jafarian"
+            tabindex="-1"
+          >
+            Mehdi
+            <span data-member-progress="mehdi-jafarian"
+              >0 of 5 · 0% complete</span
+            ></button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="a2-report-panel-david"
+            id="a2-report-tab-david"
+            data-member-tab="david-odidi"
+            data-member-name="David Odidi"
+            tabindex="-1"
+          >
+            David
+            <span data-member-progress="david-odidi"
+              >0 of 5 · 0% complete</span
+            ></button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="a2-report-panel-dan"
+            id="a2-report-tab-dan"
+            data-member-tab="dan-logvinovsky"
+            data-member-name="Dan Logvinovsky"
+            tabindex="-1"
+          >
+            Dan
+            <span data-member-progress="dan-logvinovsky"
+              >0 of 5 · 0% complete</span
+            >
+          </button>
+        </div>
+
+        <article
+          class="member-panel"
+          id="a2-report-panel-setayesh"
+          role="tabpanel"
+          aria-labelledby="a2-report-tab-setayesh"
+          data-member-panel="setayesh-chegini"
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">1–1.5 pages + final integration</p>
+              <h3>Setayesh Chegini</h3>
+              <p>
+                <strong>Role:</strong> Scope, Opening Sections, Integration,
+                Publication, and Submission.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="setayesh-chegini"
+                >Not Started</span
+              ><strong data-member-progress="setayesh-chegini"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="Setayesh Assignment 2 report progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="setayesh-chegini"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> approved scope, opening
+            section, integrated 10–15 page report, online publication, verified
+            PDF, and submission.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Scope brief and glossary.</li>
+                <li>Executive summary and introduction.</li>
+                <li>Integrated report draft.</li>
+                <li>Web publication and final PDF.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>All sections form one narrative.</li>
+                <li>Terminology and citations are consistent.</li>
+                <li>The report stays within 10–15 pages.</li>
+                <li>Web and PDF versions are verified.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-report-setayesh-tracker"
+          >
+            <h4 id="a2-report-setayesh-tracker">Setayesh Trackable Steps</h4>
+            <div class="task-list" data-task-list="setayesh-chegini">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <article
+          class="member-panel"
+          id="a2-report-panel-spence"
+          role="tabpanel"
+          aria-labelledby="a2-report-tab-spence"
+          data-member-panel="spence-hashemi"
+          hidden
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">2–2.5 pages</p>
+              <h3>Spence Hashemi</h3>
+              <p>
+                <strong>Role:</strong> Recovery Method, Entity Mapping, and
+                System-Level Architecture.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="spence-hashemi"
+                >Not Started</span
+              ><strong data-member-progress="spence-hashemi"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="Spence Assignment 2 report progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="spence-hashemi"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> reproducible method,
+            settings record, mapping table, top-level diagram, limitations, and
+            integrated section.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Analysis-environment record.</li>
+                <li>Recovery methodology.</li>
+                <li>Mapping table and decision log.</li>
+                <li>System architecture diagram.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>Extraction is reproducible.</li>
+                <li>Manual decisions are explicit.</li>
+                <li>Diagram edges are traceable.</li>
+                <li>The handoff to focused analysis is clear.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-report-spence-tracker"
+          >
+            <h4 id="a2-report-spence-tracker">Spence Trackable Steps</h4>
+            <div class="task-list" data-task-list="spence-hashemi">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <article
+          class="member-panel"
+          id="a2-report-panel-mehdi"
+          role="tabpanel"
+          aria-labelledby="a2-report-tab-mehdi"
+          data-member-panel="mehdi-jafarian"
+          hidden
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">2.5–3 pages</p>
+              <h3>Mehdi Jafarian</h3>
+              <p>
+                <strong>Role:</strong> Selected-Subsystem Structure and
+                Dependency Analysis.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="mehdi-jafarian"
+                >Not Started</span
+              ><strong data-member-progress="mehdi-jafarian"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="Mehdi Assignment 2 report progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="mehdi-jafarian"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> focused hierarchy,
+            responsibilities, dependency matrix, two static diagrams,
+            limitations, and integrated section.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Membership inventory and hierarchy.</li>
+                <li>Focused architecture narrative.</li>
+                <li>Dependency evidence matrix.</li>
+                <li>Hierarchy and dependency diagrams.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>Membership is evidence-based.</li>
+                <li>Major relations have low-level causes.</li>
+                <li>Diagrams and narrative agree.</li>
+                <li>Surprising findings are explained.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-report-mehdi-tracker"
+          >
+            <h4 id="a2-report-mehdi-tracker">Mehdi Trackable Steps</h4>
+            <div class="task-list" data-task-list="mehdi-jafarian">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <article
+          class="member-panel"
+          id="a2-report-panel-david"
+          role="tabpanel"
+          aria-labelledby="a2-report-tab-david"
+          data-member-panel="david-odidi"
+          hidden
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">2–2.5 pages</p>
+              <h3>David Odidi</h3>
+              <p>
+                <strong>Role:</strong> Dynamic Behavior, Architecture Style, and
+                Design Patterns.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="david-odidi"
+                >Not Started</span
+              ><strong data-member-progress="david-odidi"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="David Assignment 2 report progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="david-odidi"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> dynamic scenario, trace
+            evidence, sequence/state diagrams, style and pattern analysis,
+            limitations, and integrated section.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Scenario specification and trace.</li>
+                <li>Sequence or state diagram.</li>
+                <li>Style and pattern analysis.</li>
+                <li>Dynamic-behavior report section.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>Behavior matches the static model.</li>
+                <li>Evidence and interpretation are separated.</li>
+                <li>Patterns are not inferred from names alone.</li>
+                <li>Figures are readable and cited.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-report-david-tracker"
+          >
+            <h4 id="a2-report-david-tracker">David Trackable Steps</h4>
+            <div class="task-list" data-task-list="david-odidi">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <article
+          class="member-panel"
+          id="a2-report-panel-dan"
+          role="tabpanel"
+          aria-labelledby="a2-report-tab-dan"
+          data-member-panel="dan-logvinovsky"
+          hidden
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">2–2.5 pages + independent QA</p>
+              <h3>Dan Logvinovsky</h3>
+              <p>
+                <strong>Role:</strong> Comparison, Trade-offs, Limitations,
+                Lessons, Conclusions, and References.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="dan-logvinovsky"
+                >Not Started</span
+              ><strong data-member-progress="dan-logvinovsky"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="Dan Assignment 2 report progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="dan-logvinovsky"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> comparison matrix, qualified
+            gap analysis, trade-offs, threats to validity, lessons, conclusion,
+            references, and quality review.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Conceptual comparison matrix.</li>
+                <li>Trade-offs and limitations.</li>
+                <li>Lessons and conclusion.</li>
+                <li>Reference list and QA record.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>Inferences are qualified.</li>
+                <li>Benefits and limitations are balanced.</li>
+                <li>Claims and citations are traceable.</li>
+                <li>The conclusion answers the research questions.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-report-dan-tracker"
+          >
+            <h4 id="a2-report-dan-tracker">Dan Trackable Steps</h4>
+            <div class="task-list" data-task-list="dan-logvinovsky">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <div class="tracker-guidance">
+          <strong>Shared progress:</strong> after Supabase setup, invited
+          members can update only their own tasks and Setayesh can coordinate
+          all tasks. Report progress is independent from presentation progress.
+        </div>
+      </section>
+
+      <section
+        class="section"
+        id="dependencies"
+        aria-labelledby="dependencies-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Dependencies and checkpoints</p>
+            <h2 id="dependencies-title">Report Handoffs</h2>
+          </div>
+          <p>
+            Spence establishes the shared evidence base; Mehdi and David analyze
+            in parallel; Dan synthesizes and reviews; Setayesh integrates and
+            publishes.
+          </p>
+        </div>
+        <div
+          class="handoff-flow"
+          role="group"
+          aria-label="Setayesh confirms scope, Spence creates the evidence base, Mehdi and David analyze, Dan reviews, Setayesh integrates"
+        >
+          <span>Setayesh · scope</span><b aria-hidden="true">→</b
+          ><span>Spence · evidence base</span><b aria-hidden="true">→</b
+          ><span>Mehdi + David · analysis</span><b aria-hidden="true">→</b
+          ><span>Dan · review</span><b aria-hidden="true">→</b
+          ><span>Setayesh · final report</span>
+        </div>
+        <div class="checkpoint-list" data-checkpoint-list>
+          <p class="task-loading">Loading report checkpoints…</p>
+        </div>
+      </section>
+
+      <section
+        class="section section-tinted"
+        id="resources"
+        aria-labelledby="resources-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Shared toolkit</p>
+            <h2 id="resources-title">Report Resources</h2>
+          </div>
+          <p>
+            Keep editable versions of every table, diagram, and written section
+            alongside the published outputs.
+          </p>
+        </div>
+        <section
+          class="table-shell"
+          aria-label="Assignment 2 report resources"
+          tabindex="0"
+        >
+          <table class="project-table resources-table">
+            <thead>
+              <tr>
+                <th scope="col">Resource</th>
+                <th scope="col">Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Resource">OpenPilot v0.9.5 course snapshot</td>
+                <td data-label="Purpose">
+                  Common implementation evidence base for every member.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Resource">
+                  <a
+                    href="https://scitools.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Understand</a
+                  >
+                </td>
+                <td data-label="Purpose">
+                  Entity, relation, dependency, hierarchy, and architecture
+                  extraction.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Resource">
+                  EECS 4314 reverse-engineering materials
+                </td>
+                <td data-label="Purpose">
+                  Recovery process, hierarchical decomposition, subsystem
+                  relations, and dependency investigation.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Resource">
+                  <a href="assignment-1-report.html"
+                    >Assignment 1 report workspace</a
+                  >
+                </td>
+                <td data-label="Purpose">
+                  Group H's conceptual model for the later comparison.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Resource">
+                  <a
+                    href="https://app.diagrams.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >diagrams.net</a
+                  >
+                </td>
+                <td data-label="Purpose">
+                  Clean architecture, dependency, sequence, and state diagrams.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Resource">
+                  <a
+                    href="https://www.zotero.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Zotero</a
+                  >
+                </td>
+                <td data-label="Purpose">
+                  Reference collection, deduplication, and consistent citation
+                  formatting.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <section
+        class="section submission-checklist-section"
+        id="submission"
+        aria-labelledby="submission-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Final gate</p>
+            <h2 id="submission-title">Report Submission Checklist</h2>
+          </div>
+          <p>Verify every item before Sunday, November 15, 2026 at 11:59 PM.</p>
+        </div>
+        <div class="submission-checklist" data-submission-checklist>
+          <p class="task-loading">Loading report checklist…</p>
+        </div>
+      </section>
+      <section
+        class="section section-dark"
+        aria-labelledby="overall-progress-title"
+      >
+        <div class="overall-assignment-progress">
+          <div>
+            <p class="eyebrow">Shared assignment progress</p>
+            <h2 id="overall-progress-title">Report Completion</h2>
+            <p>
+              <span data-overall-completed>0</span> of
+              <span data-overall-total>25</span> member steps completed.
+            </p>
+          </div>
+          <div class="overall-progress-number">
+            <strong data-overall-progress>0%</strong
+            ><span class="overall-state" data-overall-state>Not Started</span>
+            <div
+              class="overall-progress-bar"
+              role="progressbar"
+              aria-label="Overall Assignment 2 report completion"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+            >
+              <span data-overall-progress-bar></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><strong>Group H</strong></p>
+      <p>
+        <a href="index.html">Home</a> ·
+        <a href="assignment-2.html">Assignment 2 Overview</a> ·
+        <a href="assignment-2-presentation.html">Assignment 2 Presentation</a> ·
+        York University EECS 4314
+      </p>
+    </footer>
+  </body>
+</html>

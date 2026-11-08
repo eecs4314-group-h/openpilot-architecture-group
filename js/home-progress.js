@@ -1,5 +1,7 @@
 (() => {
   const assignments = [
+    { id: "assignment2-presentation", source: "data/assignment-2-presentation.json" },
+    { id: "assignment2-report", source: "data/assignment-2-report.json" },
     { id: "presentation", source: "data/assignment-1-presentation.json" },
     { id: "report", source: "data/assignment-1-report.json?v=20261026-1", finalized: true }
   ];
@@ -8,6 +10,13 @@
     const items = state.members.flatMap((member) => member.items || []);
     const completed = finalized ? items.length : items.filter((item) => item.status === "Completed").length;
     const percentage = items.length ? Math.round((completed / items.length) * 100) : 0;
+    const status = percentage === 100 ? "Completed" : completed > 0 ? "In Progress" : "Not Started";
+    const statusClass = percentage === 100 ? "status-completed" : completed > 0 ? "status-in-progress" : "status-not-started";
+    document.querySelectorAll(`[data-home-status="${id}"]`).forEach((element) => {
+      element.textContent = status;
+      element.classList.remove("status-not-started", "status-in-progress", "status-completed");
+      element.classList.add(statusClass);
+    });
     document.querySelectorAll(`[data-home-progress="${id}"]`).forEach((element) => {
       element.textContent = percentage === 100
         ? "Completed – All Tasks Finished"
@@ -43,6 +52,7 @@
       await store.initialize();
     } catch (error) {
       document.querySelectorAll(`[data-home-progress="${id}"]`).forEach((element) => element.textContent = "Progress unavailable");
+      document.querySelectorAll(`[data-home-sync="${id}"]`).forEach((element) => element.textContent = "Progress unavailable");
       console.error(error);
     }
   });

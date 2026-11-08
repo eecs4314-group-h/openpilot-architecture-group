@@ -7,11 +7,11 @@
     <meta name="theme-color" content="#9a1020">
     <title>Group H | OpenPilot Architecture Project</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a1020'/%3E%3Cpath d='M19 46V18h13c9 0 15 5 15 14s-6 14-15 14H19zm9-8h4c4 0 7-2 7-6s-3-6-7-6h-4v12z' fill='white'/%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/style.css?v=20261108-1">
+    <link rel="stylesheet" href="css/style.css?v=20261108-2">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="js/supabase-config.js" defer></script>
     <script src="js/shared-progress.js" defer></script>
-    <script src="js/home-progress.js?v=20261026-1" defer></script>
+    <script src="js/home-progress.js?v=20261108-2" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -40,7 +40,7 @@
           <p class="hero-focus">Software Architecture &amp; Design Analysis of OpenPilot</p>
           <p class="hero-description">This website is Group H's shared workspace for recovering and presenting OpenPilot's concrete software architecture. Assignment 2 now includes the official brief, a five-member work division, report ownership, presentation timing, handoffs, and the final quality checklist; completed Assignment 1 materials remain available.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="assignment-2.html">Open Assignment 2</a>
+            <a class="button button-primary" href="#assignments">Open Assignment 2</a>
             <a class="button button-secondary" href="#team">View the team</a>
           </div>
         </div>
@@ -75,15 +75,24 @@
       <section class="section" id="assignments" aria-labelledby="assignments-title">
         <div class="section-heading">
           <div><p class="eyebrow">Current coursework</p><h2 id="assignments-title">Assignment Workspaces</h2></div>
-          <p>Start with the Assignment 2 concrete-architecture plan. The completed Assignment 1 presentation and report remain available as project history and conceptual comparison evidence.</p>
+          <p>Assignment 2 presentation and report work now have separate responsibilities, deadlines, deliverables, and progress tracking, matching the Assignment 1 workspace structure.</p>
         </div>
         <div class="assignment-focus-grid">
-          <article class="assignment-card assignment-focus-card assignment-current-card">
-            <div class="assignment-topline"><span>Assignment 2 · Concrete Architecture</span><span class="status-badge status-in-progress">Planning</span></div>
-            <h3>Five-Member Work Plan &amp; Presentation Run of Show</h3>
-            <p class="assignment-deadline"><strong>Presentation PDF:</strong> <time datetime="2026-11-12T17:30:00-05:00">Thursday, November 12 at 5:30 PM</time>; Group H presents at <strong>6:54 PM</strong>. <strong>Report PDF:</strong> <time datetime="2026-11-15T23:59:00-05:00">Sunday, November 15 at 11:59 PM</time>.</p>
-            <p>Recover OpenPilot's as-built architecture with Understand, claim one top-level subsystem, publish a 10–15 page report, and deliver a 15-minute class presentation. The workspace assigns report sections, diagrams, slides, speaking time, handoffs, and internal targets to all five members.</p>
-            <a class="assignment-link" href="assignment-2.html">Open the Assignment 2 workspace</a>
+          <article class="assignment-card assignment-focus-card">
+            <div class="assignment-topline"><span>Assignment 2 · Presentation</span><span class="status-badge status-not-started" data-home-status="assignment2-presentation">Not Started</span></div>
+            <h3>Presentation Tasks &amp; Responsibilities</h3>
+            <p class="assignment-deadline"><strong>Due:</strong> <time datetime="2026-11-12T17:30:00-05:00">Thursday, November 12, 2026 at 5:30 PM</time></p>
+            <p>Present OpenPilot's recovered concrete architecture. Group H presents at <strong>6:54 PM</strong>; use the safe 12-minute speaking plan.</p>
+            <div class="card-progress-row"><span data-home-progress="assignment2-presentation">0 of 25 · 0% complete</span><div class="mini-progress" role="progressbar" aria-label="Assignment 2 presentation task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-home-progress-bar="assignment2-presentation"></span></div><small data-home-sync="assignment2-presentation">Shared saving setup pending</small></div>
+            <a class="assignment-link" href="assignment-2-presentation.html">Open the presentation workspace</a>
+          </article>
+          <article class="assignment-card assignment-focus-card">
+            <div class="assignment-topline"><span>Assignment 2 · Report</span><span class="status-badge status-not-started" data-home-status="assignment2-report">Not Started</span></div>
+            <h3>Report Tasks &amp; Responsibilities</h3>
+            <p class="assignment-deadline"><strong>Due:</strong> <time datetime="2026-11-15T23:59:00-05:00">Sunday, November 15, 2026 at 11:59 PM</time></p>
+            <p>Create a 10–15 page concrete architecture report, publish the readable report online, and submit one verified PDF.</p>
+            <div class="card-progress-row"><span data-home-progress="assignment2-report">0 of 25 · 0% complete</span><div class="mini-progress" role="progressbar" aria-label="Assignment 2 report task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-home-progress-bar="assignment2-report"></span></div><small data-home-sync="assignment2-report">Shared saving setup pending</small></div>
+            <a class="assignment-link" href="assignment-2-report.html">Open the report workspace</a>
           </article>
           <article class="assignment-card assignment-focus-card">
             <div class="assignment-topline"><span>Assignment 1 · Presentation</span><span class="status-badge status-completed">Completed</span></div>
@@ -103,7 +112,7 @@
             <a class="assignment-link" href="reports/Assignment1_GroupH_report.pdf">Download the final report PDF</a>
           </article>
         </div>
-        <p class="assignment-history"><strong>Completed:</strong> Assignment 0 — Group List + Website Link; Assignment 1 — Conceptual Architecture Report and Presentation.</p>
+        <p class="assignment-history"><strong>Assignment 2 overview:</strong> <a href="assignment-2.html">Open the combined brief, five-member ownership map, handoffs, sources, and master checklist.</a> <strong>Completed:</strong> Assignment 0 and Assignment 1.</p>
       </section>
 
       <section class="section section-dark" id="architecture" aria-labelledby="architecture-title">
@@ -121,7 +130,9 @@
         <div class="resource-layout">
           <div class="link-list">
             <a href="https://comma.ai/openpilot" target="_blank" rel="noopener noreferrer"><span><strong>Official comma.ai OpenPilot Overview</strong><small>Advertised features, general purpose, and driver responsibility only</small></span><span aria-hidden="true">↗</span></a>
-            <a href="assignment-2.html"><span><strong>Assignment 2 Workspace</strong><small>Concrete-architecture brief, work split, presentation timing, and final checklist</small></span><span aria-hidden="true">→</span></a>
+            <a href="assignment-2-presentation.html"><span><strong>Assignment 2 Presentation Workspace</strong><small>Member slides, speaking order, progress, and final checklist</small></span><span aria-hidden="true">→</span></a>
+            <a href="assignment-2-report.html"><span><strong>Assignment 2 Report Workspace</strong><small>Report outline, member sections, progress, and final checklist</small></span><span aria-hidden="true">→</span></a>
+            <a href="assignment-2.html"><span><strong>Assignment 2 Overview</strong><small>Combined brief, ownership map, handoffs, and source guidance</small></span><span aria-hidden="true">→</span></a>
             <a href="assignment-1-presentation.html"><span><strong>Group H Presentation Workspace</strong><small>Completed conceptual presentation tasks and references</small></span><span aria-hidden="true">→</span></a>
             <a href="assignment-1-report.html"><span><strong>Group H Report Workspace</strong><small>Proposed architecture tasks, assumptions, and evidence boundary</small></span><span aria-hidden="true">→</span></a>
             <a href="reports/Assignment1_GroupH_report.pdf"><span><strong>Final Assignment 1 Report (PDF)</strong><small>Completed Group H architecture report</small></span><span aria-hidden="true">↓</span></a>

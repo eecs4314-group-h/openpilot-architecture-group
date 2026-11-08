@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Group H Assignment 2 concrete architecture presentation tasks, responsibilities, speaking order, and progress."
+    >
+    <meta name="theme-color" content="#9a1020">
+    <title>Assignment 2 Presentation | Group H</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a1020'/%3E%3Cpath d='M19 46V18h13c9 0 15 5 15 14s-6 14-15 14H19zm9-8h4c4 0 7-2 7-6s-3-6-7-6h-4v12z' fill='white'/%3E%3C/svg%3E"
+    >
+    <link rel="stylesheet" href="css/style.css?v=20261108-2">
+    <script
+      src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+      defer
+    ></script>
+    <script src="js/supabase-config.js" defer></script>
+    <script src="js/shared-progress.js" defer></script>
+    <script src="js/assignment-dashboard.js" defer></script>
+  </head>
+  <body
+    class="assignment-page assignment-2-page"
+    data-assignment-id="assignment2-presentation"
+    data-progress-source="data/assignment-2-presentation.json"
+  >
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Group H home"
+          ><span class="brand-mark" aria-hidden="true">OP</span
+          ><span>Group H</span></a
+        >
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#member-workflows">Member Tasks</a></li>
+          <li><a href="#run-of-show">Run of Show</a></li>
+          <li><a href="#submission">Final Check</a></li>
+          <li><a href="assignment-2-report.html">Report Workspace</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <nav class="breadcrumb-shell" aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#assignments">Assignments</a></li>
+          <li>Assignment 2 – Presentation</li>
+          <li data-breadcrumb-member>Setayesh Chegini</li>
+        </ol>
+      </nav>
+
+      <section class="assignment-hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">EECS 4314 · Group H · Assignment 2</p>
+          <h1 id="page-title">Presentation Tasks &amp; Responsibilities</h1>
+          <p class="assignment-lead">
+            Present the recovered concrete architecture of OpenPilot v0.9.5,
+            explain the evidence and method, focus on one claimed top-level
+            subsystem, and defend the team's findings within the posted class
+            schedule.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#member-workflows"
+              >Choose your name</a
+            ><a class="button button-secondary" href="#run-of-show"
+              >Open speaking order</a
+            ><a class="button button-secondary" href="assignment-2-report.html"
+              >Open report tasks</a
+            >
+          </div>
+        </div>
+        <aside
+          class="deadline-card"
+          aria-labelledby="presentation-schedule-title"
+        >
+          <h2 class="card-kicker" id="presentation-schedule-title">
+            Official eClass schedule
+          </h2>
+          <dl>
+            <div>
+              <dt>Slides due</dt>
+              <dd>
+                <time datetime="2026-11-12T17:30:00-05:00"
+                  >Thursday, November 12<br>5:30 PM</time
+                >
+              </dd>
+            </div>
+            <div>
+              <dt>Group H presents</dt>
+              <dd>
+                <time datetime="2026-11-12T18:54:00-05:00"
+                  >Thursday, November 12<br>6:54 PM</time
+                >
+              </dd>
+            </div>
+            <div>
+              <dt>Submission format</dt>
+              <dd>One verified PDF</dd>
+            </div>
+            <div>
+              <dt>Current status</dt>
+              <dd>
+                <span class="status-badge status-not-started">Not Started</span>
+              </dd>
+            </div>
+          </dl>
+          <p class="schedule-note">
+            Appendix B describes a 15-minute slot, but the posted group order is
+            spaced 12 minutes apart. Rehearse the safe 12-minute version first.
+          </p>
+        </aside>
+      </section>
+
+      <section
+        class="section assignment-overview"
+        id="overview"
+        aria-labelledby="overview-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Presentation overview</p>
+            <h2 id="overview-title">What the team must produce</h2>
+          </div>
+          <p>
+            Ten coordinated content slides, readable redrawn diagrams, concise
+            speaking notes, references and backup evidence, a timed rehearsal,
+            and one verified PDF.
+          </p>
+        </div>
+        <div class="overview-card-grid">
+          <article>
+            <span>10</span>
+            <h3>Content slides</h3>
+            <p>
+              Two slides per member, followed by references and backup evidence.
+            </p>
+          </article>
+          <article>
+            <span>5</span>
+            <h3>Speakers</h3>
+            <p>Every member presents the findings and artifacts they own.</p>
+          </article>
+          <article>
+            <span>12</span>
+            <h3>Minute safe version</h3>
+            <p>Ten minutes of speaking plus setup, one question, and buffer.</p>
+          </article>
+          <article>
+            <span>6:54</span>
+            <h3>Group H time</h3>
+            <p>Be ready before the scheduled Thursday presentation time.</p>
+          </article>
+        </div>
+        <div class="requirements-layout assignment2-requirements">
+          <div class="requirements-panel">
+            <h3>Required presentation story</h3>
+            <ul class="requirements-list">
+              <li>
+                State the claimed subsystem, source snapshot, scope, and
+                research questions.
+              </li>
+              <li>
+                Explain the repeatable Understand extraction and entity-grouping
+                process.
+              </li>
+              <li>
+                Show the top-level concrete architecture and the selected
+                subsystem's hierarchy.
+              </li>
+              <li>
+                Identify important dependencies and the low-level entities that
+                cause them.
+              </li>
+              <li>
+                Explain important behavior with a sequence or state diagram.
+              </li>
+              <li>
+                Identify supported architectural styles and noteworthy design
+                patterns.
+              </li>
+              <li>
+                Compare the concrete findings with the earlier conceptual model.
+              </li>
+              <li>
+                Highlight alternatives, trade-offs, limitations, and lessons
+                learned.
+              </li>
+            </ul>
+          </div>
+          <aside
+            class="format-card"
+            aria-labelledby="presentation-format-title"
+          >
+            <h3 class="card-kicker" id="presentation-format-title">
+              Speaking budget
+            </h3>
+            <dl>
+              <div>
+                <dt>Setup</dt>
+                <dd>0:30</dd>
+              </div>
+              <div>
+                <dt>Setayesh</dt>
+                <dd>1:30</dd>
+              </div>
+              <div>
+                <dt>Spence</dt>
+                <dd>2:00</dd>
+              </div>
+              <div>
+                <dt>Mehdi</dt>
+                <dd>2:10</dd>
+              </div>
+              <div>
+                <dt>David</dt>
+                <dd>2:10</dd>
+              </div>
+              <div>
+                <dt>Dan</dt>
+                <dd>2:10</dd>
+              </div>
+              <div>
+                <dt>Q&amp;A + buffer</dt>
+                <dd>1:30</dd>
+              </div>
+            </dl>
+            <p>
+              Total: 12 minutes. If 15 minutes is confirmed, use the extra time
+              for a second question and deeper evidence—not extra unreviewed
+              slides.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="summary-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Ownership map</p>
+            <h2 id="summary-title">Presentation Responsibility Summary</h2>
+          </div>
+          <p>
+            Each member owns two slides, their supporting diagrams or evidence,
+            and the matching report handoff.
+          </p>
+        </div>
+        <section
+          class="table-shell"
+          aria-label="Assignment 2 presentation responsibility summary"
+          tabindex="0"
+        >
+          <table class="project-table">
+            <thead>
+              <tr>
+                <th scope="col">Member</th>
+                <th scope="col">Presentation responsibility</th>
+                <th scope="col">Slides</th>
+                <th scope="col">Primary outputs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Member"><strong>Setayesh Chegini</strong></td>
+                <td data-label="Responsibility">
+                  Scope, research questions, coordination, submission
+                </td>
+                <td data-label="Slides">1–2</td>
+                <td data-label="Outputs">
+                  Opening slides, integrated deck, final PDF, rehearsal
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Member"><strong>Spence Hashemi</strong></td>
+                <td data-label="Responsibility">
+                  Recovery method and top-level system map
+                </td>
+                <td data-label="Slides">3–4</td>
+                <td data-label="Outputs">
+                  Method visual, system diagram, evidence labels
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Member"><strong>Mehdi Jafarian</strong></td>
+                <td data-label="Responsibility">
+                  Focused hierarchy and concrete dependencies
+                </td>
+                <td data-label="Slides">5–6</td>
+                <td data-label="Outputs">
+                  Subsystem diagram, dependency view, evidence matrix
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Member"><strong>David Odidi</strong></td>
+                <td data-label="Responsibility">
+                  Dynamic behavior, architecture style, patterns
+                </td>
+                <td data-label="Slides">7–8</td>
+                <td data-label="Outputs">
+                  Sequence/state diagram, style and pattern analysis
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Member"><strong>Dan Logvinovsky</strong></td>
+                <td data-label="Responsibility">
+                  Comparison, trade-offs, limitations, conclusion
+                </td>
+                <td data-label="Slides">9–10</td>
+                <td data-label="Outputs">
+                  Comparison table, lessons, closing slides, QA review
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <section
+        class="section section-tinted member-workspace"
+        id="member-workflows"
+        aria-labelledby="member-workflows-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Individual presentation workspaces</p>
+            <h2 id="member-workflows-title">Select Your Name</h2>
+          </div>
+          <p>
+            Each tab shows the member's dedicated deliverables, definition of
+            done, and trackable presentation tasks.
+          </p>
+        </div>
+        <section
+          class="tracker-auth"
+          aria-labelledby="tracker-access-title"
+          data-auth-panel
+        >
+          <div class="persistence-banner" data-persistence-banner>
+            <div>
+              <p class="card-kicker">Shared task access</p>
+              <h3 id="tracker-access-title" data-persistence-title>
+                Checking shared progress…
+              </h3>
+              <p data-persistence-description>
+                Loading authentication and persistence settings.
+              </p>
+            </div>
+            <a
+              href="https://github.com/eecs4314-group-h/openpilot-architecture-group/blob/main/SUPABASE_SETUP.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Setup guide</a
+            >
+          </div>
+          <form class="auth-form" data-auth-form hidden>
+            <label
+              >Email<input
+                type="email"
+                name="email"
+                autocomplete="username"
+                required></label
+            ><label
+              >Password<input
+                type="password"
+                name="password"
+                autocomplete="current-password"
+                required></label
+            ><button class="button button-primary" type="submit">
+              Sign in
+            </button>
+          </form>
+          <div class="auth-session" data-auth-session hidden>
+            <span>Signed in as <strong data-auth-user></strong></span
+            ><button
+              class="button button-secondary"
+              type="button"
+              data-sign-out
+            >
+              Sign out
+            </button>
+          </div>
+          <p class="auth-message" data-auth-message aria-live="polite"></p>
+        </section>
+        <div
+          class="member-tabs"
+          role="tablist"
+          aria-label="Assignment 2 presentation member workflows"
+        >
+          <button
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="a2-presentation-panel-setayesh"
+            id="a2-presentation-tab-setayesh"
+            data-member-tab="setayesh-chegini"
+            data-member-name="Setayesh Chegini"
+          >
+            Setayesh
+            <span data-member-progress="setayesh-chegini"
+              >0 of 5 · 0% complete</span
+            >
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="a2-presentation-panel-spence"
+            id="a2-presentation-tab-spence"
+            data-member-tab="spence-hashemi"
+            data-member-name="Spence Hashemi"
+            tabindex="-1"
+          >
+            Spence
+            <span data-member-progress="spence-hashemi"
+              >0 of 5 · 0% complete</span
+            >
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="a2-presentation-panel-mehdi"
+            id="a2-presentation-tab-mehdi"
+            data-member-tab="mehdi-jafarian"
+            data-member-name="Mehdi Jafarian"
+            tabindex="-1"
+          >
+            Mehdi
+            <span data-member-progress="mehdi-jafarian"
+              >0 of 5 · 0% complete</span
+            >
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="a2-presentation-panel-david"
+            id="a2-presentation-tab-david"
+            data-member-tab="david-odidi"
+            data-member-name="David Odidi"
+            tabindex="-1"
+          >
+            David
+            <span data-member-progress="david-odidi">0 of 5 · 0% complete</span>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="a2-presentation-panel-dan"
+            id="a2-presentation-tab-dan"
+            data-member-tab="dan-logvinovsky"
+            data-member-name="Dan Logvinovsky"
+            tabindex="-1"
+          >
+            Dan
+            <span data-member-progress="dan-logvinovsky"
+              >0 of 5 · 0% complete</span
+            >
+          </button>
+        </div>
+
+        <article
+          class="member-panel"
+          id="a2-presentation-panel-setayesh"
+          role="tabpanel"
+          aria-labelledby="a2-presentation-tab-setayesh"
+          data-member-panel="setayesh-chegini"
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">Slides 1–2 + final integration</p>
+              <h3>Setayesh Chegini</h3>
+              <p>
+                <strong>Role:</strong> Scope, Subsystem Claim, Coordination,
+                Rehearsal, and Submission.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="setayesh-chegini"
+                >Not Started</span
+              ><strong data-member-progress="setayesh-chegini"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="Setayesh Assignment 2 presentation progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="setayesh-chegini"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> confirmed scope, slides 1–2,
+            integrated deck, timed rehearsal, verified PDF, and submission.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Forum claim evidence.</li>
+                <li>Slides 1–2 and speaking notes.</li>
+                <li>Integrated ten-slide deck.</li>
+                <li>References and backup evidence.</li>
+                <li>Final verified PDF.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>Scope and research questions are explicit.</li>
+                <li>All member packages are reviewed.</li>
+                <li>The 12-minute version is rehearsed twice.</li>
+                <li>The PDF is submitted before 5:30 PM.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-presentation-setayesh-tracker"
+          >
+            <h4 id="a2-presentation-setayesh-tracker">Setayesh Trackable Steps</h4>
+            <div class="task-list" data-task-list="setayesh-chegini">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <article
+          class="member-panel"
+          id="a2-presentation-panel-spence"
+          role="tabpanel"
+          aria-labelledby="a2-presentation-tab-spence"
+          data-member-panel="spence-hashemi"
+          hidden
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">Slides 3–4 · 2:00</p>
+              <h3>Spence Hashemi</h3>
+              <p>
+                <strong>Role:</strong> Recovery Method and Top-Level Concrete
+                Architecture.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="spence-hashemi"
+                >Not Started</span
+              ><strong data-member-progress="spence-hashemi"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="Spence Assignment 2 presentation progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="spence-hashemi"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> slides 3–4, reproducible
+            recovery method, system map, evidence labels, sources, and notes.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Understand setup and method summary.</li>
+                <li>Top-level mapping.</li>
+                <li>Clean system architecture diagram.</li>
+                <li>Slides 3–4 and notes.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>Another member can reproduce the extraction.</li>
+                <li>Grouping decisions are documented.</li>
+                <li>The diagram is readable and traceable.</li>
+                <li>The script fits two minutes.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-presentation-spence-tracker"
+          >
+            <h4 id="a2-presentation-spence-tracker">Spence Trackable Steps</h4>
+            <div class="task-list" data-task-list="spence-hashemi">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <article
+          class="member-panel"
+          id="a2-presentation-panel-mehdi"
+          role="tabpanel"
+          aria-labelledby="a2-presentation-tab-mehdi"
+          data-member-panel="mehdi-jafarian"
+          hidden
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">Slides 5–6 · 2:10</p>
+              <h3>Mehdi Jafarian</h3>
+              <p>
+                <strong>Role:</strong> Focused Static Architecture and
+                Dependency Evidence.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="mehdi-jafarian"
+                >Not Started</span
+              ><strong data-member-progress="mehdi-jafarian"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="Mehdi Assignment 2 presentation progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="mehdi-jafarian"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> slides 5–6, focused
+            hierarchy, dependency diagram, evidence matrix, sources, and notes.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Subsystem membership inventory.</li>
+                <li>Hierarchy and dependency diagrams.</li>
+                <li>Dependency evidence matrix.</li>
+                <li>Slides 5–6 and notes.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>Every major edge is traceable.</li>
+                <li>Internal and external relations are distinct.</li>
+                <li>Unsupported relations are removed.</li>
+                <li>The script fits 2:10.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-presentation-mehdi-tracker"
+          >
+            <h4 id="a2-presentation-mehdi-tracker">Mehdi Trackable Steps</h4>
+            <div class="task-list" data-task-list="mehdi-jafarian">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <article
+          class="member-panel"
+          id="a2-presentation-panel-david"
+          role="tabpanel"
+          aria-labelledby="a2-presentation-tab-david"
+          data-member-panel="david-odidi"
+          hidden
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">Slides 7–8 · 2:10</p>
+              <h3>David Odidi</h3>
+              <p>
+                <strong>Role:</strong> Dynamic Behavior, Architecture Style, and
+                Design Patterns.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="david-odidi"
+                >Not Started</span
+              ><strong data-member-progress="david-odidi"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="David Assignment 2 presentation progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="david-odidi"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> slides 7–8, dynamic trace,
+            sequence/state diagram, style and pattern analysis, sources, and
+            notes.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Dynamic scenario and trace evidence.</li>
+                <li>Sequence or state diagram.</li>
+                <li>Style and pattern findings.</li>
+                <li>Slides 7–8 and notes.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>Dynamic and static models agree.</li>
+                <li>Interpretations are labeled.</li>
+                <li>Patterns are supported by evidence.</li>
+                <li>The script fits 2:10.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-presentation-david-tracker"
+          >
+            <h4 id="a2-presentation-david-tracker">David Trackable Steps</h4>
+            <div class="task-list" data-task-list="david-odidi">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <article
+          class="member-panel"
+          id="a2-presentation-panel-dan"
+          role="tabpanel"
+          aria-labelledby="a2-presentation-tab-dan"
+          data-member-panel="dan-logvinovsky"
+          hidden
+        >
+          <header class="member-panel-header">
+            <div>
+              <p class="eyebrow">Slides 9–10 · 2:10</p>
+              <h3>Dan Logvinovsky</h3>
+              <p>
+                <strong>Role:</strong> Comparison, Trade-offs, Limitations,
+                Conclusions, and QA.
+              </p>
+            </div>
+            <div class="member-status-card">
+              <span
+                class="status-badge status-not-started"
+                data-member-status="dan-logvinovsky"
+                >Not Started</span
+              ><strong data-member-progress="dan-logvinovsky"
+                >0 of 5 · 0% complete</strong
+              >
+              <div
+                class="mini-progress"
+                role="progressbar"
+                aria-label="Dan Assignment 2 presentation progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span data-member-progress-bar="dan-logvinovsky"></span>
+              </div>
+            </div>
+          </header>
+          <p class="expected-contribution">
+            <strong>Expected contribution:</strong> slides 9–10, conceptual
+            comparison, trade-offs, limitations, lessons, conclusion,
+            references, and QA review.
+          </p>
+          <div class="deliverables-definition">
+            <div>
+              <h4>Dedicated Deliverables</h4>
+              <ul>
+                <li>Conceptual-versus-concrete table.</li>
+                <li>Trade-offs and limitation analysis.</li>
+                <li>Closing slides and notes.</li>
+                <li>Independent deck review.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Definition of Done</h4>
+              <ul>
+                <li>Claims are evidence-backed.</li>
+                <li>Inferences are qualified.</li>
+                <li>References are complete.</li>
+                <li>The script fits 2:10.</li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="individual-tracker"
+            aria-labelledby="a2-presentation-dan-tracker"
+          >
+            <h4 id="a2-presentation-dan-tracker">Dan Trackable Steps</h4>
+            <div class="task-list" data-task-list="dan-logvinovsky">
+              <p class="task-loading">Loading committed progress…</p>
+            </div>
+          </section>
+        </article>
+        <div class="tracker-guidance">
+          <strong>Shared progress:</strong> after Supabase setup, invited
+          members can update only their own tasks and Setayesh can coordinate
+          all tasks. Presentation progress is independent from report progress.
+        </div>
+      </section>
+
+      <section
+        class="section"
+        id="run-of-show"
+        aria-labelledby="run-of-show-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Safe 12-minute version</p>
+            <h2 id="run-of-show-title">Presentation Run of Show</h2>
+          </div>
+          <p>
+            Start with this schedule because the posted presentation order is
+            spaced 12 minutes apart.
+          </p>
+        </div>
+        <section
+          class="table-shell"
+          aria-label="Assignment 2 presentation run of show"
+          tabindex="0"
+        >
+          <table class="project-table presentation-timing-table">
+            <thead>
+              <tr>
+                <th scope="col">Clock</th>
+                <th scope="col">Speaker</th>
+                <th scope="col">Slides</th>
+                <th scope="col">Story beat</th>
+                <th scope="col">Handoff</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Clock"><strong>0:00–0:30</strong></td>
+                <td data-label="Speaker">Team</td>
+                <td data-label="Slides">Setup</td>
+                <td data-label="Story beat">Open deck and settle speakers.</td>
+                <td data-label="Handoff">Setayesh begins immediately.</td>
+              </tr>
+              <tr>
+                <td data-label="Clock"><strong>0:30–2:00</strong></td>
+                <td data-label="Speaker">Setayesh</td>
+                <td data-label="Slides">1–2</td>
+                <td data-label="Story beat">Problem, scope, questions.</td>
+                <td data-label="Handoff">Recovery method.</td>
+              </tr>
+              <tr>
+                <td data-label="Clock"><strong>2:00–4:00</strong></td>
+                <td data-label="Speaker">Spence</td>
+                <td data-label="Slides">3–4</td>
+                <td data-label="Story beat">Method and system map.</td>
+                <td data-label="Handoff">Focused subsystem.</td>
+              </tr>
+              <tr>
+                <td data-label="Clock"><strong>4:00–6:10</strong></td>
+                <td data-label="Speaker">Mehdi</td>
+                <td data-label="Slides">5–6</td>
+                <td data-label="Story beat">Hierarchy and dependencies.</td>
+                <td data-label="Handoff">Runtime behavior.</td>
+              </tr>
+              <tr>
+                <td data-label="Clock"><strong>6:10–8:20</strong></td>
+                <td data-label="Speaker">David</td>
+                <td data-label="Slides">7–8</td>
+                <td data-label="Story beat">Behavior, style, patterns.</td>
+                <td data-label="Handoff">Findings and trade-offs.</td>
+              </tr>
+              <tr>
+                <td data-label="Clock"><strong>8:20–10:30</strong></td>
+                <td data-label="Speaker">Dan</td>
+                <td data-label="Slides">9–10</td>
+                <td data-label="Story beat">
+                  Comparison, limitations, conclusion.
+                </td>
+                <td data-label="Handoff">Questions.</td>
+              </tr>
+              <tr>
+                <td data-label="Clock"><strong>10:30–12:00</strong></td>
+                <td data-label="Speaker">Team</td>
+                <td data-label="Slides">Q&amp;A</td>
+                <td data-label="Story beat">One question, closing, buffer.</td>
+                <td data-label="Handoff">End before the next group.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <section
+        class="section section-tinted"
+        id="dependencies"
+        aria-labelledby="dependencies-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Dependencies and checkpoints</p>
+            <h2 id="dependencies-title">Presentation Handoffs</h2>
+          </div>
+          <p>
+            Use one source snapshot, one glossary, one subsystem map, and one
+            evidence-ID system across all slides.
+          </p>
+        </div>
+        <div
+          class="handoff-flow"
+          role="group"
+          aria-label="Setayesh confirms scope, Spence maps the system, Mehdi and David analyze, Dan synthesizes, Setayesh integrates"
+        >
+          <span>Setayesh · scope</span><b aria-hidden="true">→</b
+          ><span>Spence · system map</span><b aria-hidden="true">→</b
+          ><span>Mehdi + David · analysis</span><b aria-hidden="true">→</b
+          ><span>Dan · synthesis</span><b aria-hidden="true">→</b
+          ><span>Setayesh · integration</span>
+        </div>
+        <div class="checkpoint-list" data-checkpoint-list>
+          <p class="task-loading">Loading presentation checkpoints…</p>
+        </div>
+      </section>
+
+      <section
+        class="section submission-checklist-section"
+        id="submission"
+        aria-labelledby="submission-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Final gate</p>
+            <h2 id="submission-title">Presentation Submission Checklist</h2>
+          </div>
+          <p>
+            Verify every item before Thursday, November 12, 2026 at 5:30 PM.
+          </p>
+        </div>
+        <div class="submission-checklist" data-submission-checklist>
+          <p class="task-loading">Loading presentation checklist…</p>
+        </div>
+      </section>
+
+      <section
+        class="section section-dark"
+        aria-labelledby="overall-progress-title"
+      >
+        <div class="overall-assignment-progress">
+          <div>
+            <p class="eyebrow">Shared assignment progress</p>
+            <h2 id="overall-progress-title">Presentation Completion</h2>
+            <p>
+              <span data-overall-completed>0</span> of
+              <span data-overall-total>25</span> member steps completed.
+            </p>
+          </div>
+          <div class="overall-progress-number">
+            <strong data-overall-progress>0%</strong
+            ><span class="overall-state" data-overall-state>Not Started</span>
+            <div
+              class="overall-progress-bar"
+              role="progressbar"
+              aria-label="Overall Assignment 2 presentation completion"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+            >
+              <span data-overall-progress-bar></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><strong>Group H</strong></p>
+      <p>
+        <a href="index.html">Home</a> ·
+        <a href="assignment-2.html">Assignment 2 Overview</a> ·
+        <a href="assignment-2-report.html">Assignment 2 Report</a> · York
+        University EECS 4314
+      </p>
+    </footer>
+  </body>
+</html>
