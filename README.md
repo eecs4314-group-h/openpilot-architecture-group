@@ -2,6 +2,10 @@
 
 A static GitHub Pages website for York University Group H's software architecture and design analysis of OpenPilot.
 
+Assignment 2 now has one planning workspace:
+
+- `assignment-2.html` contains the concrete-architecture brief, the subsystem-claim gate, the five-member report and diagram split, a 10-slide presentation plan, handoffs, internal target dates, sources, and a final checklist. The presentation PDF is due November 12, 2026 at 5:30 PM, Group H presents at 6:54 PM, and the report PDF is due November 15, 2026 at 11:59 PM.
+
 Assignment 1 has two independent workspaces:
 
 - `assignment-1-presentation.html` contains the presentation pipeline, all five detailed member workflows, the October 22 deadline, presentation schedule, handoffs, resources, and submission checklist.
@@ -23,6 +27,7 @@ Student numbers are maintained directly in `index.html` as a simple static roste
 
 ```text
 index.html
+assignment-2.html
 assignment-1-presentation.html
 assignment-1-report.html
 css/
@@ -76,6 +81,12 @@ lastname-assignment1-artifact-v01.ext
 ```
 
 Example: `hashemi-assignment1-architecture-diagram-v01.svg`.
+
+For Assignment 2, replace `assignment1` with `assignment2`, for example:
+
+```text
+jafarian-assignment2-dependency-diagram-v01.svg
+```
 
 ## GitHub Pages
 

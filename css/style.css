@@ -2566,3 +2566,178 @@ footer p {
     flex-direction: column;
   }
 }
+
+/* Assignment 2 concrete architecture workspace */
+.assignment-current-card {
+  grid-column: 1 / -1;
+  min-height: 0;
+  background: linear-gradient(135deg, #fff 0%, #fff 64%, #f9edef 100%);
+  border-color: #e9cbd0;
+}
+
+.assignment-current-card .assignment-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.assignment-current-card .assignment-link {
+  margin-top: 1rem;
+}
+
+.assignment2-requirements {
+  margin-top: 1.25rem;
+}
+
+.assignment2-owner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.assignment2-owner-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 1.4rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 0.25rem solid var(--york-red);
+  border-radius: 0.55rem;
+  box-shadow: 0 12px 30px rgba(29, 35, 45, 0.06);
+}
+
+.assignment2-owner-card header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.35rem 0.75rem;
+  align-items: start;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.assignment2-owner-card header .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: 0.1rem;
+}
+
+.assignment2-owner-card header h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.assignment2-owner-card > p {
+  color: var(--muted);
+}
+
+.assignment2-owner-card ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.assignment2-owner-card li + li {
+  margin-top: 0.55rem;
+}
+
+.assignment2-owner-card .owner-output {
+  margin: auto 0 0;
+  padding: 0.9rem 1rem;
+  color: var(--ink);
+  background: var(--surface);
+  border-left: 0.2rem solid var(--york-red);
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.assignment2-summary-table th:first-child,
+.assignment2-summary-table td:first-child {
+  width: 15%;
+}
+
+.assignment2-summary-table th:nth-child(4),
+.assignment2-summary-table td:nth-child(4),
+.assignment2-summary-table th:last-child,
+.assignment2-summary-table td:last-child {
+  width: 10%;
+}
+
+.presentation-timing-table th:first-child,
+.presentation-timing-table td:first-child {
+  width: 12%;
+  white-space: nowrap;
+}
+
+.presentation-timing-table th:nth-child(2),
+.presentation-timing-table td:nth-child(2),
+.presentation-timing-table th:nth-child(3),
+.presentation-timing-table td:nth-child(3) {
+  width: 10%;
+}
+
+.assignment2-checkpoints {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.assignment2-checkpoints h3,
+.assignment2-checkpoints p {
+  margin-bottom: 0;
+}
+
+.assignment2-checkpoints h3 {
+  margin-top: 0.35rem;
+}
+
+.assignment2-checkpoints p {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.assignment2-next-action .button {
+  justify-self: end;
+}
+
+.assignment-2-page code {
+  padding: 0.1rem 0.3rem;
+  background: #eceff3;
+  border-radius: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.88em;
+}
+
+@media (max-width: 64rem) {
+  .assignment2-checkpoints {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 48rem) {
+  .assignment-current-card .assignment-topline {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .assignment2-checkpoints {
+    grid-template-columns: 1fr;
+  }
+
+  .assignment2-next-action .button {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 34rem) {
+  .assignment2-owner-card {
+    padding: 1.15rem;
+  }
+
+  .assignment2-owner-card header {
+    grid-template-columns: 1fr;
+  }
+
+  .assignment2-owner-card header .eyebrow {
+    grid-column: 1;
+  }
+}
