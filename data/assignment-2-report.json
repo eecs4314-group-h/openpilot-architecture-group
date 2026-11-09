@@ -18,7 +18,7 @@
       "id": "spence-hashemi",
       "name": "Spence Hashemi",
       "items": [
-        { "id": "assignment2-report-spence-01", "description": "Record the OpenPilot v0.9.5 source snapshot, Understand project settings, languages, entity types, extracted relations, exclusions, and limitations.", "expectedOutput": "Reproducible analysis-environment record.", "status": "Not Started", "deliverableUrl": "" },
+        { "id": "assignment2-report-spence-01", "description": "Record the OpenPilot v0.11.1 source snapshot, Understand project settings, languages, entity types, extracted relations, exclusions, and limitations.", "expectedOutput": "Reproducible analysis-environment record.", "status": "Not Started", "deliverableUrl": "" },
         { "id": "assignment2-report-spence-02", "description": "Explain the extraction and grouping process from source entities through relations, subsystem assignments, hierarchical composition, and cleaned views.", "expectedOutput": "Concrete-architecture recovery methodology.", "status": "Not Started", "deliverableUrl": "" },
         { "id": "assignment2-report-spence-03", "description": "Create the top-level file/entity-to-subsystem mapping table and document every manual grouping rule and unresolved classification.", "expectedOutput": "Reviewed mapping table and decision log.", "status": "Not Started", "deliverableUrl": "" },
         { "id": "assignment2-report-spence-04", "description": "Redraw the system-level concrete architecture with hierarchy, major relations, a legend, scope note, and traceable evidence identifiers.", "expectedOutput": "Report-ready system architecture diagram with editable source.", "status": "Not Started", "deliverableUrl": "" },

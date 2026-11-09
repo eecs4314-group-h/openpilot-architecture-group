@@ -19,7 +19,7 @@
       "id": "spence-hashemi",
       "name": "Spence Hashemi",
       "items": [
-        { "id": "assignment2-presentation-spence-01", "description": "Document the OpenPilot v0.9.5 Understand project settings, extraction steps, entity types, relations, and manual grouping rules.", "expectedOutput": "Concise reproducible recovery-method notes.", "status": "Not Started", "deliverableUrl": "" },
+        { "id": "assignment2-presentation-spence-01", "description": "Document the OpenPilot v0.11.1 Understand project settings, extraction steps, entity types, relations, and manual grouping rules.", "expectedOutput": "Concise reproducible recovery-method notes.", "status": "Not Started", "deliverableUrl": "" },
         { "id": "assignment2-presentation-spence-02", "description": "Export the top-level entity and dependency views and prepare a traceable system-to-subsystem mapping.", "expectedOutput": "System-level evidence package and mapping table.", "status": "Not Started", "deliverableUrl": "" },
         { "id": "assignment2-presentation-spence-03", "description": "Redraw the tool output into a clean top-level concrete-architecture diagram with a readable legend and scope note.", "expectedOutput": "Presentation-ready system architecture diagram.", "status": "Not Started", "deliverableUrl": "" },
         { "id": "assignment2-presentation-spence-04", "description": "Create slide 3 explaining the recovery process and slide 4 showing the top-level concrete architecture.", "expectedOutput": "Completed slides 3–4.", "status": "Not Started", "deliverableUrl": "" },
