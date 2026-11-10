@@ -1,0 +1,209 @@
+{
+  "lastUpdated": "2026-11-09",
+  "targetVersion": "v0.11.1",
+  "sourceAnalysisHold": true,
+  "members": [
+    {
+      "id": "setayesh-chegini",
+      "short": "Setayesh",
+      "name": "Setayesh Chegini",
+      "slides": "1–2",
+      "time": "1:30",
+      "pages": "2.5",
+      "role": "Coordinator, scope, integration and publication",
+      "section": "Title, Abstract, Introduction and Scope",
+      "report": "Title and authors, abstract (about 2/3 page), introduction (1–3 pages), scope, glossary and naming conventions; final integration and submission.",
+      "presentation": "Preserve the two-slide pre-analysis opening: title, objective, proposed scope and research questions. Coordinate the deck, online slides, rehearsal and submission.",
+      "handoff": "Confirm scope with all members; receive technical sections and Dan’s review before publishing.",
+      "done": "Forum acceptance remains pending. Opening slides remain pre-analysis. Final exports, online links and actual submissions need separate verification."
+    },
+    {
+      "id": "spence-hashemi",
+      "short": "Spence",
+      "name": "Spence Hashemi",
+      "slides": "3–4",
+      "time": "2:00",
+      "pages": "2",
+      "role": "Understand recovery method and top-level system map",
+      "section": "Recovery Method and System Structure",
+      "report": "Reproducible Understand settings, entity-to-subsystem mapping, grouping rationale, top-level map and saved Understand project.",
+      "presentation": "Slide 3: extraction and grouping method. Slide 4: redrawn top-level architecture, scope and legend.",
+      "handoff": "After authorization, supply the common mapping and evidence identifiers to Mehdi and David; supply the project file to Setayesh.",
+      "done": "Another member can reproduce the grouping. Keep one shared evidence package for report and slides; extraction and diagrams await authorization."
+    },
+    {
+      "id": "mehdi-jafarian",
+      "short": "Mehdi",
+      "name": "Mehdi Jafarian",
+      "slides": "5–6",
+      "time": "2:10",
+      "pages": "2.5",
+      "role": "Focused subsystem structure, interfaces and dependencies",
+      "section": "Focused Concrete Architecture and Dependencies",
+      "report": "Selected subsystem membership, hierarchy, responsibilities, interfaces and transmitted information; module dependency diagram and evidence matrix.",
+      "presentation": "Slide 5: selected subsystem structure and interfaces. Slide 6: dependency diagram and significant relations with their causes.",
+      "handoff": "Use Spence’s mapping; supply the static boundary and dependency evidence to David, and technical observations to Dan.",
+      "done": "Every important edge has an evidence reference. Static relations and possible runtime coupling are identified separately; no recovered claims before analysis."
+    },
+    {
+      "id": "david-odidi",
+      "short": "David",
+      "name": "David Odidi",
+      "slides": "7–8",
+      "time": "2:10",
+      "pages": "2",
+      "role": "Behavior, architectural styles and design patterns",
+      "section": "Behavior, Styles and Patterns",
+      "report": "Essential scenario and sequence or state view; control flow and concurrency; evidence-backed styles and noteworthy patterns.",
+      "presentation": "Slide 7: noteworthy scenario using a sequence or state diagram. Slide 8: architectural styles and noteworthy patterns supported by evidence.",
+      "handoff": "Use Spence’s system map and Mehdi’s boundary; send scenario and style/pattern evidence to Dan and Setayesh.",
+      "done": "Use the same entities as the static model. A static trace is not a runtime observation. Report no noteworthy pattern if none is supported."
+    },
+    {
+      "id": "dan-logvinovsky",
+      "short": "Dan",
+      "name": "Dan Logvinovsky",
+      "slides": "9–10",
+      "time": "2:10",
+      "pages": "1.5",
+      "role": "Trade-offs, limitations, lessons, conclusion and independent review",
+      "section": "Trade-offs, Limitations, Lessons and Conclusion",
+      "report": "Recovery/modelling alternatives and supported trade-offs; limitations and challenges; actual lessons; conclusion, references and full requirements review.",
+      "presentation": "Slide 9: modelling alternatives, trade-offs and limitations. Slide 10: lessons and conclusion. Review references, readability and assignment coverage.",
+      "handoff": "Receive findings from Spence, Mehdi and David; return a review record and closing package to Setayesh, who integrates and submits.",
+      "done": "No A1-versus-A2 comparison, discrepancy classification or gap-rationale analysis. Distinguish modelling choices made by the group from unverified developer intent."
+    }
+  ],
+  "requirements": [
+    [
+      "S6-report",
+      "Section 6, p.4; Section 3, p.2",
+      "10–15 page concrete architecture report, maximum 15 including diagrams and appendices; single group submission",
+      "Setayesh; Dan reviews",
+      "Integrated report and submission receipt",
+      "Opening states objective; final report handoff",
+      "Pending human-authored report and submission"
+    ],
+    [
+      "S6-web",
+      "Section 6, p.4",
+      "Web-readable report online with related-content links",
+      "Setayesh; Dan reviews",
+      "Online report, interlinked reports and artifact links",
+      "Online slides linked from group webpage",
+      "Pending final publication"
+    ],
+    [
+      "S6-extract",
+      "Section 6, p.4",
+      "Extract with Understand, group top-level entities into subsystems and describe the file-grouping process",
+      "Spence",
+      "Method, mapping and system diagram",
+      "Slides 3–4",
+      "Pending source-code analysis — not yet verified."
+    ],
+    [
+      "S6-scope",
+      "Section 6, p.4",
+      "Focus on one distinct top-level subsystem and claim it in the course forum",
+      "Setayesh; Mehdi validates boundary later",
+      "Accepted claim and focused scope",
+      "Slide 2 remains proposed until acceptance",
+      "Forum acceptance not verified; source hold applies"
+    ],
+    [
+      "S6-style",
+      "Section 6, p.4",
+      "Describe architectural styles and list noteworthy design patterns",
+      "David",
+      "Styles and patterns section",
+      "Slide 8",
+      "Pending source-code analysis — not yet verified."
+    ],
+    [
+      "S6-diagrams",
+      "Section 6, p.4; Appendix A, pp.6–7",
+      "Concrete architecture diagrams based on class tools, redrawn for readability with legends; include subsystem/module dependency diagram",
+      "Spence (system); Mehdi (focused dependencies)",
+      "Structure and dependency figures with legends",
+      "Slides 4–6",
+      "Pending source-code analysis — not yet verified."
+    ],
+    [
+      "S6-behavior",
+      "Section 6, p.4",
+      "Explain noteworthy architecture aspects with sequence or state diagrams",
+      "David",
+      "Scenario and behavior view",
+      "Slide 7",
+      "Pending source-code analysis — not yet verified."
+    ],
+    [
+      "S6-project",
+      "Section 6 submission process, p.4",
+      "Submit the Understand project file to show component grouping",
+      "Spence produces; Setayesh submits; Dan checks",
+      "Saved Understand project artifact linked in submission package",
+      "Method explains the grouping artifact",
+      "Pending source-code analysis — not yet verified."
+    ],
+    [
+      "A-format",
+      "Appendix A, p.6",
+      "Single-spaced 12-point report, title, author details, abstract and introduction",
+      "Setayesh; Dan reviews",
+      "Title/authors; abstract about 2/3 page; introduction 1–3 pages",
+      "Slides 1–2 summarize purpose and scope",
+      "Pending report; existing pre-analysis opening retained"
+    ],
+    [
+      "A-close",
+      "Appendix A, p.7",
+      "Document noteworthy lessons, conclusions and references with appropriate links",
+      "Dan; each owner supplies evidence",
+      "Closing section and references",
+      "Slide 10 and references",
+      "Pending actual findings and lessons"
+    ],
+    [
+      "B-online",
+      "Appendix B, p.8",
+      "Present findings in class and put slides online; 15-minute slot including setup; all members participate",
+      "Setayesh coordinates; all five participate",
+      "Presentation link in artifact index",
+      "Complete online deck and attendance",
+      "Pending final deck; 12-minute rehearsal is a team choice"
+    ],
+    [
+      "S6-AI",
+      "Section 6, p.4 explicitly refers to A1 guidelines, p.3",
+      "If GenAI assists extraction, acknowledge usage, first attempt without it, evaluate approaches and record lessons; do not use GenAI to write report prose",
+      "Each technical owner records use; Dan audits; Setayesh integrates",
+      "Human-authored report and conditional AI-use/method record",
+      "Method disclosure if relevant",
+      "Conditional on future extraction method; no report prose generated here"
+    ]
+  ],
+  "recommended": [
+    [
+      "Appendix A, pp.6–7: content considerations",
+      "Mehdi: external interfaces/information and significant dependencies. David: essential use case, control flow/concurrency, performance and future-change implications where relevant. Setayesh: glossary and naming conventions. These guide section coverage, not invented mandatory stand-alone chapters."
+    ],
+    [
+      "Appendix B, p.8: recommendations",
+      "All: rehearse and allow 1–2 questions. Spence/Mehdi/David: explain mechanisms and legends. Dan: rejected modelling alternatives, trade-offs, defensible findings, constructive feedback and actual lessons."
+    ],
+    [
+      "Team decisions",
+      "Ten slides, two per member; 12-minute rehearsal plan; one shared evidence package reused for slides and report; page allocations are adjustable targets. No numerical minimum of three diagrams appears in Section 6."
+    ],
+    [
+      "Assignment boundaries",
+      "Section 2, p.1 and Section 7, p.5 assign conceptual/concrete comparison, discrepancy rationales and mitigation to Assignment 3. The general course goals on p.1 do not add those tasks to Assignment 2."
+    ],
+    [
+      "Not independently verified",
+      "No Assignment 2-specific rubric or additional TA guidance was located. The earlier site recorded November 12 at 5:30 PM, a 6:54 PM talk and November 15 at 11:59 PM; eClass currently requires login, so these dates and PDF-only submission remain to be rechecked. The forum claim and instructor approval of the candidate boundary also remain unverified."
+    ]
+  ]
+}

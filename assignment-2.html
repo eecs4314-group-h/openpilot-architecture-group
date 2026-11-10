@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#9a1020">
     <title>Assignment 2 | Group H</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a1020'/%3E%3Cpath d='M19 46V18h13c9 0 15 5 15 14s-6 14-15 14H19zm9-8h4c4 0 7-2 7-6s-3-6-7-6h-4v12z' fill='white'/%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/style.css?v=20261108-2">
+    <link rel="stylesheet" href="css/style.css?v=20261109-audit">
   </head>
   <body class="assignment-page assignment-2-page">
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -43,7 +43,7 @@
           </div>
         </div>
         <aside class="deadline-card" aria-label="Assignment 2 schedule and deliverables">
-          <p class="card-kicker">Official eClass deadlines</p>
+          <p class="card-kicker">Recorded dates · eClass recheck pending</p>
           <dl>
             <div><dt>Slides due</dt><dd><time datetime="2026-11-12T17:30:00-05:00">Thursday, November 12<br>5:30 PM</time></dd></div>
             <div><dt>Group H presents</dt><dd><time datetime="2026-11-12T18:54:00-05:00">Thursday, November 12<br>6:54 PM</time></dd></div>
@@ -53,6 +53,7 @@
           <p class="schedule-note">Submit slides as a PDF before the class presentation and the report as a PDF before its deadline. The report must also remain readable online on the group website.</p>
         </aside>
       </section>
+<section class="section" aria-label="Assignment 2 evidence and source status"><p class="resource-note"><strong>Source analysis is on hold.</strong> Pending source-code analysis — not yet verified. Do not open, search or analyze the OpenPilot checkout until Setayesh explicitly authorizes it. OpenPilot v0.11.1 is the user-confirmed target, not a professor-mandated snapshot. Controls / <code>selfdrive/controls</code> is an unconfirmed candidate, not an accepted top-level boundary. <a href="assignment-2-requirements.html">Read verified requirements, ownership and open checks</a>.</p><p>Schedule: the dates below were recorded previously and need an eClass recheck. Appendix B specifies 15 minutes including setup; the 12-minute run of show and ten-slide plan are team rehearsal choices.</p></section>
 
       <section class="section assignment-overview" id="brief" aria-labelledby="brief-title">
         <div class="section-heading">
@@ -62,12 +63,12 @@
         <div class="overview-card-grid">
           <article><span>1</span><h3>Claimed subsystem</h3><p>Choose one top-level subsystem that no other group has claimed and record the forum confirmation.</p></article>
           <article><span>10–15</span><h3>Report pages</h3><p>Publish a readable report online with links to related web-accessible artifacts.</p></article>
-          <article><span>3+</span><h3>Core visuals</h3><p>Include a system map, a focused concrete-architecture view, and at least one dynamic sequence or state view.</p></article>
-          <article><span>12</span><h3>Minute safe plan</h3><p>The eClass order is spaced 12 minutes apart. Prepare a 12-minute version even though Appendix B describes a 15-minute slot.</p></article>
+          <article><span>Views</span><h3>Team diagram plan</h3><p>Include a system map, a focused concrete-architecture view, and at least one dynamic sequence or state view.</p></article>
+          <article><span>12</span><h3>Minute team rehearsal</h3><p>A team target, pending schedule confirmation. Appendix B specifies 15 minutes including setup and recommends time for questions.</p></article>
         </div>
         <div class="requirements-layout assignment2-requirements">
           <div class="requirements-panel">
-            <h3>Required analysis</h3>
+            <h3>Assignment 2 analysis and supporting guidance</h3>
             <ul class="requirements-list">
               <li>Extract the software architecture from the studied implementation with Understand.</li>
               <li>Group top-level entities into subsystems and decompose the chosen subsystem further where useful.</li>
@@ -76,13 +77,13 @@
               <li>Identify the architectural style and any noteworthy design patterns supported by evidence.</li>
               <li>Redraw tool output into clean diagrams that are readable in the report and on slides.</li>
               <li>Use sequence or state diagrams to explain important behavior or interaction.</li>
-              <li>Explain alternatives, trade-offs, limitations, and lessons learned; be ready to defend the findings.</li>
+              <li>Document lessons and conclusions (Appendix A). Present modelling alternatives and trade-offs, and prepare to defend the findings (Appendix B recommendations).</li><li>Submit the Understand project file showing the component grouping (Section 6).</li>
             </ul>
           </div>
           <aside class="format-card" aria-labelledby="evidence-standard-title">
             <h3 class="card-kicker" id="evidence-standard-title">Evidence standard</h3>
             <dl>
-              <div><dt>Implementation</dt><dd>OpenPilot v0.11.1 course snapshot, released June 5, 2026</dd></div>
+              <div><dt>Implementation</dt><dd>OpenPilot v0.11.1 target confirmed by Setayesh</dd></div>
               <div><dt>Primary tool</dt><dd>Understand</dd></div>
               <div><dt>Traceability</dt><dd>File/entity → subsystem</dd></div>
               <div><dt>Dynamic view</dt><dd>Sequence or state</dd></div>
@@ -108,83 +109,21 @@
               <tr><td data-label="Member"><strong>Spence Hashemi</strong></td><td data-label="Primary role">Recovery method and system map</td><td data-label="Report ownership">Understand setup, extraction method, top-level decomposition</td><td data-label="Slides">3–4</td><td data-label="Speaking target">2:00</td></tr>
               <tr><td data-label="Member"><strong>Mehdi Jafarian</strong></td><td data-label="Primary role">Focused concrete architecture</td><td data-label="Report ownership">Selected subsystem hierarchy, entities, dependency evidence</td><td data-label="Slides">5–6</td><td data-label="Speaking target">2:10</td></tr>
               <tr><td data-label="Member"><strong>David Odidi</strong></td><td data-label="Primary role">Dynamic behavior and patterns</td><td data-label="Report ownership">Sequence/state view, interactions, style and patterns</td><td data-label="Slides">7–8</td><td data-label="Speaking target">2:10</td></tr>
-              <tr><td data-label="Member"><strong>Dan Logvinovsky</strong></td><td data-label="Primary role">Findings, trade-offs, quality</td><td data-label="Report ownership">Conceptual comparison, gaps, alternatives, limitations, references</td><td data-label="Slides">9–10</td><td data-label="Speaking target">2:10</td></tr>
+              <tr><td data-label="Member"><strong>Dan Logvinovsky</strong></td><td data-label="Primary role">Findings, trade-offs, quality</td><td data-label="Report ownership">Trade-offs, limitations, lessons, conclusion, references and review</td><td data-label="Slides">9–10</td><td data-label="Speaking target">2:10</td></tr>
             </tbody>
           </table>
         </section>
 
-        <div class="assignment2-owner-grid">
-          <article class="assignment2-owner-card">
-            <header><p class="eyebrow">Slides 1–2 · 1:30</p><h3>Setayesh Chegini</h3><span class="status-badge status-not-started">Not Started</span></header>
-            <p><strong>Role:</strong> Coordinator, subsystem claim, scope, report/deck integration, and final publication.</p>
-            <ol>
-              <li>Prepare two candidate top-level subsystems and post the preferred choice in the course forum.</li>
-              <li>Record the accepted subsystem, source snapshot/commit, analysis questions, and boundaries.</li>
-              <li>Write the executive summary, introduction, scope, selection rationale, and conclusion bridge.</li>
-              <li>Create slide 1 (problem and objective) and slide 2 (scope, selected subsystem, research questions).</li>
-              <li>Merge the report and deck, enforce terminology, publish the web content, and coordinate submission.</li>
-            </ol>
-            <p class="owner-output"><strong>Done when:</strong> the scope is confirmed, all five packages are integrated, links work, and the final report and slides have been verified.</p>
-          </article>
-
-          <article class="assignment2-owner-card">
-            <header><p class="eyebrow">Slides 3–4 · 2:00</p><h3>Spence Hashemi</h3><span class="status-badge status-not-started">Not Started</span></header>
-            <p><strong>Role:</strong> Understand database owner, extraction-method author, and top-level system mapper.</p>
-            <ol>
-              <li>Create the Understand project from the agreed source snapshot and document language/configuration settings.</li>
-              <li>Export top-level files, entities, call/control/data dependencies, and tool-generated architecture views.</li>
-              <li>Define the initial file/entity-to-subsystem mapping and record manual grouping rules.</li>
-              <li>Write the methodology and system-level decomposition sections with reproducible steps.</li>
-              <li>Create slide 3 (recovery process) and slide 4 (clean top-level concrete architecture map).</li>
-            </ol>
-            <p class="owner-output"><strong>Done when:</strong> another member can reproduce the extraction, and the system map has traceable labels and a readable legend.</p>
-          </article>
-
-          <article class="assignment2-owner-card">
-            <header><p class="eyebrow">Slides 5–6 · 2:10</p><h3>Mehdi Jafarian</h3><span class="status-badge status-not-started">Not Started</span></header>
-            <p><strong>Role:</strong> Selected-subsystem analyst and concrete static-architecture diagram owner.</p>
-            <ol>
-              <li>Validate which files/entities belong to the selected subsystem and split it into meaningful sub-subsystems.</li>
-              <li>Identify important internal and external dependencies and the functions/entities that cause them.</li>
-              <li>Build an evidence table linking every major diagram edge to concrete source entities.</li>
-              <li>Write the focused architecture, responsibilities, hierarchy, and dependency-analysis sections.</li>
-              <li>Create slide 5 (subsystem hierarchy) and slide 6 (focused dependency diagram plus key evidence).</li>
-            </ol>
-            <p class="owner-output"><strong>Done when:</strong> the core concrete diagram is clean, its dependencies are traceable, and unsupported relationships have been removed.</p>
-          </article>
-
-          <article class="assignment2-owner-card">
-            <header><p class="eyebrow">Slides 7–8 · 2:10</p><h3>David Odidi</h3><span class="status-badge status-not-started">Not Started</span></header>
-            <p><strong>Role:</strong> Dynamic-behavior analyst and architecture-style/design-pattern reviewer.</p>
-            <ol>
-              <li>Select one important scenario that crosses the chosen subsystem boundary or exercises its core responsibility.</li>
-              <li>Trace calls, state changes, control flow, or data flow for the scenario using Understand evidence.</li>
-              <li>Redraw the trace as a readable sequence diagram and add a state diagram when it clarifies behavior.</li>
-              <li>Identify the architectural style and noteworthy patterns, separating evidence from interpretation.</li>
-              <li>Create slide 7 (sequence/state behavior) and slide 8 (style, patterns, and why they matter).</li>
-            </ol>
-            <p class="owner-output"><strong>Done when:</strong> the dynamic diagram matches the static model, uses consistent names, and every interpretation cites concrete evidence.</p>
-          </article>
-
-          <article class="assignment2-owner-card">
-            <header><p class="eyebrow">Slides 9–10 · 2:10</p><h3>Dan Logvinovsky</h3><span class="status-badge status-not-started">Not Started</span></header>
-            <p><strong>Role:</strong> Conceptual-vs-concrete comparison, trade-off analysis, references, and independent quality review.</p>
-            <ol>
-              <li>Compare the recovered subsystem with Group H's Assignment 1 conceptual model.</li>
-              <li>Classify convergences, divergences, and absences; investigate likely reasons without overstating intent.</li>
-              <li>Write alternatives, trade-offs, limitations, threats to validity, and lessons learned.</li>
-              <li>Audit citations, evidence labels, diagram consistency, accessibility, and duplicate claims.</li>
-              <li>Create slide 9 (conceptual vs concrete findings) and slide 10 (trade-offs, limitations, lessons, conclusion).</li>
-            </ol>
-            <p class="owner-output"><strong>Done when:</strong> claims are evidence-backed, limitations are explicit, references are complete, and the conclusion answers the research questions.</p>
-          </article>
-        </div>
-      </section>
+        <div class="assignment2-owner-grid"><article class="assignment2-owner-card"><header><p class="eyebrow">Slides 1–2 · 1:30 (team target)</p><h3>Setayesh Chegini</h3><span class="status-badge status-not-started">Not Started</span></header><p><strong>Role:</strong> Coordinator, scope, integration and publication</p><p><strong>Report:</strong> Title and authors, abstract (about 2/3 page), introduction (1–3 pages), scope, glossary and naming conventions; final integration and submission.</p><p><strong>Presentation:</strong> Preserve the two-slide pre-analysis opening: title, objective, proposed scope and research questions. Coordinate the deck, online slides, rehearsal and submission.</p><p><strong>Handoff:</strong> Confirm scope with all members; receive technical sections and Dan’s review before publishing.</p><p class="owner-output">Pending source-code analysis — not yet verified. Forum acceptance remains pending. Opening slides remain pre-analysis. Final exports, online links and actual submissions need separate verification.</p><p><a href="assignment-2-presentation.html#setayesh-chegini">Presentation tasks</a> · <a href="assignment-2-report.html#setayesh-chegini">Report tasks</a></p></article>
+<article class="assignment2-owner-card"><header><p class="eyebrow">Slides 3–4 · 2:00 (team target)</p><h3>Spence Hashemi</h3><span class="status-badge status-not-started">Not Started</span></header><p><strong>Role:</strong> Understand recovery method and top-level system map</p><p><strong>Report:</strong> Reproducible Understand settings, entity-to-subsystem mapping, grouping rationale, top-level map and saved Understand project.</p><p><strong>Presentation:</strong> Slide 3: extraction and grouping method. Slide 4: redrawn top-level architecture, scope and legend.</p><p><strong>Handoff:</strong> After authorization, supply the common mapping and evidence identifiers to Mehdi and David; supply the project file to Setayesh.</p><p class="owner-output">Pending source-code analysis — not yet verified. Another member can reproduce the grouping. Keep one shared evidence package for report and slides; extraction and diagrams await authorization.</p><p><a href="assignment-2-presentation.html#spence-hashemi">Presentation tasks</a> · <a href="assignment-2-report.html#spence-hashemi">Report tasks</a></p></article>
+<article class="assignment2-owner-card"><header><p class="eyebrow">Slides 5–6 · 2:10 (team target)</p><h3>Mehdi Jafarian</h3><span class="status-badge status-not-started">Not Started</span></header><p><strong>Role:</strong> Focused subsystem structure, interfaces and dependencies</p><p><strong>Report:</strong> Selected subsystem membership, hierarchy, responsibilities, interfaces and transmitted information; module dependency diagram and evidence matrix.</p><p><strong>Presentation:</strong> Slide 5: selected subsystem structure and interfaces. Slide 6: dependency diagram and significant relations with their causes.</p><p><strong>Handoff:</strong> Use Spence’s mapping; supply the static boundary and dependency evidence to David, and technical observations to Dan.</p><p class="owner-output">Pending source-code analysis — not yet verified. Every important edge has an evidence reference. Static relations and possible runtime coupling are identified separately; no recovered claims before analysis.</p><p><a href="assignment-2-presentation.html#mehdi-jafarian">Presentation tasks</a> · <a href="assignment-2-report.html#mehdi-jafarian">Report tasks</a></p></article>
+<article class="assignment2-owner-card"><header><p class="eyebrow">Slides 7–8 · 2:10 (team target)</p><h3>David Odidi</h3><span class="status-badge status-not-started">Not Started</span></header><p><strong>Role:</strong> Behavior, architectural styles and design patterns</p><p><strong>Report:</strong> Essential scenario and sequence or state view; control flow and concurrency; evidence-backed styles and noteworthy patterns.</p><p><strong>Presentation:</strong> Slide 7: noteworthy scenario using a sequence or state diagram. Slide 8: architectural styles and noteworthy patterns supported by evidence.</p><p><strong>Handoff:</strong> Use Spence’s system map and Mehdi’s boundary; send scenario and style/pattern evidence to Dan and Setayesh.</p><p class="owner-output">Pending source-code analysis — not yet verified. Use the same entities as the static model. A static trace is not a runtime observation. Report no noteworthy pattern if none is supported.</p><p><a href="assignment-2-presentation.html#david-odidi">Presentation tasks</a> · <a href="assignment-2-report.html#david-odidi">Report tasks</a></p></article>
+<article class="assignment2-owner-card"><header><p class="eyebrow">Slides 9–10 · 2:10 (team target)</p><h3>Dan Logvinovsky</h3><span class="status-badge status-not-started">Not Started</span></header><p><strong>Role:</strong> Trade-offs, limitations, lessons, conclusion and independent review</p><p><strong>Report:</strong> Recovery/modelling alternatives and supported trade-offs; limitations and challenges; actual lessons; conclusion, references and full requirements review.</p><p><strong>Presentation:</strong> Slide 9: modelling alternatives, trade-offs and limitations. Slide 10: lessons and conclusion. Review references, readability and assignment coverage.</p><p><strong>Handoff:</strong> Receive findings from Spence, Mehdi and David; return a review record and closing package to Setayesh, who integrates and submits.</p><p class="owner-output">Pending source-code analysis — not yet verified. No A1-versus-A2 comparison, discrepancy classification or gap-rationale analysis. Distinguish modelling choices made by the group from unverified developer intent.</p><p><a href="assignment-2-presentation.html#dan-logvinovsky">Presentation tasks</a> · <a href="assignment-2-report.html#dan-logvinovsky">Report tasks</a></p></article></div></section>
 
       <section class="section" id="presentation" aria-labelledby="presentation-title">
         <div class="section-heading">
           <div><p class="eyebrow">Safe 12-minute version</p><h2 id="presentation-title">Presentation Run of Show</h2></div>
-          <p>Appendix B says a 15-minute slot including setup, but the current eClass order places groups 12 minutes apart. This plan uses 10 minutes of speaking, 1 minute for setup/transitions, and 1 minute for a question and buffer.</p>
+          <p>Appendix B specifies 15 minutes including setup. This team rehearsal plan fits 12 minutes with setup, five speaking segments and question time. Recheck the class order in eClass.</p>
         </div>
         <section class="table-shell" aria-label="Assignment 2 presentation run of show" tabindex="0">
           <table class="project-table presentation-timing-table">
@@ -194,14 +133,14 @@
               <tr><td data-label="Clock"><strong>0:30–2:00</strong></td><td data-label="Speaker">Setayesh</td><td data-label="Slides">1–2</td><td data-label="Story beat">Problem, selected scope, research questions, and deliverables.</td><td data-label="Handoff line">“Spence will show how we recovered the as-built structure.”</td></tr>
               <tr><td data-label="Clock"><strong>2:00–4:00</strong></td><td data-label="Speaker">Spence</td><td data-label="Slides">3–4</td><td data-label="Story beat">Understand workflow, grouping rules, and top-level concrete map.</td><td data-label="Handoff line">“Mehdi now zooms into the subsystem we claimed.”</td></tr>
               <tr><td data-label="Clock"><strong>4:00–6:10</strong></td><td data-label="Speaker">Mehdi</td><td data-label="Slides">5–6</td><td data-label="Story beat">Subsystem hierarchy, responsibilities, dependencies, and evidence.</td><td data-label="Handoff line">“David will show how these parts behave at runtime.”</td></tr>
-              <tr><td data-label="Clock"><strong>6:10–8:20</strong></td><td data-label="Speaker">David</td><td data-label="Slides">7–8</td><td data-label="Story beat">Sequence/state behavior, architecture style, and noteworthy patterns.</td><td data-label="Handoff line">“Dan will compare the recovered design with our conceptual model.”</td></tr>
-              <tr><td data-label="Clock"><strong>8:20–10:30</strong></td><td data-label="Speaker">Dan</td><td data-label="Slides">9–10</td><td data-label="Story beat">Gaps, trade-offs, limitations, lessons learned, and conclusion.</td><td data-label="Handoff line">“We welcome your questions.”</td></tr>
+              <tr><td data-label="Clock"><strong>6:10–8:20</strong></td><td data-label="Speaker">David</td><td data-label="Slides">7–8</td><td data-label="Story beat">Sequence/state behavior, architecture style, and noteworthy patterns.</td><td data-label="Handoff line">“Dan will discuss trade-offs, limitations and lessons.”</td></tr>
+              <tr><td data-label="Clock"><strong>8:20–10:30</strong></td><td data-label="Speaker">Dan</td><td data-label="Slides">9–10</td><td data-label="Story beat">Modelling alternatives, trade-offs, limitations, lessons and conclusion.</td><td data-label="Handoff line">“We welcome your questions.”</td></tr>
               <tr><td data-label="Clock"><strong>10:30–11:30</strong></td><td data-label="Speaker">Team</td><td data-label="Slides">Q&amp;A</td><td data-label="Story beat">Answer one question; the evidence owner answers first.</td><td data-label="Handoff line">Setayesh closes.</td></tr>
               <tr><td data-label="Clock"><strong>11:30–12:00</strong></td><td data-label="Speaker">Team</td><td data-label="Slides">Buffer</td><td data-label="Story beat">Absorb a slow transition, close, and clear the presentation area.</td><td data-label="Handoff line">End before the next group starts.</td></tr>
             </tbody>
           </table>
         </section>
-        <p class="resource-note"><strong>Timing rule:</strong> rehearse the 12-minute version first. If the instructor confirms a full 15 minutes, use the extra time for a second question and deeper evidence—do not add unreviewed slides. Keep the main deck to 10 content slides plus a references/backup section.</p>
+        <p class="resource-note"><strong>Team timing choice:</strong> rehearse the 12-minute version with questions. Appendix B specifies 15 minutes including setup. Ten slides plus references/backup is our allocation, not a slide count required by the brief.</p>
       </section>
 
       <section class="section section-tinted" id="handoffs" aria-labelledby="handoffs-title">
@@ -213,10 +152,10 @@
           <span>Setayesh · scope</span><b aria-hidden="true">→</b><span>Spence · system evidence</span><b aria-hidden="true">→</b><span>Mehdi + David · focused analysis</span><b aria-hidden="true">→</b><span>Dan · synthesis</span><b aria-hidden="true">→</b><span>Setayesh · final integration</span>
         </div>
         <div class="checkpoint-grid assignment2-checkpoints">
-          <article><span>November 8</span><h3>Choose &amp; claim</h3><p>Post the preferred subsystem and keep a backup choice ready.</p></article>
-          <article><span>November 9</span><h3>Freeze evidence base</h3><p>Use the v0.11.1 course snapshot, record Understand settings, and agree on the glossary.</p></article>
-          <article><span>November 10</span><h3>Complete extraction</h3><p>Finish top-level mapping, focused hierarchy, dependency exports, and the dynamic trace.</p></article>
-          <article><span>November 11</span><h3>Merge &amp; rehearse</h3><p>Combine the 10-slide deck, review diagrams, and rehearse the 12-minute version twice.</p></article>
+          <article><span>Team target · claim pending</span><h3>Confirm scope and claim</h3><p>Post the preferred subsystem and keep a backup choice ready.</p></article>
+          <article><span>After explicit authorization</span><h3>Freeze evidence base</h3><p>Agree on the v0.11.1 target and glossary. Do not inspect or extract source until explicitly authorized.</p></article>
+          <article><span>After source analysis</span><h3>Recover and review</h3><p>Finish top-level mapping, focused hierarchy, dependency exports, and the dynamic trace.</p></article>
+          <article><span>Team target · November 11</span><h3>Merge &amp; rehearse</h3><p>Combine the 10-slide deck, review diagrams, and rehearse the 12-minute version twice.</p></article>
           <article><span>November 12</span><h3>Submit &amp; present</h3><p>Submit the PDF by 5:30 PM and be ready for Group H's 6:54 PM presentation.</p></article>
           <article><span>November 15</span><h3>Publish &amp; submit report</h3><p>Finish the web report, verify the PDF, and submit by 11:59 PM.</p></article>
         </div>
@@ -234,8 +173,8 @@
             <tbody>
               <tr><td data-label="Source or tool"><strong>Assignment 2 brief · Section 6</strong></td><td data-label="Use">10–15 page web report, Understand extraction, subsystem grouping, selected-subsystem focus, architecture style, design patterns, diagrams, and dynamic views.</td></tr>
               <tr><td data-label="Source or tool"><strong>Assignment brief · Appendix B</strong></td><td data-label="Use">15-minute slot including setup, audience expectations, rehearsal, readable diagrams, alternatives, trade-offs, defensible decisions, feedback, and lessons learned.</td></tr>
-              <tr><td data-label="Source or tool"><strong>eClass · Concrete Architecture Presentation</strong></td><td data-label="Use">Slides are due November 12, 2026 at 5:30 PM; Group H presents at 6:54 PM; submit the slides in PDF format before presenting.</td></tr>
-              <tr><td data-label="Source or tool"><strong>eClass · Concrete Architecture Report</strong></td><td data-label="Use">The report PDF is due November 15, 2026 at 11:59 PM and the evolving report remains published on the group website.</td></tr>
+              <tr><td data-label="Source or tool"><strong>eClass · Concrete Architecture Presentation</strong></td><td data-label="Use">Previously recorded: November 12, 5:30 PM, with Group H at 6:54 PM and PDF slides. Recheck in eClass; not confirmed in this audit.</td></tr>
+              <tr><td data-label="Source or tool"><strong>eClass · Concrete Architecture Report</strong></td><td data-label="Use">Previously recorded report deadline: November 15, 11:59 PM, PDF submission. Recheck in eClass; online report and Understand project are verified requirements.</td></tr>
               <tr><td data-label="Source or tool"><strong>EECS 4314-5-ReverseEngineering · Pages 14–19, 28</strong></td><td data-label="Use">Extract relations, map source entities to subsystems, determine subsystem relations, visualize hierarchical composition, and identify the low-level causes of dependencies.</td></tr>
               <tr><td data-label="Source or tool"><strong>EECS 4314-2-UMLOverview · Page 7</strong></td><td data-label="Use">Use sequence diagrams for inter-object behavior and state diagrams for detailed intra-object behavior.</td></tr>
               <tr><td data-label="Source or tool"><a href="https://scitools.com/" target="_blank" rel="noopener noreferrer">Understand</a></td><td data-label="Use">Build the project database, inspect entities and relations, export evidence, and generate starting views for clean diagrams.</td></tr>
@@ -259,15 +198,15 @@
           <article class="submission-check-item"><span class="checkpoint-number">5</span><strong>Sequence or state diagram verified against evidence</strong><span class="status-badge status-not-started">Not Started</span></article>
           <article class="submission-check-item"><span class="checkpoint-number">6</span><strong>Architecture style and patterns supported by findings</strong><span class="status-badge status-not-started">Not Started</span></article>
           <article class="submission-check-item"><span class="checkpoint-number">7</span><strong>10–15 page report edited and posted online</strong><span class="status-badge status-not-started">Not Started</span></article>
-          <article class="submission-check-item"><span class="checkpoint-number">8</span><strong>Ten-slide talk rehearsed within 12 minutes</strong><span class="status-badge status-not-started">Not Started</span></article>
+          <article class="submission-check-item"><span class="checkpoint-number">8</span><strong>Team rehearsal target met; setup and questions allowed</strong><span class="status-badge status-not-started">Not Started</span></article>
           <article class="submission-check-item"><span class="checkpoint-number">9</span><strong>One or two Q&amp;A answers prepared per member</strong><span class="status-badge status-not-started">Not Started</span></article>
-          <article class="submission-check-item"><span class="checkpoint-number">10</span><strong>Final links, PDF exports, and website checked</strong><span class="status-badge status-not-started">Not Started</span></article>
+          <article class="submission-check-item"><span class="checkpoint-number">10</span><strong>Final online slides/report, exports and Understand project checked</strong><span class="status-badge status-not-started">Not Started</span></article>
         </div>
       </section>
 
       <section class="section section-dark" aria-labelledby="next-action-title">
         <div class="overall-assignment-progress assignment2-next-action">
-          <div><p class="eyebrow">Start here</p><h2 id="next-action-title">The next action is the subsystem claim</h2><p>Setayesh confirms the preferred and backup top-level subsystems with the group, posts the preferred choice in the course forum, and records the accepted scope before detailed recovery work begins.</p></div>
+          <div><p class="eyebrow">Start here</p><h2 id="next-action-title">Confirm scope and keep source analysis on hold</h2><p>Setayesh confirms the preferred and backup top-level subsystems with the group, posts the preferred choice in the course forum, and records the accepted scope before detailed recovery work begins.</p></div>
           <div class="overall-progress-number"><strong>Gate 1</strong><span class="overall-state">Scope confirmation</span><a class="button button-primary" href="#ownership">Review member tasks</a></div>
         </div>
       </section>

@@ -110,6 +110,12 @@
       const output = document.createElement("small");
       output.textContent = `Expected output: ${item.expectedOutput}`;
       copy.append(id, title, output);
+      if (item.analysisStatus) {
+        const evidenceState = document.createElement("small");
+        evidenceState.className = "verification-state";
+        evidenceState.textContent = item.analysisStatus;
+        copy.append(evidenceState);
+      }
       description.append(checkbox, copy);
 
       const status = document.createElement("span");

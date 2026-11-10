@@ -1,82 +1,379 @@
 {
   "assignment": "Assignment 2 – Concrete Architecture Report",
   "deadline": "2026-11-15T23:59:00-05:00",
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-09",
   "members": [
     {
       "id": "setayesh-chegini",
       "name": "Setayesh Chegini",
       "items": [
-        { "id": "assignment2-report-setayesh-01", "description": "Confirm the claimed top-level subsystem, source snapshot, scope boundaries, research questions, and common terminology for all sections.", "expectedOutput": "Approved scope brief and shared glossary.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-setayesh-02", "description": "Write the executive summary, introduction, studied-system context, subsystem-selection rationale, research questions, and report roadmap.", "expectedOutput": "Integrated opening section of approximately 1.5–2 pages.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-setayesh-03", "description": "Collect all sections and diagrams, remove duplication, enforce one terminology and citation style, and keep the report within 10–15 pages.", "expectedOutput": "Coherent integrated report draft.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-setayesh-04", "description": "Publish the report and related web-accessible artifacts on the Group H website and verify every internal and external link.", "expectedOutput": "Readable online report with working related-content links.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-setayesh-05", "description": "Export and verify the final PDF, coordinate the final team review, and submit it before Sunday, November 15 at 11:59 PM.", "expectedOutput": "Verified final report PDF and confirmed submission.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-report-setayesh-01",
+          "description": "Confirm the forum claim and OpenPilot v0.11.1 target; maintain the shared glossary, naming conventions and unresolved-scope log.",
+          "expectedOutput": "Scope record and glossary.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-setayesh-02",
+          "description": "Prepare the title (about 3–6 words), author details, abstract and introduction outline. Team members write report prose themselves under the brief’s AI policy; complete findings only after evidence exists.",
+          "expectedOutput": "Human-authored title, abstract (about 2/3 page) and introduction (1–3 pages).",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-setayesh-03",
+          "description": "Integrate member-authored sections using single-spaced 12-point text; keep the entire report within 10–15 pages and the 15-page cap including diagrams and appendices.",
+          "expectedOutput": "Coherent report with glossary and consistent naming.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-setayesh-04",
+          "description": "Publish the web-readable report and linked artifacts; interlink project reports, preserve Assignment 1 and verify related-content links.",
+          "expectedOutput": "Readable online report and linked artifact index.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-setayesh-05",
+          "description": "Collect Spence’s Understand project file showing the grouping; run Dan’s final review; verify the report export and submit one group report plus the project artifact by the confirmed deadline.",
+          "expectedOutput": "Final report, Understand project artifact and submission receipt.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        }
       ]
     },
     {
       "id": "spence-hashemi",
       "name": "Spence Hashemi",
       "items": [
-        { "id": "assignment2-report-spence-01", "description": "Record the OpenPilot v0.11.1 source snapshot, Understand project settings, languages, entity types, extracted relations, exclusions, and limitations.", "expectedOutput": "Reproducible analysis-environment record.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-spence-02", "description": "Explain the extraction and grouping process from source entities through relations, subsystem assignments, hierarchical composition, and cleaned views.", "expectedOutput": "Concrete-architecture recovery methodology.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-spence-03", "description": "Create the top-level file/entity-to-subsystem mapping table and document every manual grouping rule and unresolved classification.", "expectedOutput": "Reviewed mapping table and decision log.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-spence-04", "description": "Redraw the system-level concrete architecture with hierarchy, major relations, a legend, scope note, and traceable evidence identifiers.", "expectedOutput": "Report-ready system architecture diagram with editable source.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-spence-05", "description": "Write the methodology and system-level architecture section with figures, captions, evidence references, limitations, and a handoff to the focused subsystem analysis.", "expectedOutput": "Completed 2–2.5 page report package.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-report-spence-01",
+          "description": "After authorization, establish and record the v0.11.1 source revision and Understand environment, exclusions and extraction limitations.",
+          "expectedOutput": "Reproducible environment and source-version record.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-spence-02",
+          "description": "Describe the actual extraction and grouping process, including hierarchical decomposition and each manual decision.",
+          "expectedOutput": "Human-authored recovery methodology.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-spence-03",
+          "description": "Map top-level files/entities to subsystems, define grouping conventions and record unresolved cases.",
+          "expectedOutput": "Shared mapping table and decision log.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-spence-04",
+          "description": "Produce the redrawn system-level structure with major interactions and legends; save the Understand project file that demonstrates the component groupings.",
+          "expectedOutput": "System diagram and submission-ready Understand project artifact.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-spence-05",
+          "description": "Write the method and system-structure section; hand the reviewed mapping to Mehdi and David and the saved project to Setayesh.",
+          "expectedOutput": "Approximately 2 pages, captions and artifact index.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        }
       ]
     },
     {
       "id": "mehdi-jafarian",
       "name": "Mehdi Jafarian",
       "items": [
-        { "id": "assignment2-report-mehdi-01", "description": "Validate the selected subsystem's file and entity membership and decompose it into meaningful sub-subsystems where evidence supports the grouping.", "expectedOutput": "Reviewed focused hierarchy and membership inventory.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-mehdi-02", "description": "Describe the selected subsystem's responsibilities, important entities, internal organization, entry points, outputs, and external boundaries.", "expectedOutput": "Focused concrete-architecture narrative.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-mehdi-03", "description": "Identify important internal and external dependencies and trace each major relation to the functions or entities that cause it.", "expectedOutput": "Dependency evidence matrix.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-mehdi-04", "description": "Create a subsystem hierarchy diagram and focused dependency diagram with consistent names, evidence identifiers, legends, and captions.", "expectedOutput": "Two report-ready static diagrams with editable sources.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-mehdi-05", "description": "Write the focused subsystem structure and dependency-analysis section, including surprising relations, limitations, and unresolved questions.", "expectedOutput": "Completed 2.5–3 page report package.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-report-mehdi-01",
+          "description": "After authorization and forum acceptance, validate focused membership and hierarchical decomposition against the system mapping.",
+          "expectedOutput": "Reviewed subsystem inventory.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-mehdi-02",
+          "description": "Describe responsibilities, internal organization and information transmitted through external interfaces at architecture level.",
+          "expectedOutput": "Focused structure and interface narrative.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-mehdi-03",
+          "description": "Trace significant subsystem/module dependencies to low-level causes and classify static versus runtime evidence.",
+          "expectedOutput": "Evidence matrix with scope and limitations.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-mehdi-04",
+          "description": "Create the required subsystem/module dependency diagram and a focused hierarchy view when useful, with clear arrow and symbol legends.",
+          "expectedOutput": "Report-ready editable diagram(s).",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-mehdi-05",
+          "description": "Write the focused architecture and dependency section, keeping detailed procedures only as evidence for important architectural relations.",
+          "expectedOutput": "Approximately 2.5 pages and static-model handoff to David.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        }
       ]
     },
     {
       "id": "david-odidi",
       "name": "David Odidi",
       "items": [
-        { "id": "assignment2-report-david-01", "description": "Choose one important scenario that exercises the selected subsystem and document its actors, trigger, preconditions, main behavior, alternatives, and result.", "expectedOutput": "Approved dynamic-analysis scenario specification.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-david-02", "description": "Trace the scenario through calls, state changes, control flow, or data flow using Understand and source evidence.", "expectedOutput": "Traceable dynamic evidence table.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-david-03", "description": "Create a readable sequence diagram and, when useful, a state diagram that use the same entities and boundaries as the static architecture.", "expectedOutput": "Report-ready dynamic diagram set with editable sources.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-david-04", "description": "Identify the supported architectural style and noteworthy design patterns, clearly separating extracted evidence from interpretation.", "expectedOutput": "Evidence-backed style and pattern analysis.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-david-05", "description": "Write the dynamic behavior, architectural style, and design-pattern section with figures, captions, evidence links, and limitations.", "expectedOutput": "Completed 2–2.5 page report package.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-report-david-01",
+          "description": "Select an essential scenario and document its actors, trigger, preconditions and outcome; validate the scenario after source authorization.",
+          "expectedOutput": "Scenario specification tied to the selected subsystem.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-david-02",
+          "description": "After authorization, trace control/data flow, relevant state changes and concurrency, with explicit limits on what static evidence proves.",
+          "expectedOutput": "Behavior evidence table.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-david-03",
+          "description": "Create the sequence OR state diagram using the same boundaries and names as the static model, with readable legends.",
+          "expectedOutput": "Behavior figure and explanatory caption.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-david-04",
+          "description": "Identify architectural styles and noteworthy patterns from evidence. Discuss significant performance or evolution implications where supported, without inventing intent.",
+          "expectedOutput": "Style/pattern analysis and evidence notes.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-report-david-05",
+          "description": "Write the behavior, style and pattern section; share key mechanisms, uncertainties and observations with Dan.",
+          "expectedOutput": "Approximately 2 pages and reviewed behavior package.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        }
       ]
     },
     {
       "id": "dan-logvinovsky",
       "name": "Dan Logvinovsky",
       "items": [
-        { "id": "assignment2-report-dan-01", "description": "Compare the recovered subsystem with Group H's Assignment 1 conceptual model and classify convergences, divergences, and absences.", "expectedOutput": "Conceptual-versus-concrete comparison matrix.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-dan-02", "description": "Investigate likely reasons for important gaps without presenting inferred developer intent as fact.", "expectedOutput": "Carefully qualified gap-analysis notes.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-dan-03", "description": "Analyze alternatives, trade-offs, limitations, threats to validity, lessons learned, and what the team would do differently.", "expectedOutput": "Evidence-backed discussion and lessons section.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-dan-04", "description": "Audit claims, evidence labels, citations, diagrams, captions, terminology, accessibility, and page-budget compliance across the full report.", "expectedOutput": "Independent quality-review record and resolved issue list.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-report-dan-05", "description": "Write the comparison, trade-offs, limitations, lessons, and conclusion; consolidate and verify the final reference list.", "expectedOutput": "Completed 2–2.5 page closing package and references.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-report-dan-01",
+          "description": "Review the group’s recovery/modelling alternatives and supported architecture trade-offs; record the actual reasons for the group’s choices.",
+          "expectedOutput": "Qualified trade-off and modelling-choice notes.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        },
+        {
+          "id": "assignment2-report-dan-02",
+          "description": "Collect extraction limitations, analysis challenges and actual lessons from all owners. If GenAI was used for extraction, check the required disclosure, human-first attempt, approach evaluation and lessons.",
+          "expectedOutput": "Limitations and lessons notes, plus AI-use record where applicable.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        },
+        {
+          "id": "assignment2-report-dan-03",
+          "description": "Prepare the conclusion from the verified findings, and consolidate references with appropriate web links; report prose must be human-authored.",
+          "expectedOutput": "Human-authored closing section and linked references.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        },
+        {
+          "id": "assignment2-report-dan-04",
+          "description": "Independently check Sections 3 and 6 and Appendix A: length and format, abstract/introduction, diagram legends and module dependency view, references, project file and online report. Keep uncovered points visible.",
+          "expectedOutput": "Requirements review and issue list for Setayesh.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        },
+        {
+          "id": "assignment2-report-dan-05",
+          "description": "Deliver the trade-offs, limitations, lessons, conclusion and references; check that owners resolve review issues before integration. Do not perform A1/A2 discrepancy analysis.",
+          "expectedOutput": "Approximately 1.5 pages plus references and final review record.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        }
       ]
     }
   ],
   "checkpoints": [
-    { "id": "assignment2-report-checkpoint-01", "label": "Scope and subsystem claim confirmed", "status": "Not Started" },
-    { "id": "assignment2-report-checkpoint-02", "label": "Evidence base and mapping reviewed", "status": "Not Started" },
-    { "id": "assignment2-report-checkpoint-03", "label": "All member sections delivered", "status": "Not Started" },
-    { "id": "assignment2-report-checkpoint-04", "label": "Integrated 10–15 page draft complete", "status": "Not Started" },
-    { "id": "assignment2-report-checkpoint-05", "label": "Technical and citation review complete", "status": "Not Started" },
-    { "id": "assignment2-report-checkpoint-06", "label": "Web report and PDF verified", "status": "Not Started" }
+    {
+      "id": "assignment2-report-checkpoint-01",
+      "label": "Scope and subsystem claim confirmed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-checkpoint-02",
+      "label": "Evidence base and mapping reviewed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-checkpoint-03",
+      "label": "All member sections delivered",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-checkpoint-04",
+      "label": "Integrated 10–15 page draft complete",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-checkpoint-05",
+      "label": "Technical and citation review complete",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-checkpoint-06",
+      "label": "Web report and PDF verified",
+      "status": "Not Started"
+    }
   ],
   "submissionChecklist": [
-    { "id": "assignment2-report-submit-01", "label": "Report is between 10 and 15 pages", "status": "Not Started" },
-    { "id": "assignment2-report-submit-02", "label": "Claimed subsystem and source snapshot identified", "status": "Not Started" },
-    { "id": "assignment2-report-submit-03", "label": "Recovery process is reproducible", "status": "Not Started" },
-    { "id": "assignment2-report-submit-04", "label": "Mapping decisions and dependencies are traceable", "status": "Not Started" },
-    { "id": "assignment2-report-submit-05", "label": "Concrete architecture diagrams are readable", "status": "Not Started" },
-    { "id": "assignment2-report-submit-06", "label": "Sequence or state behavior is explained", "status": "Not Started" },
-    { "id": "assignment2-report-submit-07", "label": "Style and patterns are evidence-backed", "status": "Not Started" },
-    { "id": "assignment2-report-submit-08", "label": "Trade-offs, limitations, and lessons included", "status": "Not Started" },
-    { "id": "assignment2-report-submit-09", "label": "References and links are verified", "status": "Not Started" },
-    { "id": "assignment2-report-submit-10", "label": "Online report and PDF submitted by 11:59 PM", "status": "Not Started" }
-  ]
+    {
+      "id": "assignment2-report-submit-01",
+      "label": "10–15 pages, maximum 15 including diagrams/appendices; single-spaced 12-point text",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-02",
+      "label": "Claimed subsystem and source snapshot identified",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-03",
+      "label": "Recovery process is reproducible",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-04",
+      "label": "Mapping decisions and dependencies are traceable",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-05",
+      "label": "Concrete architecture diagrams are readable",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-06",
+      "label": "Sequence or state behavior is explained",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-07",
+      "label": "Style and patterns are evidence-backed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-08",
+      "label": "Actual lessons, conclusion and linked references included",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-09",
+      "label": "References and links are verified",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-10",
+      "label": "Online report, report export and Understand project submitted by confirmed deadline",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-report-submit-11",
+      "label": "Title/authors, abstract and introduction checked; applicable AI-use rules followed",
+      "status": "Not Started"
+    }
+  ],
+  "scheduleVerification": "Previously recorded; recheck in eClass. Current session requires login.",
+  "targetVersion": "v0.11.1",
+  "sourceAnalysisHold": true
 }

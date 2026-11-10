@@ -14,14 +14,14 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a1020'/%3E%3Cpath d='M19 46V18h13c9 0 15 5 15 14s-6 14-15 14H19zm9-8h4c4 0 7-2 7-6s-3-6-7-6h-4v12z' fill='white'/%3E%3C/svg%3E"
     >
-    <link rel="stylesheet" href="css/style.css?v=20261108-2">
+    <link rel="stylesheet" href="css/style.css?v=20261109-audit">
     <script
       src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
       defer
     ></script>
     <script src="js/supabase-config.js" defer></script>
     <script src="js/shared-progress.js" defer></script>
-    <script src="js/assignment-dashboard.js" defer></script>
+    <script src="js/assignment-dashboard.js?v=20261109-audit" defer></script>
   </head>
   <body
     class="assignment-page assignment-2-page"
@@ -82,7 +82,7 @@
         </div>
         <aside class="deadline-card" aria-labelledby="report-schedule-title">
           <h2 class="card-kicker" id="report-schedule-title">
-            Official eClass deadline
+            Recorded deadline · recheck in eClass
           </h2>
           <dl>
             <div>
@@ -108,12 +108,10 @@
               </dd>
             </div>
           </dl>
-          <p class="schedule-note">
-            The PDF must be submitted before the deadline, and the evolving
-            report must remain readable online on the Group H website.
-          </p>
+          <p class="schedule-note">Section 6 requires the online report, one group report submission and the Understand project file showing groupings. Recheck the recorded eClass deadline and file-format instructions.</p>
         </aside>
       </section>
+<section class="section" aria-label="Assignment 2 evidence and source status"><p class="resource-note"><strong>Source analysis is on hold.</strong> Pending source-code analysis — not yet verified. Do not open, search or analyze the OpenPilot checkout until Setayesh explicitly authorizes it. OpenPilot v0.11.1 is the user-confirmed target, not a professor-mandated snapshot. Controls / <code>selfdrive/controls</code> is an unconfirmed candidate, not an accepted top-level boundary. <a href="assignment-2-requirements.html">Read verified requirements, ownership and open checks</a>.</p><p>Schedule: the dates below were recorded previously and need an eClass recheck. Appendix B specifies 15 minutes including setup; the 12-minute run of show and ten-slide plan are team rehearsal choices.</p></section>
 
       <section
         class="section assignment-overview"
@@ -148,8 +146,8 @@
             </p>
           </article>
           <article>
-            <span>3+</span>
-            <h3>Core diagrams</h3>
+            <span>Views</span>
+            <h3>Views in team plan</h3>
             <p>
               System map, focused static view, and at least one sequence or
               state view.
@@ -165,7 +163,7 @@
         </div>
         <div class="requirements-layout assignment2-requirements">
           <div class="requirements-panel">
-            <h3>Required report content</h3>
+            <h3>Assignment 2 content and team outline</h3>
             <ul class="requirements-list">
               <li>
                 Source snapshot, scope, research questions, and subsystem claim.
@@ -191,8 +189,7 @@
                 evidence.
               </li>
               <li>
-                Conceptual comparison, alternatives, trade-offs, limitations,
-                and lessons.
+                Actual lessons, conclusion and linked references, with modelling trade-offs and limitations.
               </li>
             </ul>
           </div>
@@ -262,20 +259,20 @@
             <tbody>
               <tr>
                 <td data-label="Section">
-                  <strong>1. Executive Summary &amp; Scope</strong>
+                  <strong>1. Title, Abstract, Introduction &amp; Scope</strong>
                 </td>
-                <td data-label="Target">1–1.5 pages</td>
+                <td data-label="Target">2.5 pages</td>
                 <td data-label="Lead">Setayesh</td>
                 <td data-label="Required content">
-                  Objective, claimed subsystem, snapshot, questions, headline
-                  findings.
+                  Title and authors, abstract, introduction, claimed scope,
+                  target snapshot, glossary and naming conventions. Findings await analysis.
                 </td>
               </tr>
               <tr>
                 <td data-label="Section">
                   <strong>2. Recovery Method &amp; System Map</strong>
                 </td>
-                <td data-label="Target">2–2.5 pages</td>
+                <td data-label="Target">2 pages</td>
                 <td data-label="Lead">Spence</td>
                 <td data-label="Required content">
                   Understand setup, extraction, grouping rules, mapping,
@@ -286,7 +283,7 @@
                 <td data-label="Section">
                   <strong>3. Focused Concrete Architecture</strong>
                 </td>
-                <td data-label="Target">2.5–3 pages</td>
+                <td data-label="Target">2.5 pages</td>
                 <td data-label="Lead">Mehdi</td>
                 <td data-label="Required content">
                   Hierarchy, responsibilities, entities, dependencies, evidence
@@ -297,7 +294,7 @@
                 <td data-label="Section">
                   <strong>4. Dynamic Behavior, Style &amp; Patterns</strong>
                 </td>
-                <td data-label="Target">2–2.5 pages</td>
+                <td data-label="Target">2 pages</td>
                 <td data-label="Lead">David</td>
                 <td data-label="Required content">
                   Scenario trace, sequence/state view, architecture style,
@@ -306,13 +303,12 @@
               </tr>
               <tr>
                 <td data-label="Section">
-                  <strong>5. Comparison, Trade-offs &amp; Conclusion</strong>
+                  <strong>5. Trade-offs, Lessons &amp; Conclusion</strong>
                 </td>
-                <td data-label="Target">2–2.5 pages</td>
+                <td data-label="Target">1.5 pages</td>
                 <td data-label="Lead">Dan</td>
                 <td data-label="Required content">
-                  Conceptual comparison, gaps, alternatives, limitations,
-                  lessons, references.
+                  Modelling alternatives, trade-offs, limitations, actual lessons, conclusion and references.
                 </td>
               </tr>
             </tbody>
@@ -395,10 +391,10 @@
               <tr>
                 <td data-label="Member"><strong>Dan Logvinovsky</strong></td>
                 <td data-label="Responsibility">
-                  Comparison, trade-offs, limitations, conclusion, QA
+                  Trade-offs, limitations, lessons, conclusion and review
                 </td>
                 <td data-label="Artifacts">
-                  Comparison matrix, closing analysis, references
+                  Closing analysis, linked references and review record
                 </td>
                 <td data-label="Handoff">
                   Review record and closing package to Setayesh
@@ -561,12 +557,10 @@
         >
           <header class="member-panel-header">
             <div>
-              <p class="eyebrow">1–1.5 pages + final integration</p>
+              <p class="eyebrow">2.5 pages + final integration</p>
               <h3>Setayesh Chegini</h3>
               <p>
-                <strong>Role:</strong> Scope, Opening Sections, Integration,
-                Publication, and Submission.
-              </p>
+                <strong>Role:</strong> Coordinator, scope, integration and publication.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -588,31 +582,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> approved scope, opening
-            section, integrated 10–15 page report, online publication, verified
-            PDF, and submission.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Scope brief and glossary.</li>
-                <li>Executive summary and introduction.</li>
-                <li>Integrated report draft.</li>
-                <li>Web publication and final PDF.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>All sections form one narrative.</li>
-                <li>Terminology and citations are consistent.</li>
-                <li>The report stays within 10–15 pages.</li>
-                <li>Web and PDF versions are verified.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Title and authors, abstract (about 2/3 page), introduction (1–3 pages), scope, glossary and naming conventions; final integration and submission.</p>
+          <p><strong>Depends on:</strong> Confirm scope with all members; receive technical sections and Dan’s review before publishing.</p><p class="resource-note">Pending source-code analysis — not yet verified. Forum acceptance remains pending. Opening slides remain pre-analysis. Final exports, online links and actual submissions need separate verification.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Scope record and glossary.</li><li>Human-authored title, abstract (about 2/3 page) and introduction (1–3 pages).</li><li>Coherent report with glossary and consistent naming.</li><li>Readable online report and linked artifact index.</li><li>Final report, Understand project artifact and submission receipt.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-report-setayesh-tracker"
@@ -633,12 +604,10 @@
         >
           <header class="member-panel-header">
             <div>
-              <p class="eyebrow">2–2.5 pages</p>
+              <p class="eyebrow">2 pages</p>
               <h3>Spence Hashemi</h3>
               <p>
-                <strong>Role:</strong> Recovery Method, Entity Mapping, and
-                System-Level Architecture.
-              </p>
+                <strong>Role:</strong> Understand recovery method and top-level system map.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -660,31 +629,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> reproducible method,
-            settings record, mapping table, top-level diagram, limitations, and
-            integrated section.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Analysis-environment record.</li>
-                <li>Recovery methodology.</li>
-                <li>Mapping table and decision log.</li>
-                <li>System architecture diagram.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>Extraction is reproducible.</li>
-                <li>Manual decisions are explicit.</li>
-                <li>Diagram edges are traceable.</li>
-                <li>The handoff to focused analysis is clear.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Reproducible Understand settings, entity-to-subsystem mapping, grouping rationale, top-level map and saved Understand project.</p>
+          <p><strong>Depends on:</strong> After authorization, supply the common mapping and evidence identifiers to Mehdi and David; supply the project file to Setayesh.</p><p class="resource-note">Pending source-code analysis — not yet verified. Another member can reproduce the grouping. Keep one shared evidence package for report and slides; extraction and diagrams await authorization.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Reproducible environment and source-version record.</li><li>Human-authored recovery methodology.</li><li>Shared mapping table and decision log.</li><li>System diagram and submission-ready Understand project artifact.</li><li>Approximately 2 pages, captions and artifact index.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-report-spence-tracker"
@@ -705,12 +651,10 @@
         >
           <header class="member-panel-header">
             <div>
-              <p class="eyebrow">2.5–3 pages</p>
+              <p class="eyebrow">2.5 pages</p>
               <h3>Mehdi Jafarian</h3>
               <p>
-                <strong>Role:</strong> Selected-Subsystem Structure and
-                Dependency Analysis.
-              </p>
+                <strong>Role:</strong> Focused subsystem structure, interfaces and dependencies.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -732,31 +676,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> focused hierarchy,
-            responsibilities, dependency matrix, two static diagrams,
-            limitations, and integrated section.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Membership inventory and hierarchy.</li>
-                <li>Focused architecture narrative.</li>
-                <li>Dependency evidence matrix.</li>
-                <li>Hierarchy and dependency diagrams.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>Membership is evidence-based.</li>
-                <li>Major relations have low-level causes.</li>
-                <li>Diagrams and narrative agree.</li>
-                <li>Surprising findings are explained.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Selected subsystem membership, hierarchy, responsibilities, interfaces and transmitted information; module dependency diagram and evidence matrix.</p>
+          <p><strong>Depends on:</strong> Use Spence’s mapping; supply the static boundary and dependency evidence to David, and technical observations to Dan.</p><p class="resource-note">Pending source-code analysis — not yet verified. Every important edge has an evidence reference. Static relations and possible runtime coupling are identified separately; no recovered claims before analysis.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Reviewed subsystem inventory.</li><li>Focused structure and interface narrative.</li><li>Evidence matrix with scope and limitations.</li><li>Report-ready editable diagram(s).</li><li>Approximately 2.5 pages and static-model handoff to David.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-report-mehdi-tracker"
@@ -777,12 +698,10 @@
         >
           <header class="member-panel-header">
             <div>
-              <p class="eyebrow">2–2.5 pages</p>
+              <p class="eyebrow">2 pages</p>
               <h3>David Odidi</h3>
               <p>
-                <strong>Role:</strong> Dynamic Behavior, Architecture Style, and
-                Design Patterns.
-              </p>
+                <strong>Role:</strong> Behavior, architectural styles and design patterns.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -804,31 +723,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> dynamic scenario, trace
-            evidence, sequence/state diagrams, style and pattern analysis,
-            limitations, and integrated section.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Scenario specification and trace.</li>
-                <li>Sequence or state diagram.</li>
-                <li>Style and pattern analysis.</li>
-                <li>Dynamic-behavior report section.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>Behavior matches the static model.</li>
-                <li>Evidence and interpretation are separated.</li>
-                <li>Patterns are not inferred from names alone.</li>
-                <li>Figures are readable and cited.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Essential scenario and sequence or state view; control flow and concurrency; evidence-backed styles and noteworthy patterns.</p>
+          <p><strong>Depends on:</strong> Use Spence’s system map and Mehdi’s boundary; send scenario and style/pattern evidence to Dan and Setayesh.</p><p class="resource-note">Pending source-code analysis — not yet verified. Use the same entities as the static model. A static trace is not a runtime observation. Report no noteworthy pattern if none is supported.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Scenario specification tied to the selected subsystem.</li><li>Behavior evidence table.</li><li>Behavior figure and explanatory caption.</li><li>Style/pattern analysis and evidence notes.</li><li>Approximately 2 pages and reviewed behavior package.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-report-david-tracker"
@@ -849,12 +745,10 @@
         >
           <header class="member-panel-header">
             <div>
-              <p class="eyebrow">2–2.5 pages + independent QA</p>
+              <p class="eyebrow">1.5 pages + references and independent review</p>
               <h3>Dan Logvinovsky</h3>
               <p>
-                <strong>Role:</strong> Comparison, Trade-offs, Limitations,
-                Lessons, Conclusions, and References.
-              </p>
+                <strong>Role:</strong> Trade-offs, limitations, lessons, conclusion and independent review.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -876,31 +770,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> comparison matrix, qualified
-            gap analysis, trade-offs, threats to validity, lessons, conclusion,
-            references, and quality review.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Conceptual comparison matrix.</li>
-                <li>Trade-offs and limitations.</li>
-                <li>Lessons and conclusion.</li>
-                <li>Reference list and QA record.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>Inferences are qualified.</li>
-                <li>Benefits and limitations are balanced.</li>
-                <li>Claims and citations are traceable.</li>
-                <li>The conclusion answers the research questions.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Recovery/modelling alternatives and supported trade-offs; limitations and challenges; actual lessons; conclusion, references and full requirements review.</p>
+          <p><strong>Depends on:</strong> Receive findings from Spence, Mehdi and David; return a review record and closing package to Setayesh, who integrates and submits.</p><p class="resource-note">Pending source-code analysis — not yet verified. No A1-versus-A2 comparison, discrepancy classification or gap-rationale analysis. Distinguish modelling choices made by the group from unverified developer intent.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Qualified trade-off and modelling-choice notes.</li><li>Limitations and lessons notes, plus AI-use record where applicable.</li><li>Human-authored closing section and linked references.</li><li>Requirements review and issue list for Setayesh.</li><li>Approximately 1.5 pages plus references and final review record.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-report-dan-tracker"
@@ -979,7 +850,7 @@
             </thead>
             <tbody>
               <tr>
-                <td data-label="Resource">OpenPilot v0.11.1 course snapshot</td>
+                <td data-label="Resource">OpenPilot v0.11.1 target (user confirmed)</td>
                 <td data-label="Purpose">
                   Common implementation evidence base for every member.
                 </td>
@@ -1014,7 +885,7 @@
                   >
                 </td>
                 <td data-label="Purpose">
-                  Group H's conceptual model for the later comparison.
+                  Historical Assignment 1 material. Discrepancy analysis belongs to Assignment 3 and is outside this work split.
                 </td>
               </tr>
               <tr>
@@ -1059,7 +930,7 @@
             <p class="eyebrow">Final gate</p>
             <h2 id="submission-title">Report Submission Checklist</h2>
           </div>
-          <p>Verify every item before Sunday, November 15, 2026 at 11:59 PM.</p>
+          <p>Verify every item before the confirmed deadline (recorded target: November 15 at 11:59 PM).</p>
         </div>
         <div class="submission-checklist" data-submission-checklist>
           <p class="task-loading">Loading report checklist…</p>

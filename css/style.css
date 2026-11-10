@@ -2526,6 +2526,21 @@ footer p {
   white-space: nowrap;
 }
 
+/* Assignment 2 evidence notes must wrap inside narrow member task rows. */
+.assignment-2-page .task-description,
+.assignment-2-page .task-description > div {
+  min-width: 0;
+}
+
+.assignment-2-page .verification-state {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.assignment-2-page .task-id {
+  overflow-wrap: anywhere;
+}
+
 .mini-progress.is-complete span,
 .overall-progress-bar.is-complete span {
   background: var(--success-ink);

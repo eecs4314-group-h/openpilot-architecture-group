@@ -14,14 +14,14 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a1020'/%3E%3Cpath d='M19 46V18h13c9 0 15 5 15 14s-6 14-15 14H19zm9-8h4c4 0 7-2 7-6s-3-6-7-6h-4v12z' fill='white'/%3E%3C/svg%3E"
     >
-    <link rel="stylesheet" href="css/style.css?v=20261108-2">
+    <link rel="stylesheet" href="css/style.css?v=20261109-audit">
     <script
       src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
       defer
     ></script>
     <script src="js/supabase-config.js" defer></script>
     <script src="js/shared-progress.js" defer></script>
-    <script src="js/assignment-dashboard.js" defer></script>
+    <script src="js/assignment-dashboard.js?v=20261109-audit" defer></script>
   </head>
   <body
     class="assignment-page assignment-2-page"
@@ -81,7 +81,7 @@
           aria-labelledby="presentation-schedule-title"
         >
           <h2 class="card-kicker" id="presentation-schedule-title">
-            Official eClass schedule
+            Recorded schedule · recheck in eClass
           </h2>
           <dl>
             <div>
@@ -111,12 +111,10 @@
               </dd>
             </div>
           </dl>
-          <p class="schedule-note">
-            Appendix B describes a 15-minute slot, but the posted group order is
-            spaced 12 minutes apart. Rehearse the safe 12-minute version first.
-          </p>
+          <p class="schedule-note">Appendix B gives 15 minutes including setup. Our 12-minute rehearsal target leaves a buffer. Recheck the recorded eClass time and submission format.</p>
         </aside>
       </section>
+<section class="section" aria-label="Assignment 2 evidence and source status"><p class="resource-note"><strong>Source analysis is on hold.</strong> Pending source-code analysis — not yet verified. Do not open, search or analyze the OpenPilot checkout until Setayesh explicitly authorizes it. OpenPilot v0.11.1 is the user-confirmed target, not a professor-mandated snapshot. Controls / <code>selfdrive/controls</code> is an unconfirmed candidate, not an accepted top-level boundary. <a href="assignment-2-requirements.html">Read verified requirements, ownership and open checks</a>.</p><p>Schedule: the dates below were recorded previously and need an eClass recheck. Appendix B specifies 15 minutes including setup; the 12-minute run of show and ten-slide plan are team rehearsal choices.</p></section>
 
       <section
         class="section assignment-overview"
@@ -129,7 +127,7 @@
             <h2 id="overview-title">What the team must produce</h2>
           </div>
           <p>
-            Ten coordinated content slides, readable redrawn diagrams, concise
+            Team plan: ten coordinated slides, readable redrawn diagrams, concise
             speaking notes, references and backup evidence, a timed rehearsal,
             and one verified PDF.
           </p>
@@ -137,7 +135,7 @@
         <div class="overview-card-grid">
           <article>
             <span>10</span>
-            <h3>Content slides</h3>
+            <h3>Slides in team plan</h3>
             <p>
               Two slides per member, followed by references and backup evidence.
             </p>
@@ -160,7 +158,7 @@
         </div>
         <div class="requirements-layout assignment2-requirements">
           <div class="requirements-panel">
-            <h3>Required presentation story</h3>
+            <h3>Assignment 2 content and team outline</h3>
             <ul class="requirements-list">
               <li>
                 State the claimed subsystem, source snapshot, scope, and
@@ -185,9 +183,7 @@
                 Identify supported architectural styles and noteworthy design
                 patterns.
               </li>
-              <li>
-                Compare the concrete findings with the earlier conceptual model.
-              </li>
+              <li>Present actual limitations, modelling alternatives and lessons under Appendix B recommendations.</li>
               <li>
                 Highlight alternatives, trade-offs, limitations, and lessons
                 learned.
@@ -232,9 +228,8 @@
               </div>
             </dl>
             <p>
-              Total: 12 minutes. If 15 minutes is confirmed, use the extra time
-              for a second question and deeper evidence—not extra unreviewed
-              slides.
+              Team rehearsal target: 12 minutes. Appendix B allows 15 minutes
+              including setup. Recheck the class schedule and reserve time for one or two questions.
             </p>
           </aside>
         </div>
@@ -309,11 +304,11 @@
               <tr>
                 <td data-label="Member"><strong>Dan Logvinovsky</strong></td>
                 <td data-label="Responsibility">
-                  Comparison, trade-offs, limitations, conclusion
+                  Trade-offs, limitations, lessons, conclusion and review
                 </td>
                 <td data-label="Slides">9–10</td>
                 <td data-label="Outputs">
-                  Comparison table, lessons, closing slides, QA review
+                  Modelling alternatives, lessons, closing slides and coverage review
                 </td>
               </tr>
             </tbody>
@@ -478,9 +473,7 @@
               <p class="eyebrow">Slides 1–2 + final integration</p>
               <h3>Setayesh Chegini</h3>
               <p>
-                <strong>Role:</strong> Scope, Subsystem Claim, Coordination,
-                Rehearsal, and Submission.
-              </p>
+                <strong>Role:</strong> Coordinator, scope, integration and publication.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -502,31 +495,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> confirmed scope, slides 1–2,
-            integrated deck, timed rehearsal, verified PDF, and submission.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Forum claim evidence.</li>
-                <li>Slides 1–2 and speaking notes.</li>
-                <li>Integrated ten-slide deck.</li>
-                <li>References and backup evidence.</li>
-                <li>Final verified PDF.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>Scope and research questions are explicit.</li>
-                <li>All member packages are reviewed.</li>
-                <li>The 12-minute version is rehearsed twice.</li>
-                <li>The PDF is submitted before 5:30 PM.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Preserve the two-slide pre-analysis opening: title, objective, proposed scope and research questions. Coordinate the deck, online slides, rehearsal and submission.</p>
+          <p><strong>Depends on:</strong> Confirm scope with all members; receive technical sections and Dan’s review before publishing.</p><p class="resource-note">Pending source-code analysis — not yet verified. Forum acceptance remains pending. Opening slides remain pre-analysis. Final exports, online links and actual submissions need separate verification.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Accepted claim record, scope note and glossary.</li><li>Existing pre-analysis title slide, with Assignment 2 scope wording.</li><li>Existing scope slide and notes, still pre-analysis.</li><li>One reviewed deck, online slides and working PDF.</li><li>Rehearsal record and actual submission receipt.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-presentation-setayesh-tracker"
@@ -550,9 +520,7 @@
               <p class="eyebrow">Slides 3–4 · 2:00</p>
               <h3>Spence Hashemi</h3>
               <p>
-                <strong>Role:</strong> Recovery Method and Top-Level Concrete
-                Architecture.
-              </p>
+                <strong>Role:</strong> Understand recovery method and top-level system map.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -574,30 +542,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> slides 3–4, reproducible
-            recovery method, system map, evidence labels, sources, and notes.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Understand setup and method summary.</li>
-                <li>Top-level mapping.</li>
-                <li>Clean system architecture diagram.</li>
-                <li>Slides 3–4 and notes.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>Another member can reproduce the extraction.</li>
-                <li>Grouping decisions are documented.</li>
-                <li>The diagram is readable and traceable.</li>
-                <li>The script fits two minutes.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Slide 3: extraction and grouping method. Slide 4: redrawn top-level architecture, scope and legend.</p>
+          <p><strong>Depends on:</strong> After authorization, supply the common mapping and evidence identifiers to Mehdi and David; supply the project file to Setayesh.</p><p class="resource-note">Pending source-code analysis — not yet verified. Another member can reproduce the grouping. Keep one shared evidence package for report and slides; extraction and diagrams await authorization.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Recovery-method notes and source-version record.</li><li>Shared system mapping and evidence package.</li><li>Top-level concrete diagram shared with the report.</li><li>Slides 3–4 with source notes.</li><li>Speaking notes and one shared evidence handoff.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-presentation-spence-tracker"
@@ -621,9 +567,7 @@
               <p class="eyebrow">Slides 5–6 · 2:10</p>
               <h3>Mehdi Jafarian</h3>
               <p>
-                <strong>Role:</strong> Focused Static Architecture and
-                Dependency Evidence.
-              </p>
+                <strong>Role:</strong> Focused subsystem structure, interfaces and dependencies.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -645,30 +589,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> slides 5–6, focused
-            hierarchy, dependency diagram, evidence matrix, sources, and notes.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Subsystem membership inventory.</li>
-                <li>Hierarchy and dependency diagrams.</li>
-                <li>Dependency evidence matrix.</li>
-                <li>Slides 5–6 and notes.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>Every major edge is traceable.</li>
-                <li>Internal and external relations are distinct.</li>
-                <li>Unsupported relations are removed.</li>
-                <li>The script fits 2:10.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Slide 5: selected subsystem structure and interfaces. Slide 6: dependency diagram and significant relations with their causes.</p>
+          <p><strong>Depends on:</strong> Use Spence’s mapping; supply the static boundary and dependency evidence to David, and technical observations to Dan.</p><p class="resource-note">Pending source-code analysis — not yet verified. Every important edge has an evidence reference. Static relations and possible runtime coupling are identified separately; no recovered claims before analysis.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Focused membership inventory and hierarchy.</li><li>Dependency evidence matrix with relation types.</li><li>Editable focused diagram(s) shared with the report.</li><li>Slides 5–6 with readable legends.</li><li>Speaking notes and shared static-analysis package.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-presentation-mehdi-tracker"
@@ -692,9 +614,7 @@
               <p class="eyebrow">Slides 7–8 · 2:10</p>
               <h3>David Odidi</h3>
               <p>
-                <strong>Role:</strong> Dynamic Behavior, Architecture Style, and
-                Design Patterns.
-              </p>
+                <strong>Role:</strong> Behavior, architectural styles and design patterns.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -716,31 +636,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> slides 7–8, dynamic trace,
-            sequence/state diagram, style and pattern analysis, sources, and
-            notes.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Dynamic scenario and trace evidence.</li>
-                <li>Sequence or state diagram.</li>
-                <li>Style and pattern findings.</li>
-                <li>Slides 7–8 and notes.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>Dynamic and static models agree.</li>
-                <li>Interpretations are labeled.</li>
-                <li>Patterns are supported by evidence.</li>
-                <li>The script fits 2:10.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Slide 7: noteworthy scenario using a sequence or state diagram. Slide 8: architectural styles and noteworthy patterns supported by evidence.</p>
+          <p><strong>Depends on:</strong> Use Spence’s system map and Mehdi’s boundary; send scenario and style/pattern evidence to Dan and Setayesh.</p><p class="resource-note">Pending source-code analysis — not yet verified. Use the same entities as the static model. A static trace is not a runtime observation. Report no noteworthy pattern if none is supported.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Candidate scenario, explicitly unverified until analysis.</li><li>Trace and state-transition evidence with limitations.</li><li>Editable behavior view with legend, shared with the report.</li><li>Slides 7–8 and evidence notes.</li><li>Speaking notes and shared behavior-analysis package.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-presentation-david-tracker"
@@ -761,12 +658,10 @@
         >
           <header class="member-panel-header">
             <div>
-              <p class="eyebrow">Slides 9–10 · 2:10</p>
+              <p class="eyebrow">Slides 9–10</p>
               <h3>Dan Logvinovsky</h3>
               <p>
-                <strong>Role:</strong> Comparison, Trade-offs, Limitations,
-                Conclusions, and QA.
-              </p>
+                <strong>Role:</strong> Trade-offs, limitations, lessons, conclusion and independent review.</p>
             </div>
             <div class="member-status-card">
               <span
@@ -788,31 +683,8 @@
               </div>
             </div>
           </header>
-          <p class="expected-contribution">
-            <strong>Expected contribution:</strong> slides 9–10, conceptual
-            comparison, trade-offs, limitations, lessons, conclusion,
-            references, and QA review.
-          </p>
-          <div class="deliverables-definition">
-            <div>
-              <h4>Dedicated Deliverables</h4>
-              <ul>
-                <li>Conceptual-versus-concrete table.</li>
-                <li>Trade-offs and limitation analysis.</li>
-                <li>Closing slides and notes.</li>
-                <li>Independent deck review.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Definition of Done</h4>
-              <ul>
-                <li>Claims are evidence-backed.</li>
-                <li>Inferences are qualified.</li>
-                <li>References are complete.</li>
-                <li>The script fits 2:10.</li>
-              </ul>
-            </div>
-          </div>
+          <p class="expected-contribution"><strong>Expected contribution:</strong> Slide 9: modelling alternatives, trade-offs and limitations. Slide 10: lessons and conclusion. Review references, readability and assignment coverage.</p>
+          <p><strong>Depends on:</strong> Receive findings from Spence, Mehdi and David; return a review record and closing package to Setayesh, who integrates and submits.</p><p class="resource-note">Pending source-code analysis — not yet verified. No A1-versus-A2 comparison, discrepancy classification or gap-rationale analysis. Distinguish modelling choices made by the group from unverified developer intent.</p><div class="deliverables-definition"><div><h4>Dedicated Deliverables</h4><ul><li>Slide 9 outline and documented modelling alternatives.</li><li>Slide 10 outline, limitations and actual lesson notes.</li><li>Independent review checklist with unresolved issues.</li><li>Closing slides 9–10, with no conceptual/concrete comparison.</li><li>Speaking notes, references and question preparation.</li></ul></div><div><h4>Definition of Done</h4><ul><li>Deliver each listed artifact with traceable sources and clear limitations.</li><li>Review against <a href="assignment-2-requirements.html">verified A2 requirements</a>.</li><li>Share the same evidence and diagrams between report and presentation.</li><li>Record actual completion and verification separately.</li></ul></div></div>
           <section
             class="individual-tracker"
             aria-labelledby="a2-presentation-dan-tracker"
@@ -841,8 +713,8 @@
             <h2 id="run-of-show-title">Presentation Run of Show</h2>
           </div>
           <p>
-            Start with this schedule because the posted presentation order is
-            spaced 12 minutes apart.
+            This is the team’s 12-minute rehearsal plan. Confirm the actual class
+            schedule in eClass; Appendix B specifies 15 minutes including setup.
           </p>
         </div>
         <section
@@ -901,7 +773,7 @@
                 <td data-label="Speaker">Dan</td>
                 <td data-label="Slides">9–10</td>
                 <td data-label="Story beat">
-                  Comparison, limitations, conclusion.
+                  Trade-offs, limitations, lessons and conclusion.
                 </td>
                 <td data-label="Handoff">Questions.</td>
               </tr>

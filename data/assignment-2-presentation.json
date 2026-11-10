@@ -2,82 +2,374 @@
   "assignment": "Assignment 2 – Concrete Architecture Presentation",
   "deadline": "2026-11-12T17:30:00-05:00",
   "presentationTime": "2026-11-12T18:54:00-05:00",
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-09",
   "members": [
     {
       "id": "setayesh-chegini",
       "name": "Setayesh Chegini",
       "items": [
-        { "id": "assignment2-presentation-setayesh-01", "description": "Confirm the preferred and backup top-level subsystem with the group, post the preferred choice in the course forum, and save the accepted claim.", "expectedOutput": "Confirmed subsystem scope and forum evidence.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-setayesh-02", "description": "Create slide 1 with the title, course, Group H, all five names, the concrete-architecture objective, and the selected source snapshot.", "expectedOutput": "Completed title and objective slide.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-setayesh-03", "description": "Create slide 2 with the selected subsystem, scope boundaries, research questions, and the distinction between extracted facts and team interpretation.", "expectedOutput": "Completed scope and research-questions slide.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-setayesh-04", "description": "Collect all slides, enforce consistent terminology and visual style, add references and backup evidence, and export one verified PDF.", "expectedOutput": "Integrated and verified presentation PDF.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-setayesh-05", "description": "Lead two timed rehearsals, verify the opening and handoffs, submit the PDF by 5:30 PM, and coordinate Group H's 6:54 PM presentation.", "expectedOutput": "Rehearsed talk, confirmed submission, and presentation readiness.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-presentation-setayesh-01",
+          "description": "Confirm the available top-level subsystem with the team and course forum. Controls and selfdrive/controls are candidate labels only; confirm suitability with the instructor and retain a backup.",
+          "expectedOutput": "Accepted claim record, scope note and glossary.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-setayesh-02",
+          "description": "Retain slide 1’s title, course, five names and OpenPilot v0.11.1 target. Limit the objective to concrete architecture recovery.",
+          "expectedOutput": "Existing pre-analysis title slide, with Assignment 2 scope wording.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-setayesh-03",
+          "description": "Retain slide 2’s conceptual hypothesis and pre-analysis caveat. Ask about concrete entities, grouping, dependencies and limitations. Do not present an accepted claim or recovered finding.",
+          "expectedOutput": "Existing scope slide and notes, still pre-analysis.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-setayesh-04",
+          "description": "Integrate all member slides after evidence is available; publish the slides on the group webpage, verify links and export the final PDF.",
+          "expectedOutput": "One reviewed deck, online slides and working PDF.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-setayesh-05",
+          "description": "Recheck the recorded eClass deadlines and speaking time; lead timed rehearsals, allow one or two questions, coordinate attendance and one group submission.",
+          "expectedOutput": "Rehearsal record and actual submission receipt.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        }
       ]
     },
     {
       "id": "spence-hashemi",
       "name": "Spence Hashemi",
       "items": [
-        { "id": "assignment2-presentation-spence-01", "description": "Document the OpenPilot v0.11.1 Understand project settings, extraction steps, entity types, relations, and manual grouping rules.", "expectedOutput": "Concise reproducible recovery-method notes.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-spence-02", "description": "Export the top-level entity and dependency views and prepare a traceable system-to-subsystem mapping.", "expectedOutput": "System-level evidence package and mapping table.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-spence-03", "description": "Redraw the tool output into a clean top-level concrete-architecture diagram with a readable legend and scope note.", "expectedOutput": "Presentation-ready system architecture diagram.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-spence-04", "description": "Create slide 3 explaining the recovery process and slide 4 showing the top-level concrete architecture.", "expectedOutput": "Completed slides 3–4.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-spence-05", "description": "Prepare a two-minute script and submit slides, diagrams, evidence labels, sources, and notes for integration.", "expectedOutput": "Complete presentation package and timed speaking notes.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-presentation-spence-01",
+          "description": "After explicit authorization, record the v0.11.1 tag and verified revision, Understand configuration, languages, supported relations, exclusions and grouping steps.",
+          "expectedOutput": "Recovery-method notes and source-version record.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-spence-02",
+          "description": "After authorization, extract top-level entities and relations and document the file/entity-to-subsystem grouping and unresolved classifications.",
+          "expectedOutput": "Shared system mapping and evidence package.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-spence-03",
+          "description": "Redraw the system view from the authorized extraction; use subsystem/module labels and a readable arrow and symbol legend.",
+          "expectedOutput": "Top-level concrete diagram shared with the report.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-spence-04",
+          "description": "Build slide 3 (method) and slide 4 (system structure) from the reviewed evidence; state tool limitations and avoid low-level detail that does not explain architecture.",
+          "expectedOutput": "Slides 3–4 with source notes.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-spence-05",
+          "description": "Prepare a two-minute explanation; hand the common diagram, method notes, settings and evidence identifiers to the slide integrator.",
+          "expectedOutput": "Speaking notes and one shared evidence handoff.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        }
       ]
     },
     {
       "id": "mehdi-jafarian",
       "name": "Mehdi Jafarian",
       "items": [
-        { "id": "assignment2-presentation-mehdi-01", "description": "Validate the files and entities assigned to the selected subsystem and divide it into meaningful sub-subsystems where useful.", "expectedOutput": "Reviewed subsystem membership and hierarchy.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-mehdi-02", "description": "Identify important internal and external dependencies and the low-level functions or entities that cause them.", "expectedOutput": "Dependency evidence table with concrete causes.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-mehdi-03", "description": "Create a clean subsystem hierarchy diagram and a focused concrete-dependency diagram with consistent labels.", "expectedOutput": "Two presentation-ready static architecture diagrams.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-mehdi-04", "description": "Create slide 5 showing the selected subsystem hierarchy and slide 6 explaining its most important dependencies and evidence.", "expectedOutput": "Completed slides 5–6.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-mehdi-05", "description": "Prepare a two-minute-ten-second script and submit slides, editable diagrams, evidence table, sources, and notes.", "expectedOutput": "Complete presentation package and timed speaking notes.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-presentation-mehdi-01",
+          "description": "After authorization and forum acceptance, check the selected subsystem’s entity membership and refine sub-subsystems only where the evidence supports it.",
+          "expectedOutput": "Focused membership inventory and hierarchy.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-mehdi-02",
+          "description": "Identify major internal and cross-boundary dependencies and their concrete causes; distinguish static relations from runtime interactions requiring additional evidence.",
+          "expectedOutput": "Dependency evidence matrix with relation types.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-mehdi-03",
+          "description": "Redraw the focused structure and dependency view with subsystem/module boxes, dependency arrows and legends. Combine hierarchy and dependency views if this improves readability.",
+          "expectedOutput": "Editable focused diagram(s) shared with the report.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-mehdi-04",
+          "description": "Build slide 5 (structure, responsibilities and information at interfaces) and slide 6 (important dependencies and evidence).",
+          "expectedOutput": "Slides 5–6 with readable legends.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-mehdi-05",
+          "description": "Prepare a two-minute-ten-second explanation and hand the static boundary and dependency evidence to David and the integrator.",
+          "expectedOutput": "Speaking notes and shared static-analysis package.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        }
       ]
     },
     {
       "id": "david-odidi",
       "name": "David Odidi",
       "items": [
-        { "id": "assignment2-presentation-david-01", "description": "Select one important scenario that exercises the chosen subsystem or crosses its boundary and define the actors, trigger, and expected result.", "expectedOutput": "Approved dynamic-analysis scenario.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-david-02", "description": "Trace calls, state changes, control flow, or data flow for the scenario using Understand and source evidence.", "expectedOutput": "Traceable dynamic evidence package.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-david-03", "description": "Redraw the trace as a readable sequence diagram and add a state diagram when it materially clarifies behavior.", "expectedOutput": "Presentation-ready dynamic diagram set.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-david-04", "description": "Create slide 7 explaining the sequence or state behavior and slide 8 identifying the supported architectural style and noteworthy patterns.", "expectedOutput": "Completed slides 7–8.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-david-05", "description": "Prepare a two-minute-ten-second script and submit slides, editable diagrams, evidence links, sources, and notes.", "expectedOutput": "Complete presentation package and timed speaking notes.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-presentation-david-01",
+          "description": "Prepare a candidate noteworthy scenario from authorized documentation; define actors, trigger and outcome. Validate its implementation only after authorization.",
+          "expectedOutput": "Candidate scenario, explicitly unverified until analysis.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-david-02",
+          "description": "After authorization, trace the scenario and explain control flow and concurrency. Separate source-derived paths from observed execution; do not claim Understand alone proves runtime coupling.",
+          "expectedOutput": "Trace and state-transition evidence with limitations.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-david-03",
+          "description": "Produce a readable sequence OR state diagram that explains noteworthy behavior. Add the second form only if it contributes something necessary.",
+          "expectedOutput": "Editable behavior view with legend, shared with the report.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-david-04",
+          "description": "Build slide 7 (behavior view) and slide 8 (supported architectural styles and noteworthy patterns); qualify interpretations and avoid inferring patterns from names.",
+          "expectedOutput": "Slides 7–8 and evidence notes.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        },
+        {
+          "id": "assignment2-presentation-david-05",
+          "description": "Prepare a two-minute-ten-second explanation and hand behavior, style and pattern evidence to Dan and the integrator.",
+          "expectedOutput": "Speaking notes and shared behavior-analysis package.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
+        }
       ]
     },
     {
       "id": "dan-logvinovsky",
       "name": "Dan Logvinovsky",
       "items": [
-        { "id": "assignment2-presentation-dan-01", "description": "Compare the recovered subsystem with Group H's Assignment 1 conceptual model and classify convergences, divergences, and absences.", "expectedOutput": "Conceptual-versus-concrete comparison table.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-dan-02", "description": "Analyze alternatives, trade-offs, limitations, threats to validity, and lessons without overstating developer intent.", "expectedOutput": "Evidence-backed findings and limitation notes.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-dan-03", "description": "Audit every diagram, evidence label, citation, claim, and term for consistency and readability.", "expectedOutput": "Independent presentation quality-review record.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-dan-04", "description": "Create slide 9 with conceptual-versus-concrete findings and slide 10 with trade-offs, limitations, lessons, and the conclusion.", "expectedOutput": "Completed slides 9–10.", "status": "Not Started", "deliverableUrl": "" },
-        { "id": "assignment2-presentation-dan-05", "description": "Prepare a two-minute-ten-second script, organize references and backup evidence, and submit the complete closing package.", "expectedOutput": "Complete presentation package and timed speaking notes.", "status": "Not Started", "deliverableUrl": "" }
+        {
+          "id": "assignment2-presentation-dan-01",
+          "description": "Review the team’s modelling choices and rejected grouping or diagram alternatives; explain evidence-supported trade-offs without guessing developer intent.",
+          "expectedOutput": "Slide 9 outline and documented modelling alternatives.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        },
+        {
+          "id": "assignment2-presentation-dan-02",
+          "description": "Collect actual recovery limitations, challenges and lessons from the other owners. Prepare a conclusion based only on verified A2 findings when available.",
+          "expectedOutput": "Slide 10 outline, limitations and actual lesson notes.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        },
+        {
+          "id": "assignment2-presentation-dan-03",
+          "description": "Audit claims, legends, terminology, citations, projector readability and coverage against Section 6 and Appendix B; return issues to their owners.",
+          "expectedOutput": "Independent review checklist with unresolved issues.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        },
+        {
+          "id": "assignment2-presentation-dan-04",
+          "description": "Build slide 9 (alternatives, trade-offs and limitations) and slide 10 (lessons and conclusion) after the evidence owners deliver.",
+          "expectedOutput": "Closing slides 9–10, with no conceptual/concrete comparison.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": true,
+          "analysisStatus": "Pending source-code analysis — not yet verified.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        },
+        {
+          "id": "assignment2-presentation-dan-05",
+          "description": "Prepare a two-minute-ten-second close, consolidate references and backup evidence, help prepare questions and constructive feedback, and send the reviewed closing package to Setayesh.",
+          "expectedOutput": "Speaking notes, references and question preparation.",
+          "status": "Not Started",
+          "deliverableUrl": "",
+          "requiresSourceAnalysis": false,
+          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
+          "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
+        }
       ]
     }
   ],
   "checkpoints": [
-    { "id": "assignment2-presentation-checkpoint-01", "label": "Subsystem claim confirmed", "status": "Not Started" },
-    { "id": "assignment2-presentation-checkpoint-02", "label": "Extraction and mappings complete", "status": "Not Started" },
-    { "id": "assignment2-presentation-checkpoint-03", "label": "All ten slides merged", "status": "Not Started" },
-    { "id": "assignment2-presentation-checkpoint-04", "label": "Technical peer review complete", "status": "Not Started" },
-    { "id": "assignment2-presentation-checkpoint-05", "label": "Two timed rehearsals complete", "status": "Not Started" },
-    { "id": "assignment2-presentation-checkpoint-06", "label": "PDF submitted and verified", "status": "Not Started" }
+    {
+      "id": "assignment2-presentation-checkpoint-01",
+      "label": "Subsystem claim confirmed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-checkpoint-02",
+      "label": "Extraction and mappings complete",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-checkpoint-03",
+      "label": "All ten slides merged",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-checkpoint-04",
+      "label": "Technical peer review complete",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-checkpoint-05",
+      "label": "Two timed rehearsals complete",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-checkpoint-06",
+      "label": "Slides published online; export and submission checked",
+      "status": "Not Started"
+    }
   ],
   "submissionChecklist": [
-    { "id": "assignment2-presentation-submit-01", "label": "Subsystem and source snapshot named", "status": "Not Started" },
-    { "id": "assignment2-presentation-submit-02", "label": "Recovery process explained", "status": "Not Started" },
-    { "id": "assignment2-presentation-submit-03", "label": "Concrete architecture diagrams readable", "status": "Not Started" },
-    { "id": "assignment2-presentation-submit-04", "label": "Sequence or state view included", "status": "Not Started" },
-    { "id": "assignment2-presentation-submit-05", "label": "Style and patterns evidence-backed", "status": "Not Started" },
-    { "id": "assignment2-presentation-submit-06", "label": "Trade-offs and limitations included", "status": "Not Started" },
-    { "id": "assignment2-presentation-submit-07", "label": "References and backup evidence included", "status": "Not Started" },
-    { "id": "assignment2-presentation-submit-08", "label": "Twelve-minute version rehearsed", "status": "Not Started" },
-    { "id": "assignment2-presentation-submit-09", "label": "PDF export opens correctly", "status": "Not Started" },
-    { "id": "assignment2-presentation-submit-10", "label": "PDF submitted before 5:30 PM", "status": "Not Started" }
-  ]
+    {
+      "id": "assignment2-presentation-submit-01",
+      "label": "Subsystem and source snapshot named",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-submit-02",
+      "label": "Recovery process explained",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-submit-03",
+      "label": "Concrete architecture diagrams readable",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-submit-04",
+      "label": "Sequence or state view included",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-submit-05",
+      "label": "Style and patterns evidence-backed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-submit-06",
+      "label": "Trade-offs and limitations included",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-submit-07",
+      "label": "References and backup evidence included",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-submit-08",
+      "label": "Team rehearsal target met; setup and 1–2 questions allowed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-submit-09",
+      "label": "PDF export opens correctly",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment2-presentation-submit-10",
+      "label": "Slides online and one group submission made by confirmed deadline",
+      "status": "Not Started"
+    }
+  ],
+  "scheduleVerification": "Previously recorded; recheck in eClass. Current session requires login.",
+  "targetVersion": "v0.11.1",
+  "sourceAnalysisHold": true
 }

@@ -4,8 +4,8 @@ A static GitHub Pages website for York University Group H's software architectur
 
 Assignment 2 has two independent workspaces plus a combined overview:
 
-- `assignment-2-presentation.html` contains the presentation brief, all five slide and speaking assignments, progress tracking, the safe 12-minute run of show, handoffs, and the presentation checklist. The PDF is due November 12, 2026 at 5:30 PM and Group H presents at 6:54 PM.
-- `assignment-2-report.html` contains the report brief, 10–15 page outline, all five report work packages, progress tracking, handoffs, resources, and the report checklist. The PDF is due November 15, 2026 at 11:59 PM.
+- `assignment-2-presentation.html` contains the presentation brief, all five slide and speaking assignments, progress tracking, the safe 12-minute run of show, handoffs, and the presentation checklist. Recorded schedule, pending eClass recheck: November 12 at 5:30 PM and Group H at 6:54 PM.
+- `assignment-2-report.html` contains the report brief, 10–15 page outline, all five report work packages, progress tracking, handoffs, resources, and the report checklist. Recorded report deadline, pending eClass recheck: November 15 at 11:59 PM.
 - `assignment-2.html` remains the combined concrete-architecture overview, subsystem-claim gate, master ownership map, handoffs, sources, and master checklist.
 
 Assignment 1 has two independent workspaces:
@@ -103,3 +103,7 @@ Live site: https://eecs4314-group-h.github.io/openpilot-architecture-group/
 ## Privacy
 
 This repository and website are public. Do not add passwords, API keys, private credentials, or information that should not be publicly visible.
+
+## Assignment 2 audit (November 9, 2026)
+
+Read [verified requirements and ownership](assignment-2-requirements.html) and [the audit](documents/assignment-2-audit.md). The target is OpenPilot v0.11.1. Source analysis is on hold pending explicit authorization. No A1/A2 comparison is assigned in A2. Stable progress task IDs are preserved; no task is marked complete by this audit. Supabase remains unconfigured, so committed JSON is the task catalog.
