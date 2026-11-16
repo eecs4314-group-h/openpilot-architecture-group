@@ -1,109 +1,15 @@
-# Group H – OpenPilot Architecture Project
+# Group H — openpilot Architecture Project
 
-A static GitHub Pages website for York University Group H's software architecture and design analysis of OpenPilot.
+Group H's EECS 4314 website presents our university coursework on openpilot's software architecture. It brings together the team, assignment responsibilities, reports and presentation materials.
 
-Assignment 2 has two independent workspaces plus a combined overview:
+- [Homepage](https://eecs4314-group-h.github.io/openpilot-architecture-group/)
+- [Assignment 1 presentation](assignment-1-presentation.html) and [report](assignment-1-report.html): proposed conceptual architecture.
+- [Assignment 2 overview](assignment-2.html), [requirements](assignment-2-requirements.html), [presentation](assignment-2-presentation.html) and [report](assignment-2-report.html): concrete architecture of openpilot v0.11.1, with a focus on Perception.
+- [Final Assignment 1 report](reports/Assignment1_GroupH_report.pdf)
+- [Final Assignment 2 report](reports/Assignment2_GroupH_Report.pdf)
 
-- `assignment-2-presentation.html` contains the presentation brief, all five slide and speaking assignments, progress tracking, the safe 12-minute run of show, handoffs, and the presentation checklist. Recorded schedule, pending eClass recheck: November 12 at 5:30 PM and Group H at 6:54 PM.
-- `assignment-2-report.html` contains the report brief, 10–15 page outline, all five report work packages, progress tracking, handoffs, resources, and the report checklist. Recorded report deadline, pending eClass recheck: November 15 at 11:59 PM.
-- `assignment-2.html` remains the combined concrete-architecture overview, subsystem-claim gate, master ownership map, handoffs, sources, and master checklist.
+Team: Setayesh Chegini, Spence Hashemi, Mehdi Jafarian, David Odidi and Dan Logvinovsky.
 
-Assignment 1 has two independent workspaces:
+## Contributor guidance
 
-- `assignment-1-presentation.html` contains the presentation pipeline, all five detailed member workflows, the October 22 deadline, presentation schedule, handoffs, resources, and submission checklist.
-- `assignment-1-report.html` contains the ten-stage report pipeline, complete report requirements, all five detailed member workflows, the October 25 deadline, handoffs, resources, and submission checklist.
-
-The homepage stays focused on the project overview, roster, assignment cards, and general resources.
-
-## Team Members
-
-Student numbers are maintained directly in `index.html` as a simple static roster.
-
-- Setayesh Chegini — 218804096
-- Spence Hashemi — 220785408
-- Mehdi Jafarian — 219899095
-- David Odidi — 214208086
-- Dan Logvinovsky — 215753494
-
-## Project Files
-
-```text
-index.html
-assignment-2.html
-assignment-2-presentation.html
-assignment-2-report.html
-assignment-1-presentation.html
-assignment-1-report.html
-css/
-  style.css
-data/
-  assignment-2-presentation.json
-  assignment-2-report.json
-  assignment-1-presentation.json
-  assignment-1-report.json
-js/
-  assignment-dashboard.js
-  home-progress.js
-  shared-progress.js
-  supabase-config.js
-supabase/
-  schema.sql
-  map-users.sql.example
-SUPABASE_SETUP.md
-assignments/
-reports/
-documents/
-resources/
-README.md
-```
-
-## Updating the Team List
-
-Edit the member cards in the `Team Members` section of `index.html`, then commit and push the change to `main`.
-
-## Interactive Shared Progress
-
-The website contains a Supabase-backed interactive checkbox system with independent presentation and report progress, per-member authorization, coordinator access, automatic percentages, and Realtime updates.
-
-**Cloud persistence is not active until the one-time Supabase configuration is completed.** Follow [`SUPABASE_SETUP.md`](SUPABASE_SETUP.md). Until then, task rows remain read-only and use the committed JSON files as the baseline task catalog.
-
-After setup:
-
-- Invited members sign in on either assignment page and update only their assigned task checkboxes.
-- Setayesh's coordinator account can update every member's tasks.
-- Anonymous visitors may view progress but cannot change it.
-- Completion is stored in Supabase and shared across browsers; it is not stored in `localStorage`.
-- Presentation and report completion remain independent.
-- A completion checkbox does not automatically mark a deliverable submitted or verified.
-
-Do not change stable task IDs after the database has been seeded. Never add a Supabase secret or service-role key to the repository; only the public publishable/anon key belongs in `js/supabase-config.js`.
-
-## Assignment 1 File Names
-
-Use lowercase kebab-case names following this pattern:
-
-```text
-lastname-assignment1-artifact-v01.ext
-```
-
-Example: `hashemi-assignment1-architecture-diagram-v01.svg`.
-
-For Assignment 2, replace `assignment1` with `assignment2`, for example:
-
-```text
-jafarian-assignment2-dependency-diagram-v01.svg
-```
-
-## GitHub Pages
-
-The website deploys from the `main` branch and `/ (root)` folder.
-
-Live site: https://eecs4314-group-h.github.io/openpilot-architecture-group/
-
-## Privacy
-
-This repository and website are public. Do not add passwords, API keys, private credentials, or information that should not be publicly visible.
-
-## Assignment 2 audit (November 9, 2026)
-
-Read [verified requirements and ownership](assignment-2-requirements.html) and [the audit](documents/assignment-2-audit.md). The target is OpenPilot v0.11.1. Source analysis is on hold pending explicit authorization. No A1/A2 comparison is assigned in A2. Stable progress task IDs are preserved; no task is marked complete by this audit. Supabase remains unconfigured, so committed JSON is the task catalog.
+Read the repository-root [AGENTS.md](AGENTS.md), particularly **Public Website Content and Academic Integrity Rules**, before making changes. Keep public content relevant to the group's academic work and preserve required disclosures. Contributor instructions and setup documentation are excluded from the published GitHub Pages site.

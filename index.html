@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="js/supabase-config.js" defer></script>
     <script src="js/shared-progress.js" defer></script>
-    <script src="js/home-progress.js?v=20261115-final-a2" defer></script>
+    <script src="js/home-progress.js?v=20261115-public" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -38,7 +38,7 @@
           <h1 id="page-title">Group H</h1>
           <p class="hero-subtitle">OpenPilot Architecture Group</p>
           <p class="hero-focus">Software Architecture &amp; Design Analysis of OpenPilot</p>
-          <p class="hero-description">This website is Group H's shared workspace for recovering and presenting OpenPilot's concrete software architecture. Assignment 2 now includes the official brief, a five-member work division, report ownership, presentation timing, handoffs, and the final quality checklist; completed Assignment 1 materials remain available.</p>
+          <p class="hero-description">Group H studies openpilot’s software architecture for EECS 4314. Assignment 1 presents our conceptual model. Assignment 2 examines the concrete architecture of openpilot v0.11.1, with a focus on the Perception subsystem.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#assignments">Open Assignment 2</a>
             <a class="button button-secondary" href="#team">View the team</a>
@@ -75,14 +75,14 @@
       <section class="section" id="assignments" aria-labelledby="assignments-title">
         <div class="section-heading">
           <div><p class="eyebrow">Current coursework</p><h2 id="assignments-title">Assignment Workspaces</h2></div>
-          <p>Assignment 2 presentation and report work now have separate responsibilities, deadlines, deliverables, and progress tracking, matching the Assignment 1 workspace structure.</p><p class="resource-note">Assignment 2 tasks audited November 9. <a href="assignment-2-requirements.html">Verified requirements and ownership</a>. Source analysis is on hold; recorded eClass dates require a recheck.</p>
+
         </div>
         <div class="assignment-focus-grid">
           <article class="assignment-card assignment-focus-card">
             <div class="assignment-topline"><span>Assignment 2 · Presentation</span><span class="status-badge status-completed" data-home-status="assignment2-presentation">Completed</span></div>
             <h3>Presentation Tasks &amp; Responsibilities</h3>
             <p class="assignment-deadline"><strong>Due:</strong> <time datetime="2026-11-12T17:30:00-05:00">Thursday, November 12, 2026 at 5:30 PM</time></p>
-            <p>Present OpenPilot's recovered concrete architecture. Group H presents at <strong>6:54 PM</strong>; the 12-minute rehearsal is a team target. Source analysis is on hold.</p>
+            <p>Concrete architecture recovery, subsystem structure, dependencies and behavior in openpilot v0.11.1.</p>
             <div class="card-progress-row"><span data-home-progress="assignment2-presentation">Completed – All Tasks Finished</span><div class="mini-progress" role="progressbar" aria-label="Assignment 2 presentation task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><span data-home-progress-bar="assignment2-presentation" style="width: 100%"></span></div><small data-home-sync="assignment2-presentation" class="is-live">Completed</small></div>
             <a class="assignment-link" href="assignment-2-presentation.html">Open the presentation workspace</a>
           </article>
@@ -90,7 +90,7 @@
             <div class="assignment-topline"><span>Assignment 2 · Report</span><span class="status-badge status-completed" data-home-status="assignment2-report">Completed</span></div>
             <h3>Report Tasks &amp; Responsibilities</h3>
             <p class="assignment-deadline"><strong>Due:</strong> <time datetime="2026-11-15T23:59:00-05:00">Sunday, November 15, 2026 at 11:59 PM</time></p>
-            <p>Create a 10–15 page concrete architecture report, publish the readable report online, and submit one verified PDF.</p>
+            <p>The 15-page report presents openpilot’s concrete architecture and the Perception subsystem.</p>
             <div class="card-progress-row"><span data-home-progress="assignment2-report">Completed – All Tasks Finished</span><div class="mini-progress" role="progressbar" aria-label="Assignment 2 report task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><span data-home-progress-bar="assignment2-report" style="width: 100%"></span></div><small data-home-sync="assignment2-report" class="is-live">Completed</small></div>
             <a class="assignment-link" href="assignment-2-report.html">Open the report workspace</a>
           </article>
@@ -112,13 +112,13 @@
             <a class="assignment-link" href="reports/Assignment1_GroupH_report.pdf">Download the final report PDF</a>
           </article>
         </div>
-        <p class="assignment-history"><strong>Assignment 2 overview:</strong> <a href="assignment-2.html">Open the combined brief, five-member ownership map, handoffs, sources, and master checklist.</a> <strong>Completed:</strong> Assignment 0 and Assignment 1.</p>
+        <p class="assignment-history"><strong>Assignment 2 overview:</strong> <a href="assignment-2.html">Open the combined brief, five-member ownership map, handoffs, sources, and master checklist.</a> <strong>Completed:</strong> Assignment 0, Assignment 1 and Assignment 2.</p>
       </section>
 
       <section class="section section-dark" id="architecture" aria-labelledby="architecture-title">
         <div class="report-layout">
           <div><p class="eyebrow">Current analysis</p><h2 id="architecture-title">Concrete Architecture Recovery</h2></div>
-          <p>Assignment 1 established Group H's proposed conceptual architecture. Assignment 2 now recovers the as-built structure from an agreed OpenPilot source snapshot, maps source entities into subsystems, investigates dependencies, and explains the selected subsystem’s concrete structure and behavior. Discrepancy analysis belongs to Assignment 3.</p>
+          <p>Assignment 1 presents Group H’s proposed conceptual architecture. Assignment 2 combines Understand dependency analysis with runtime communication evidence to describe openpilot v0.11.1 and its Perception subsystem. <a href="assignment-2-report.html">Read the final Assignment 2 report</a>.</p>
         </div>
       </section>
 
@@ -140,16 +140,16 @@
             <a href="https://mermaid.js.org/" target="_blank" rel="noopener noreferrer"><span><strong>Mermaid</strong><small>Version-controlled diagrams from text</small></span><span aria-hidden="true">↗</span></a>
             <a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer"><span><strong>Zotero</strong><small>Reference collection and citation management</small></span><span aria-hidden="true">↗</span></a>
           </div>
-          <aside class="collection-card" aria-labelledby="evidence-boundary-title"><h3 id="evidence-boundary-title">Evidence boundary by assignment</h3><p><strong>Assignment 1:</strong> product facts came from the official comma.ai overview and the conceptual architecture was explicitly a Group H proposal. <strong>Assignment 2:</strong> implementation evidence is required. Record the exact source snapshot, Understand settings, entity grouping decisions, and low-level causes of every important dependency; label interpretations separately from extracted facts.</p></aside>
+          <aside class="collection-card" aria-labelledby="evidence-boundary-title"><h3 id="evidence-boundary-title">Conceptual and concrete architecture</h3><p>Assignment 1 develops a proposed architecture from product information and course concepts. Assignment 2 studies implementation structure, subsystem dependencies and runtime communication.</p></aside>
         </div>
       </section>
 
       <section class="section section-tinted" id="discussions" aria-labelledby="discussions-title">
-        <div class="compact-section"><div><p class="eyebrow">Design notes</p><h2 id="discussions-title">Discussions</h2></div><p>Group discussions, architecture decisions, unresolved questions, and peer-review notes will be added throughout the project.</p></div>
+        <div class="compact-section"><div><p class="eyebrow">Design notes</p><h2 id="discussions-title">Discussions</h2></div><p>The report discusses static dependencies and runtime communication, the Perception subsystem boundary, and the limitations of the recovery method.</p></div>
       </section>
 
       <section class="section" id="project-files" aria-labelledby="project-files-title">
-        <div class="section-heading"><div><p class="eyebrow">Group H workspace</p><h2 id="project-files-title">Project Files</h2></div><p>These links are for Group H collaboration and publication, not architectural evidence about OpenPilot's implementation.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">Group H workspace</p><h2 id="project-files-title">Project Files</h2></div><p>Project reports, presentation materials and the Group H repository.</p></div>
         <div class="card-grid source-grid">
           <article class="source-card"><p class="card-kicker">Course project</p><h3>Group Repository</h3><a href="https://github.com/eecs4314-group-h/openpilot-architecture-group" target="_blank" rel="noopener noreferrer">github.com/eecs4314-group-h/openpilot-architecture-group</a></article>
           <article class="source-card"><p class="card-kicker">Published workspace</p><h3>Group H Website</h3><a href="https://eecs4314-group-h.github.io/openpilot-architecture-group/" target="_blank" rel="noopener noreferrer">eecs4314-group-h.github.io/openpilot-architecture-group</a></article>
