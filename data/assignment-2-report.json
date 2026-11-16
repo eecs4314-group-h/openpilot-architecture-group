@@ -13,8 +13,6 @@
           "expectedOutput": "Scope record and glossary.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": false,
-          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -23,8 +21,6 @@
           "expectedOutput": "Human-authored title, abstract (about 2/3 page) and introduction (1–3 pages).",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": false,
-          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -33,8 +29,6 @@
           "expectedOutput": "Coherent report with glossary and consistent naming.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": false,
-          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -43,8 +37,6 @@
           "expectedOutput": "Readable online report and linked artifact index.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": false,
-          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -53,8 +45,6 @@
           "expectedOutput": "Final report, Understand project artifact and submission receipt.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": false,
-          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         }
       ]
@@ -65,12 +55,10 @@
       "items": [
         {
           "id": "assignment2-report-spence-01",
-          "description": "After authorization, establish and record the v0.11.1 source revision and Understand environment, exclusions and extraction limitations.",
+          "description": "Establish and record the v0.11.1 source revision and Understand environment, exclusions and extraction limitations.",
           "expectedOutput": "Reproducible environment and source-version record.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -79,8 +67,6 @@
           "expectedOutput": "Human-authored recovery methodology.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -89,8 +75,6 @@
           "expectedOutput": "Shared mapping table and decision log.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -99,8 +83,6 @@
           "expectedOutput": "System diagram and submission-ready Understand project artifact.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -109,8 +91,6 @@
           "expectedOutput": "Approximately 2 pages, captions and artifact index.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         }
       ]
@@ -121,12 +101,10 @@
       "items": [
         {
           "id": "assignment2-report-mehdi-01",
-          "description": "After authorization and forum acceptance, validate focused membership and hierarchical decomposition against the system mapping.",
+          "description": "Validate focused membership and hierarchical decomposition against the system mapping.",
           "expectedOutput": "Reviewed subsystem inventory.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -135,8 +113,6 @@
           "expectedOutput": "Focused structure and interface narrative.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -145,8 +121,6 @@
           "expectedOutput": "Evidence matrix with scope and limitations.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -155,8 +129,6 @@
           "expectedOutput": "Report-ready editable diagram(s).",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -165,8 +137,6 @@
           "expectedOutput": "Approximately 2.5 pages and static-model handoff to David.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         }
       ]
@@ -177,22 +147,18 @@
       "items": [
         {
           "id": "assignment2-report-david-01",
-          "description": "Select an essential scenario and document its actors, trigger, preconditions and outcome; validate the scenario after source authorization.",
+          "description": "Select an essential scenario and document its actors, trigger, preconditions and outcome; trace the scenario in the implementation.",
           "expectedOutput": "Scenario specification tied to the selected subsystem.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": false,
-          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
           "id": "assignment2-report-david-02",
-          "description": "After authorization, trace control/data flow, relevant state changes and concurrency, with explicit limits on what static evidence proves.",
+          "description": "Trace control/data flow, relevant state changes and concurrency, with explicit limits on what static evidence proves.",
           "expectedOutput": "Behavior evidence table.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -201,8 +167,6 @@
           "expectedOutput": "Behavior figure and explanatory caption.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -211,8 +175,6 @@
           "expectedOutput": "Style/pattern analysis and evidence notes.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         },
         {
@@ -221,8 +183,6 @@
           "expectedOutput": "Approximately 2 pages and reviewed behavior package.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Section 6 / Appendices A–B; allocation is a team decision"
         }
       ]
@@ -237,8 +197,6 @@
           "expectedOutput": "Qualified trade-off and modelling-choice notes.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
         },
         {
@@ -247,8 +205,6 @@
           "expectedOutput": "Limitations and lessons notes, plus AI-use record where applicable.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": false,
-          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
           "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
         },
         {
@@ -257,8 +213,6 @@
           "expectedOutput": "Human-authored closing section and linked references.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
         },
         {
@@ -267,8 +221,6 @@
           "expectedOutput": "Requirements review and issue list for Setayesh.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": false,
-          "analysisStatus": "Planning, coordination or review; no source inspection required now.",
           "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
         },
         {
@@ -277,8 +229,6 @@
           "expectedOutput": "Approximately 1.5 pages plus references and final review record.",
           "status": "Not Started",
           "deliverableUrl": "",
-          "requiresSourceAnalysis": true,
-          "analysisStatus": "Pending source-code analysis — not yet verified.",
           "requirementBasis": "Appendix A closing sections / Appendix B recommendations and team review"
         }
       ]
@@ -373,7 +323,5 @@
       "status": "Not Started"
     }
   ],
-  "scheduleVerification": "Previously recorded; recheck in eClass. Current session requires login.",
-  "targetVersion": "v0.11.1",
-  "sourceAnalysisHold": true
+  "targetVersion": "v0.11.1"
 }
