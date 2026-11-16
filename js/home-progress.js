@@ -1,7 +1,7 @@
 (() => {
   const assignments = [
-    { id: "assignment2-presentation", source: "data/assignment-2-presentation.json" },
-    { id: "assignment2-report", source: "data/assignment-2-report.json" },
+    { id: "assignment2-presentation", source: "data/assignment-2-presentation.json", finalized: true },
+    { id: "assignment2-report", source: "data/assignment-2-report.json", finalized: true },
     { id: "presentation", source: "data/assignment-1-presentation.json" },
     { id: "report", source: "data/assignment-1-report.json?v=20261026-1", finalized: true }
   ];
