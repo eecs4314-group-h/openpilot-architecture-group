@@ -2,7 +2,7 @@
   const assignments = [
     { id: "assignment2-presentation", source: "data/assignment-2-presentation.json", finalized: true },
     { id: "assignment2-report", source: "data/assignment-2-report.json", finalized: true },
-    { id: "presentation", source: "data/assignment-1-presentation.json" },
+    { id: "presentation", source: "data/assignment-1-presentation.json", finalized: true },
     { id: "report", source: "data/assignment-1-report.json?v=20261026-1", finalized: true }
   ];
 
@@ -30,7 +30,7 @@
       progressbar?.classList.toggle("is-complete", percentage === 100);
     });
     document.querySelectorAll(`[data-home-sync="${id}"]`).forEach((element) => {
-      element.textContent = finalized ? "Completed" : state.configured ? "Live shared progress" : "Shared saving setup pending";
+      element.textContent = finalized ? "Completed" : state.configured ? "Team progress" : "Task progress";
       element.classList.toggle("is-live", finalized || state.configured);
     });
   };

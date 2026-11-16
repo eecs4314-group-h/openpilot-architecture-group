@@ -42,7 +42,7 @@
     if (!value) {
       const empty = document.createElement("span");
       empty.className = "task-no-link";
-      empty.textContent = "No file linked";
+      empty.textContent = "";
       return empty;
     }
     try {
@@ -97,7 +97,7 @@
       checkbox.setAttribute("aria-label", `${completed ? "Reopen" : "Complete"} ${item.id}: ${item.description}`);
       checkbox.title = editable
         ? completed ? "Uncheck to reopen this task" : "Check to mark this task completed"
-        : state.configured ? "Sign in as this member, or as the coordinator, to update this task" : "Shared saving must be configured before tasks can be changed";
+        : completed ? "Completed task" : "Assigned task";
       checkbox.addEventListener("click", (event) => event.stopPropagation());
       checkbox.addEventListener("change", () => requestToggle(item, checkbox.checked));
 
@@ -127,8 +127,10 @@
       submission.append(safeLink(item.deliverableUrl));
       const verification = document.createElement("small");
       verification.className = "verification-state";
-      verification.textContent = `Verification: ${item.verificationStatus || "Not submitted"}`;
-      submission.append(verification);
+      if (item.verificationStatus) {
+        verification.textContent = `Verification: ${item.verificationStatus}`;
+        submission.append(verification);
+      }
 
       if (editable) {
         row.tabIndex = 0;
@@ -210,8 +212,7 @@
     banner?.classList.toggle("setup-required", !configured);
 
     if (!configured) {
-      if (title) title.textContent = "Shared saving requires Supabase setup";
-      if (description) description.textContent = "The secure integration is installed, but no Supabase project URL or public key is configured. Tasks remain read-only.";
+      panel.hidden = true;
       if (form) form.hidden = true;
       if (session) session.hidden = true;
       return;
