@@ -5,6 +5,7 @@ Group H's EECS 4314 website presents our university coursework on openpilot's so
 - [Homepage](https://eecs4314-group-h.github.io/openpilot-architecture-group/)
 - [Assignment 1 presentation](assignment-1-presentation.html) and [report](assignment-1-report.html): proposed conceptual architecture.
 - [Assignment 2 overview](assignment-2.html), [requirements](assignment-2-requirements.html), [presentation](assignment-2-presentation.html) and [report](assignment-2-report.html): concrete architecture of openpilot v0.11.1, with a focus on Perception.
+- [Assignment 3 presentation](assignment-3-presentation.html) and [report](assignment-3-report.html): discrepancy analysis between A1 and A2, including rationales and mitigation proposals.
 - [Final Assignment 1 report](reports/Assignment1_GroupH_report.pdf)
 - [Final Assignment 2 report](reports/Assignment2_GroupH_Report.pdf)
 

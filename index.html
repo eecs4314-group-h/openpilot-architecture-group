@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="js/supabase-config.js" defer></script>
     <script src="js/shared-progress.js" defer></script>
-    <script src="js/home-progress.js?v=20261115-public" defer></script>
+    <script src="js/home-progress.js?v=20261124-a3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -22,7 +22,7 @@
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#assignments">Assignment 2</a></li>
+          <li><a href="#assignments">Assignment 3</a></li>
           <li><a href="#architecture">Architecture Report</a></li>
           <li><a href="#resources">Resources</a></li>
           <li><a href="#discussions">Discussions</a></li>
@@ -38,24 +38,14 @@
           <h1 id="page-title">Group H</h1>
           <p class="hero-subtitle">OpenPilot Architecture Group</p>
           <p class="hero-focus">Software Architecture &amp; Design Analysis of OpenPilot</p>
-          <p class="hero-description">Group H studies openpilot’s software architecture for EECS 4314. Assignment 1 presents our conceptual model. Assignment 2 examines the concrete architecture of openpilot v0.11.1, with a focus on the Perception subsystem.</p>
+          <p class="hero-description">Group H studies openpilot’s software architecture for EECS 4314. Assignment 1 presents our conceptual model. Assignment 2 examines the concrete architecture of openpilot v0.11.1, with a focus on the Perception subsystem. Assignment 3 compares the two architectures and develops justified proposals to address discrepancies.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#assignments">Open Assignment 2</a>
+            <a class="button button-primary" href="#assignments">Open Assignment 3</a>
             <a class="button button-secondary" href="#team">View the team</a>
           </div>
         </div>
 
-        <aside class="milestone-card" aria-label="Current project milestone">
-          <p class="card-kicker">Current milestone</p>
-          <h2>Assignment 2</h2>
-          <p>Concrete Architecture Recovery</p>
-          <dl class="milestone-details">
-            <div><dt>Presentation</dt><dd><time datetime="2026-11-12T17:30:00-05:00">November 12 · 5:30 PM</time><br>Group H at 6:54 PM</dd></div>
-            <div><dt>Report</dt><dd><time datetime="2026-11-15T23:59:00-05:00">November 15 · 11:59 PM</time></dd></div>
-            <div><dt>Status</dt><dd><span class="status-badge status-completed">Completed</span></dd></div>
-          </dl>
-          <p class="schedule-note">Slides and report must be submitted as PDFs. The report must also be posted online.</p>
-        </aside>
+        <aside class="milestone-card" aria-label="Current project milestone"><p class="card-kicker">Current milestone</p><h2>Assignment 3</h2><p>Discrepancy Analysis</p><dl class="milestone-details"><div><dt>Presentation</dt><dd><time datetime="2026-12-01T17:30:00-05:00">December 1 · 5:30 PM</time></dd></div><div><dt>Report</dt><dd><time datetime="2026-12-06T23:59:00-05:00">December 6 · 11:59 PM</time></dd></div><div><dt>Focus</dt><dd>A1 conceptual vs. A2 concrete</dd></div></dl><p class="schedule-note">Explain discrepancies at the system and detailed Perception levels, then justify the proposed changes.</p></aside>
       </section>
 
       <section class="section section-tinted" id="team" aria-labelledby="team-title">
@@ -78,6 +68,9 @@
 
         </div>
         <div class="assignment-focus-grid">
+<article class="assignment-card assignment-focus-card"><div class="assignment-topline"><span>Assignment 3 · Presentation</span><span class="status-badge status-not-started" data-home-status="assignment3-presentation">Not Started</span></div><h3>Presentation Tasks &amp; Responsibilities</h3><p class="assignment-deadline"><strong>Due:</strong> <time datetime="2026-12-01T17:30:00-05:00">Tuesday, December 1, 2026 at 5:30 PM</time></p><p>Compare A1 and A2, explain discrepancy rationales at both levels, and present justified changes.</p><div class="card-progress-row"><span data-home-progress="assignment3-presentation">0 of 25 · 0% complete</span><div class="mini-progress" role="progressbar" aria-label="Assignment 3 presentation task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-home-progress-bar="assignment3-presentation"></span></div><small data-home-sync="assignment3-presentation">Task progress</small></div><a class="assignment-link" href="assignment-3-presentation.html">Open the presentation workspace</a></article>
+<article class="assignment-card assignment-focus-card"><div class="assignment-topline"><span>Assignment 3 · Report</span><span class="status-badge status-not-started" data-home-status="assignment3-report">Not Started</span></div><h3>Report Tasks &amp; Responsibilities</h3><p class="assignment-deadline"><strong>Due:</strong> <time datetime="2026-12-06T23:59:00-05:00">Sunday, December 6, 2026 at 11:59 PM</time></p><p>Write the 10–15 page discrepancy analysis, with rationales, mitigation proposals and explicit changes to A1, A2 or both.</p><div class="card-progress-row"><span data-home-progress="assignment3-report">0 of 25 · 0% complete</span><div class="mini-progress" role="progressbar" aria-label="Assignment 3 report task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-home-progress-bar="assignment3-report"></span></div><small data-home-sync="assignment3-report">Task progress</small></div><a class="assignment-link" href="assignment-3-report.html">Open the report workspace</a></article>
+
           <article class="assignment-card assignment-focus-card">
             <div class="assignment-topline"><span>Assignment 2 · Presentation</span><span class="status-badge status-completed" data-home-status="assignment2-presentation">Completed</span></div>
             <h3>Presentation Tasks &amp; Responsibilities</h3>
@@ -117,8 +110,8 @@
 
       <section class="section section-dark" id="architecture" aria-labelledby="architecture-title">
         <div class="report-layout">
-          <div><p class="eyebrow">Current analysis</p><h2 id="architecture-title">Concrete Architecture Recovery</h2></div>
-          <p>Assignment 1 presents Group H’s proposed conceptual architecture. Assignment 2 combines Understand dependency analysis with runtime communication evidence to describe openpilot v0.11.1 and its Perception subsystem. <a href="assignment-2-report.html">Read the final Assignment 2 report</a>.</p>
+          <div><p class="eyebrow">Current analysis</p><h2 id="architecture-title">Discrepancy Analysis</h2></div>
+          <p>Assignment 1 presents Group H’s proposed conceptual architecture. Assignment 2 combines Understand dependency analysis with runtime communication evidence. Assignment 3 compares those baselines at the system and detailed Perception levels, investigates discrepancy rationales and proposes changes. <a href="assignment-3-report.html">Open the Assignment 3 report tasks</a>.</p>
         </div>
       </section>
 
@@ -129,6 +122,8 @@
         </div>
         <div class="resource-layout">
           <div class="link-list">
+<a href="assignment-3-presentation.html"><span><strong>Assignment 3 Presentation Workspace</strong><small>Discrepancy analysis, five-member slide allocation and speaking order</small></span><span aria-hidden="true">→</span></a>
+<a href="assignment-3-report.html"><span><strong>Assignment 3 Report Workspace</strong><small>Comparison cases, rationales, proposed changes and report responsibilities</small></span><span aria-hidden="true">→</span></a>
             <a href="https://comma.ai/openpilot" target="_blank" rel="noopener noreferrer"><span><strong>Official comma.ai OpenPilot Overview</strong><small>Advertised features, general purpose, and driver responsibility only</small></span><span aria-hidden="true">↗</span></a>
             <a href="assignment-2-presentation.html"><span><strong>Assignment 2 Presentation Workspace</strong><small>Member slides, speaking order, progress, and final checklist</small></span><span aria-hidden="true">→</span></a>
             <a href="assignment-2-report.html"><span><strong>Assignment 2 Report Workspace</strong><small>Report outline, member sections, progress, and final checklist</small></span><span aria-hidden="true">→</span></a>
