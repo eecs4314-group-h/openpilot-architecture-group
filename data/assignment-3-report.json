@@ -1,0 +1,285 @@
+{
+  "assignment": "Assignment 3 – Discrepancy Analysis Report",
+  "deadline": "2026-12-06T23:59:00-05:00",
+  "members": [
+    {
+      "id": "setayesh-chegini",
+      "name": "Setayesh Chegini",
+      "items": [
+        {
+          "id": "assignment3-report-setayesh-01",
+          "description": "Define the scope: the A1 conceptual model, the A2 openpilot v0.11.1 concrete model, and Perception as the detailed subsystem. Assign system, Perception and behaviour case identifiers.",
+          "expectedOutput": "Scope statement, shared case-ID scheme and glossary.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-setayesh-02",
+          "description": "Write the title, author information, abstract and introduction from the team’s completed analyses. Explain the comparison questions and report organisation.",
+          "expectedOutput": "Group-authored opening sections; abstract about two-thirds of a page and introduction within Appendix A guidance.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-setayesh-03",
+          "description": "Integrate the comparison tables, rationales, proposed fixes and revised diagrams. Keep each claim linked to its owner’s evidence and use the same subsystem names throughout.",
+          "expectedOutput": "One coherent report draft with a common terminology and evidence index.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-setayesh-04",
+          "description": "Check the complete report against Section 7 and Appendix A: 10–15 pages, 12-point single-spaced text, readable legends, references and clear changes to A1, A2 or both.",
+          "expectedOutput": "Integrated report within the 15-page cap, including diagrams and appendices.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-setayesh-05",
+          "description": "Publish the web-readable report and final PDF, interlink A1, A2 and A3, check every report/artifact link, and coordinate the group submission by December 6 at 11:59 PM.",
+          "expectedOutput": "Final report, working website/PDF links and group handoff.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "spence-hashemi",
+      "name": "Spence Hashemi",
+      "items": [
+        {
+          "id": "assignment3-report-spence-01",
+          "description": "Read A1 Figure 1, Figure 2 and Table 1 (pp.3–5) alongside A2’s system views (pp.3–7) and Table 2 (p.8). Record the scope and meaning of each view.",
+          "expectedOutput": "Baseline inventory and source-page references.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-spence-02",
+          "description": "Build the A1-to-A2 subsystem mapping. Distinguish renamed, split, merged or differently scoped elements before classifying dependencies.",
+          "expectedOutput": "Common mapping table and relation definitions.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-spence-03",
+          "description": "Classify system-level relations as Absences, Convergences or Divergences. Recheck the cases listed in A2 Table 2 against the original A1 model.",
+          "expectedOutput": "Top-level comparison matrix with evidence for each case.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-spence-04",
+          "description": "Investigate why each top-level discrepancy exists using the report references and relevant source or history evidence. Separate documented explanations from the group’s interpretation.",
+          "expectedOutput": "System-level rationale records with supporting sources and limitations.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-spence-05",
+          "description": "Propose and justify a conceptual correction, a concrete change or both for the top-level cases. Provide before/after subsystem or dependency views and hand them over for integration.",
+          "expectedOutput": "Top-level analysis section, revised-view proposals and change summary.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "mehdi-jafarian",
+      "name": "Mehdi Jafarian",
+      "items": [
+        {
+          "id": "assignment3-report-mehdi-01",
+          "description": "Identify Perception’s conceptual responsibility and relationships in A1 (pp.2–5), then read A2 Section 6, Table 3 and Figures 5–8 (pp.8–11).",
+          "expectedOutput": "Detailed baseline inventory with report/page/figure references.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-mehdi-02",
+          "description": "Map the conceptual Perception box to the concrete components and interfaces. Compare responsibilities, inputs, outputs and internal or cross-boundary dependencies.",
+          "expectedOutput": "Perception mapping and detailed comparison matrix.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-mehdi-03",
+          "description": "Classify detailed discrepancies after accounting for differences in abstraction. Keep static code dependencies, message communication and frame transport distinct.",
+          "expectedOutput": "Detailed case records with relation types and evidence.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-mehdi-04",
+          "description": "Investigate the rationale for each structural or interface discrepancy. Use the cited implementation evidence where needed and identify limits of static analysis.",
+          "expectedOutput": "Evidence-backed explanations for the detailed design differences.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-mehdi-05",
+          "description": "Propose and justify detailed conceptual or concrete changes. Show the original and proposed Perception boundaries/interfaces with readable legends and pass the changes to the report integrator.",
+          "expectedOutput": "Detailed comparison section, revised Perception diagrams and case-linked proposals.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "david-odidi",
+      "name": "David Odidi",
+      "items": [
+        {
+          "id": "assignment3-report-david-01",
+          "description": "Use the slower/braking lead-vehicle scenario as a shared comparison: A1’s ACC sequence (Figure 3, p.10) and A2’s braking sequence (Figure 10, p.13). Define the common trigger and outcome.",
+          "expectedOutput": "Scenario specification and baseline references.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-david-02",
+          "description": "Compare participating components, information flow, feedback and control responsibilities. Relate the scenario to the structural differences recorded by Spence and Mehdi.",
+          "expectedOutput": "Paired scenario trace and linked behavioural cases.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-david-03",
+          "description": "Investigate the rationale and implications of each behavioural/interface difference using the A2 evidence references. Distinguish a source-derived trace from an observed runtime result.",
+          "expectedOutput": "Behavioural rationale records with evidence and limits.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-david-04",
+          "description": "Propose conceptual scenario corrections or concrete interface/control-flow changes. Explain expected effects on coupling, timing or maintainability only where supported.",
+          "expectedOutput": "Justified behavioural/interface proposals and a validation plan.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-david-05",
+          "description": "Produce a readable before/after sequence or state view and write the scenario comparison section using the same names and legends as the static views.",
+          "expectedOutput": "Behaviour section, diagrams, captions and handoff to the integrator.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "dan-logvinovsky",
+      "name": "Dan Logvinovsky",
+      "items": [
+        {
+          "id": "assignment3-report-dan-01",
+          "description": "Collect the system-level, detailed Perception and behavioural case records. Check that each case cites both baselines and separates evidence from interpretation.",
+          "expectedOutput": "Consolidated case register and coverage review.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-dan-02",
+          "description": "Compare the owners’ mitigation alternatives: revise the conceptual model, propose a concrete change or change both. Explain why each selected option is preferable.",
+          "expectedOutput": "Case-linked mitigation matrix with alternatives and rationale.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-dan-03",
+          "description": "Describe expected benefits, costs, compatibility risks and a validation plan for the chosen proposals. Reconcile conflicts between the proposed revised views.",
+          "expectedOutput": "Prioritised recommendations and consistent change summary.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-dan-04",
+          "description": "Write conclusions and lessons from the completed comparison. Consolidate references and the required AI-use disclosure under the assignment’s A1 guidelines.",
+          "expectedOutput": "Group-authored closing sections, references and applicable disclosures.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-report-dan-05",
+          "description": "Review Section 7 coverage at both levels, the 10–15 page limit, legends, explicit before/after changes and website/report links. Return corrections to their owners for final integration.",
+          "expectedOutput": "Final content review and report handoff to Setayesh.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "assignment3-report-checkpoint-01",
+      "label": "Baselines and common mapping agreed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-checkpoint-02",
+      "label": "System and detailed comparison cases assembled",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-checkpoint-03",
+      "label": "Rationale evidence and proposals reviewed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-checkpoint-04",
+      "label": "Figures and member contributions integrated",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-checkpoint-05",
+      "label": "Final deliverable and website links checked",
+      "status": "Not Started"
+    }
+  ],
+  "submissionChecklist": [
+    {
+      "id": "assignment3-report-submit-01",
+      "label": "Report compares the A1 conceptual and A2 concrete architectures",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-submit-02",
+      "label": "System-level and detailed Perception discrepancies have rationales",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-submit-03",
+      "label": "Each selected discrepancy has a justified mitigation proposal",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-submit-04",
+      "label": "Changes to the conceptual and concrete views are explicit",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-submit-05",
+      "label": "Report is 10–15 pages, within 15 including diagrams and appendices",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-submit-06",
+      "label": "Single-spaced 12-point text, abstract, introduction and references are included",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-submit-07",
+      "label": "Diagrams have clear legends and citations to the baseline evidence",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-submit-08",
+      "label": "Members author their sections and include required AI-use disclosures",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-report-submit-09",
+      "label": "Web report, final PDF and related assignment links work by December 6 at 11:59 PM",
+      "status": "Not Started"
+    }
+  ]
+}

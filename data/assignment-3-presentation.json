@@ -1,0 +1,280 @@
+{
+  "assignment": "Assignment 3 – Discrepancy Analysis Presentation",
+  "deadline": "2026-12-01T17:30:00-05:00",
+  "members": [
+    {
+      "id": "setayesh-chegini",
+      "name": "Setayesh Chegini",
+      "items": [
+        {
+          "id": "assignment3-presentation-setayesh-01",
+          "description": "Agree on the A1/A2 baselines, Perception focus, case identifiers and one shared evidence package for both deliverables.",
+          "expectedOutput": "Common scope, glossary and presentation story.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-setayesh-02",
+          "description": "Prepare slide 1 with the objective, team, baselines and the two comparison levels required by Section 7.",
+          "expectedOutput": "Opening slide and speaking notes.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-setayesh-03",
+          "description": "Prepare slide 2 with the mapping method and the meanings of Absences, Convergences and Divergences from the Reflexion Models lecture.",
+          "expectedOutput": "Comparison-method slide with a clear classification legend.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-setayesh-04",
+          "description": "Integrate the other members’ slides. Check that each selected discrepancy has evidence, an explanation, a justified proposal and a clear indication of which architecture would change.",
+          "expectedOutput": "One consistent deck, references and presentation-ready notes.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-setayesh-05",
+          "description": "Coordinate a timed rehearsal with all five speakers, leave time for questions, publish the slides online and prepare the presentation for December 1 at 5:30 PM.",
+          "expectedOutput": "Rehearsed deck, online presentation link and speaking order.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "spence-hashemi",
+      "name": "Spence Hashemi",
+      "items": [
+        {
+          "id": "assignment3-presentation-spence-01",
+          "description": "Use the same subsystem mapping and case IDs as the report; select the top-level cases that best explain the system-wide differences.",
+          "expectedOutput": "System-level evidence package shared with the report.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-spence-02",
+          "description": "Prepare slide 3 with comparable A1 and A2 system views. Keep arrow meanings and subsystem labels consistent.",
+          "expectedOutput": "Readable system comparison slide with legends.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-spence-03",
+          "description": "Prepare slide 4 around selected top-level discrepancies, their evidence-supported rationales and the changes proposed for those cases.",
+          "expectedOutput": "Top-level findings and proposed changes slide.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-spence-04",
+          "description": "Label conceptual updates and concrete-change proposals separately. Explain the expected benefit and important cost of each recommendation.",
+          "expectedOutput": "Before/after labels, trade-offs and concise speaker notes.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-spence-05",
+          "description": "Rehearse the two-minute system-level segment and pass the common mapping and referenced figures to the slide integrator.",
+          "expectedOutput": "Speaking notes, figures and handoff to Mehdi.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "mehdi-jafarian",
+      "name": "Mehdi Jafarian",
+      "items": [
+        {
+          "id": "assignment3-presentation-mehdi-01",
+          "description": "Use the report’s Perception boundary, mapping and case IDs; select detailed cases that complement Spence’s system-level examples.",
+          "expectedOutput": "Focused evidence package shared with the report.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-mehdi-02",
+          "description": "Prepare slide 5 comparing the A1 Perception responsibility with A2’s detailed structure, interfaces and dependency view.",
+          "expectedOutput": "Detailed Perception comparison slide.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-mehdi-03",
+          "description": "Prepare slide 6 explaining selected detailed discrepancies, their rationales and proposed conceptual or concrete changes.",
+          "expectedOutput": "Detailed rationale and mitigation slide.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-mehdi-04",
+          "description": "Check the diagrams with David so the static boundary and behavioural scenario use the same components and connector meanings.",
+          "expectedOutput": "Consistent static and behavioural views with source references.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-mehdi-05",
+          "description": "Rehearse a two-minute explanation and hand over the figures, case IDs and speaking notes.",
+          "expectedOutput": "Presentation-ready detailed figures and handoff to David.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "david-odidi",
+      "name": "David Odidi",
+      "items": [
+        {
+          "id": "assignment3-presentation-david-01",
+          "description": "Use the same scenario and case IDs as the report, with common actors, trigger and outcome across the A1/A2 traces.",
+          "expectedOutput": "Scenario evidence package shared with the report.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-david-02",
+          "description": "Prepare slide 7 showing the important A1/A2 interaction differences with readable sequence or state diagrams.",
+          "expectedOutput": "Paired behavioural comparison slide.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-david-03",
+          "description": "Prepare slide 8 explaining the behavioural/interface rationales and the changes proposed to address them.",
+          "expectedOutput": "Behavioural rationale and proposed-change slide.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-david-04",
+          "description": "Connect the proposed interaction changes to the system and Perception cases; make any unimplemented code changes explicit as proposals.",
+          "expectedOutput": "Consistent case links, change labels and speaker notes.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-david-05",
+          "description": "Rehearse the two-minute scenario explanation and prepare evidence-based answers about control flow, concurrency and limitations.",
+          "expectedOutput": "Speaking notes, scenario figures and handoff to Dan.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "dan-logvinovsky",
+      "name": "Dan Logvinovsky",
+      "items": [
+        {
+          "id": "assignment3-presentation-dan-01",
+          "description": "Collect the owners’ discrepancy cases and proposed fixes; select recommendations that cover both the system and detailed levels.",
+          "expectedOutput": "Shared recommendation matrix for the presentation.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-dan-02",
+          "description": "Prepare slide 9 comparing mitigation options and showing which conceptual or concrete elements would change.",
+          "expectedOutput": "Recommendation and before/after change slide.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-dan-03",
+          "description": "Prepare slide 10 with priorities, important trade-offs, limitations, lessons and the conclusion supported by the analysed cases.",
+          "expectedOutput": "Closing slide and concise conclusions.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-dan-04",
+          "description": "Check the complete deck for both comparison levels, rationale evidence, explicit proposed changes, readable legends and references.",
+          "expectedOutput": "Cross-checked deck and reference slides.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        },
+        {
+          "id": "assignment3-presentation-dan-05",
+          "description": "Rehearse the two-minute close, prepare questions about rejected alternatives and validation, and hand the reviewed closing materials to Setayesh.",
+          "expectedOutput": "Speaking notes, Q&A preparation and final presentation handoff.",
+          "status": "Not Started",
+          "deliverableUrl": ""
+        }
+      ]
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "assignment3-presentation-checkpoint-01",
+      "label": "Baselines and common mapping agreed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-checkpoint-02",
+      "label": "System and detailed comparison cases assembled",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-checkpoint-03",
+      "label": "Rationale evidence and proposals reviewed",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-checkpoint-04",
+      "label": "Figures and member contributions integrated",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-checkpoint-05",
+      "label": "Final deliverable and website links checked",
+      "status": "Not Started"
+    }
+  ],
+  "submissionChecklist": [
+    {
+      "id": "assignment3-presentation-submit-01",
+      "label": "A1 and A2 baselines and Perception scope are identified",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-submit-02",
+      "label": "Both system-level and detailed discrepancies are presented",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-submit-03",
+      "label": "Rationales are supported by case evidence",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-submit-04",
+      "label": "Mitigations identify conceptual, concrete or combined changes",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-submit-05",
+      "label": "Before/after views and legends make the changes clear",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-submit-06",
+      "label": "All five members have speaking notes and rehearse together",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-submit-07",
+      "label": "Slides and references are available on the group website",
+      "status": "Not Started"
+    },
+    {
+      "id": "assignment3-presentation-submit-08",
+      "label": "Presentation is ready for December 1 at 5:30 PM",
+      "status": "Not Started"
+    }
+  ]
+}
