@@ -1,5 +1,7 @@
 (() => {
   const assignments = [
+    { id: "assignment3-presentation", source: "data/assignment-3-presentation.json" },
+    { id: "assignment3-report", source: "data/assignment-3-report.json" },
     { id: "assignment2-presentation", source: "data/assignment-2-presentation.json", finalized: true },
     { id: "assignment2-report", source: "data/assignment-2-report.json", finalized: true },
     { id: "presentation", source: "data/assignment-1-presentation.json", finalized: true },
